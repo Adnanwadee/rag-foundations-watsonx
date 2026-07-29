@@ -1,33 +1,29 @@
 # Prompt Design
 
+## System And User Roles
+
+System prompts define durable behavior: context-only answering, schema rules, unsupported refusal, or tone style. User prompts provide the specific question, retrieved context, grounded answer, protected elements, or target tone input.
+
 ## Grounded Prompts
 
-The active grounded prompt is Candidate A:
+Candidate A lives in `prompts/v2/grounded/`. Candidate B emphasized canonical refusal more aggressively but produced 31/36 structured-valid outputs. Candidate C changed completeness and constraint emphasis and matched A structurally, but had no decisive advantage. Candidate A was selected because it achieved 36/36 structured-valid outputs, 6/6 unsupported decisions correct, and no invented requested attributes.
 
-- `prompts/v2/grounded/candidate_a.system.txt`
-- `prompts/v2/grounded/candidate_a.user.txt`
+## Grounded JSON Schema
 
-The prompt receives only the question and retrieved context. Expected answers, labels, and scoring metadata are not sent to the generation model.
+`prompts/v2/schemas/grounded_output.schema.json` requires `answerable`, `answer`, and `citation_chunk_ids`. Unsupported answers use the canonical refusal. Document and section names are resolved locally from metadata.
 
 ## Tone Prompts
 
-The selected tones are:
+Tone assets live in `prompts/v2/tones/`. The tones are formal report summary, casual message, and concise executive briefing. Each has three few-shot examples in `prompts/v2/few_shot/` and returns `prompts/v2/schemas/tone_output.schema.json` JSON.
 
-- formal report summary
-- casual message
-- concise executive briefing
+## Protected Semantic Slots
 
-Each tone has a system prompt, user prompt, and three few-shot examples under `prompts/v2/`.
+Tone prompts preserve factual content, source language, quantities, dates, authorities, negation, conditions, and exceptions while changing style.
 
-## Output Schemas
+## Malformed-Output Repair
 
-The retained schemas are:
+The runtime allows one repair retry for malformed grounded or tone JSON. The retry asks only for valid JSON and does not repair semantic defects.
 
-- `prompts/v2/schemas/grounded_output.schema.json`
-- `prompts/v2/schemas/tone_output.schema.json`
+## Known Prompt Brittleness
 
-Both outputs are strict JSON objects. The runtime allows one bounded repair retry when model output is malformed or fails validation.
-
-## Guardrails
-
-Grounded answers must cite retrieved chunk IDs. Unsupported questions must use the canonical refusal: `I don't know based on the provided documents.`
+Final v2 tone behavior remained less reliable than grounded answering. Granite produced 8/20 fully valid triplets and 16/20 distinct triplets; Mistral produced 9/20 fully valid triplets and 20/20 distinct triplets. Future prompt work should use a new development set.

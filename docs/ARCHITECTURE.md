@@ -1,21 +1,39 @@
 # Architecture
 
+The active runtime reads `data/indexes/selected/` and `data/manifests/frozen/`. The dataset is synthetic; see `docs/DATASET_CARD.md`.
+
 ## Offline Ingestion And Indexing
 
-Corpus v2.1 documents are stored in `data/documents_v2_1/` and described by `data/manifest_v2_1.json`. The document loader validates manifest shape, source paths, checksums, titles, and section counts.
+```mermaid
+flowchart LR
+  A["documents"] --> B["manifest validation"] --> C["section loading"] --> D["chunking"] --> E["embeddings"] --> F["FAISS plus metadata"] --> G["frozen manifests"]
+```
 
-The selected index is stored at `data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/`. Its metadata preserves document IDs, section headings, chunk IDs, retriever configuration, and source paths.
+`scripts/build_watsonx_faiss_index.py` rebuilds to `artifacts/rebuilt-index/` by default. It validates 5 documents, 60 sections, 70 chunks, 768 dimensions, 70 vectors, and the embedding model, and it cannot overwrite the selected index without explicit overwrite.
 
 ## Query-Time Runtime
 
-1. `rag_foundations.cli` parses the user command.
-2. `frozen_v2_runtime.verify_frozen_v2_artifacts()` validates protected prompts, manifests, and selected index hashes.
-3. The embedding provider embeds the question with `ibm/granite-embedding-278m-multilingual`.
-4. FAISS retrieves Top-5 chunks from the selected index.
-5. Grounded generation renders Candidate A prompts and parses strict JSON.
-6. Citation validation resolves chunk IDs back to local document sections.
-7. Optional tone transformation renders the selected tone prompt and parses strict JSON.
+```mermaid
+flowchart LR
+  A["CLI"] --> B["configuration"] --> C["integrity verification"] --> D["query embedding"] --> E["Top-5 retrieval"] --> F["Candidate A"] --> G["JSON validation/repair"] --> H["citation resolution"] --> I["optional tone prompts"] --> J["output"]
+```
 
-## Integrity Controls
+## Component Responsibilities
 
-Protected hashes are recorded in `data/evaluation/final_v2/manifests/protected_hashes.json`. Runtime validation confirms selected prompt bytes, selected index bytes, corpus manifest, fact registry, frozen configuration, and development set hashes before live components are created.
+`config.py` reads local settings. `faiss_store.py` loads and searches FAISS. `frozen_v2_runtime.py` verifies hashes and wires live clients. `grounded_generation.py`, `tone_transformation.py`, and `schemas.py` enforce output contracts.
+
+## Credentials Boundary
+
+Offline commands require no `.env`. Live CLI calls require local watsonx variables in ignored `.env`.
+
+## Error Handling
+
+Unsupported outputs normalize only when the model marks unanswerable with no citations. Malformed JSON gets one repair retry. Invalid citation IDs raise errors.
+
+## Offline Versus Live Commands
+
+Compile, Ruff, pytest, docs validation, reference validation, corpus validation, Final v2 validation, project-complete validation, CLI help, and dry-run are offline. A live grounded answer uses one embedding and one generation call; each tone adds one generation call and at most one repair call.
+
+## Integrity Verification
+
+Protected hashes cover corpus, prompts, selected index assets, and frozen manifests. The Final v2 artifact manifest covers retained evaluation evidence.
