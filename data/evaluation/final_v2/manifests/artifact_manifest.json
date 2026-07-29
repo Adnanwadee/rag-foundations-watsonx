@@ -1,24 +1,23 @@
 {
-    "artifact_count":  17,
-    "artifacts":  {
-                      "data/evaluation/final_v2/final_dataset_manifest.json":  "d3ea86baf70ac283271a7e131791d7e4df8268b11cc86e6f8d724461b83ec27c",
-                      "data/evaluation/final_v2/final_questions_v2.json":  "89a8df77abe97d329d822311da17d17ad70b57aa7948b2cc221dcacb8eade57f",
-                      "data/evaluation/final_v2/final_tone_inputs_v2.json":  "868f4f31af6f5420eaef80e92ba63ba25cb47941eefacc76f37ff3502bd61473",
-                      "data/evaluation/final_v2/grounded_results.jsonl":  "f0b2bde3e0d160ac510f4d6d54a3ed20f285a377d865ced402b39e0b16f86e2e",
-                      "data/evaluation/final_v2/human_review/human_adjudication.json":  "b8ff4438b2f0c808abdccee07f508926852b49176137751432d5e46df064f3b1",
-                      "data/evaluation/final_v2/human_review/review_packet.json":  "a97f0dcf7aa77ba64ce48e02d6f9484b0fe376cc3e28a45afa289ca640ec2e23",
-                      "data/evaluation/final_v2/manifests/execution_manifest.json":  "7a40326c824cb9e8b22e6b029dca185ea678ecb8335050102edb58357bc18d56",
-                      "data/evaluation/final_v2/manifests/model_selection_evidence.json":  "548955726eec81dee20ac8d5b8f4df4abf583aba6ef0da870fd06b4b135d0099",
-                      "data/evaluation/final_v2/manifests/protected_hashes.json":  "0e01bb5d049027c18e4de258b2ebd29e173714d9b9422d0de950833b4ca2f83e",
-                      "data/evaluation/final_v2/manifests/rendered_requests.json":  "7fc177b9f9f9dbc40ed71b6c11fd4d1565ff9745afec52ee84a47d58f5c74a83",
-                      "data/evaluation/final_v2/retrieval_results.json":  "e0b000e31d5e01b7350320535db2b8006d61f3b879a303b50763044b17ffb859",
-                      "data/evaluation/final_v2/run_plan.json":  "f3955734c6d65d23665cb9b759c406153f5f3abd50fb0f2e39fa7e9843ffaaf4",
-                      "data/evaluation/final_v2/scoring/deterministic_scores.json":  "e048bb7ab1a113696a14bd36fcdd1b4e9b4b66df7df308501e4337ba58a554f8",
-                      "data/evaluation/final_v2/scoring/failure_analysis.md":  "94669ec67c1b31321cc8d6fcc697c9e068076e6023e715fb6664864009c12ae1",
-                      "data/evaluation/final_v2/scoring/final_metrics.json":  "1eb5e3d0e6fe409cd7cf304be9750ed18e4ff9f120915800df7999521641ac08",
-                      "data/evaluation/final_v2/scoring/model_comparison.json":  "fc64a2da3e9baf4138d16e9008513db6e95e39c7f65fe5a97fec594562698c44",
-                      "data/evaluation/final_v2/tone_results.jsonl":  "71ebce698de6099fde00f0361f4c173c6a6f7d5ed219d584419d38a04b82cf3f"
-                  },
-    "created_at_utc":  "2026-07-29T01:14:58+00:00",
-    "hash_policy":  "sha256 over repository-canonical bytes; LF-normalized for text, raw bytes for binary artifacts"
+  "artifact_count": 16,
+  "artifacts": {
+    "data/evaluation/final_v2/final_dataset_manifest.json": "d3ea86baf70ac283271a7e131791d7e4df8268b11cc86e6f8d724461b83ec27c",
+    "data/evaluation/final_v2/final_questions_v2.json": "89a8df77abe97d329d822311da17d17ad70b57aa7948b2cc221dcacb8eade57f",
+    "data/evaluation/final_v2/final_tone_inputs_v2.json": "868f4f31af6f5420eaef80e92ba63ba25cb47941eefacc76f37ff3502bd61473",
+    "data/evaluation/final_v2/grounded_results.jsonl": "f0b2bde3e0d160ac510f4d6d54a3ed20f285a377d865ced402b39e0b16f86e2e",
+    "data/evaluation/final_v2/human_review/owner_adjudication.json": "5323c808a6c36baa66e68470173479e392203cfefea972932df578e60001548c",
+    "data/evaluation/final_v2/manifests/execution_manifest.json": "7a40326c824cb9e8b22e6b029dca185ea678ecb8335050102edb58357bc18d56",
+    "data/evaluation/final_v2/manifests/model_selection_evidence.json": "ec490e8756a8602806afd76af41448b0fb179fcb591ed0be027b1d21bd248a61",
+    "data/evaluation/final_v2/manifests/protected_hashes.json": "3adddc20839ef1b07cda9200e48fca55dc29c1811cee65c95830a0795feda2be",
+    "data/evaluation/final_v2/manifests/rendered_requests.json": "7fc177b9f9f9dbc40ed71b6c11fd4d1565ff9745afec52ee84a47d58f5c74a83",
+    "data/evaluation/final_v2/retrieval_results.json": "e1575551dadc86b1dccbf4428cc61a3d4541980a3e910628a958b69bf77eda38",
+    "data/evaluation/final_v2/run_plan.json": "f3955734c6d65d23665cb9b759c406153f5f3abd50fb0f2e39fa7e9843ffaaf4",
+    "data/evaluation/final_v2/scoring/deterministic_scores.json": "e048bb7ab1a113696a14bd36fcdd1b4e9b4b66df7df308501e4337ba58a554f8",
+    "data/evaluation/final_v2/scoring/failure_analysis.md": "f71b133062e5a8ab9f1f374fd6bcf7a4e174485b71cfb25294c21f203705798e",
+    "data/evaluation/final_v2/scoring/final_metrics.json": "7db6524c80c8128d515d794b525ec7d5c7f15a0dcacc7f99dbeb9e2bff890472",
+    "data/evaluation/final_v2/scoring/model_comparison.json": "eca5ef44d3390e0f93c88668062d5f918650a909c75cf49c15fc4bf4c3e3cafd",
+    "data/evaluation/final_v2/tone_results.jsonl": "71ebce698de6099fde00f0361f4c173c6a6f7d5ed219d584419d38a04b82cf3f"
+  },
+  "created_at_utc": "2026-07-29T16:14:24+00:00",
+  "hash_policy": "sha256 over repository-canonical bytes; LF-normalized for text, raw bytes for binary artifacts"
 }

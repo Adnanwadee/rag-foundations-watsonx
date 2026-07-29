@@ -1,0 +1,17 @@
+{
+  "chunk_overlap_tokens": 40,
+  "chunk_size_tokens": 220,
+  "embedding_dimension": 768,
+  "embedding_model_id": "ibm/granite-embedding-278m-multilingual",
+  "faiss_type": "IndexFlatIP",
+  "index_config_path": "data/indexes/selected/index_config.json",
+  "index_config_sha256": "dea00fd3ec904e421b982ca6628adbffd0ea752a01c64e817d1f2a5dd67af44a",
+  "index_path": "data/indexes/selected/asteron_policies_watsonx.index",
+  "index_sha256": "d69ec3caa0a49e331396650dc1eae69d5fe20b2386e436b06a0da3bc63d201d4",
+  "manifest_id": "frozen-index-manifest-v2",
+  "metadata_path": "data/indexes/selected/metadata.json",
+  "metadata_sha256": "e226391b461eb34ebce7942dfb0347ef450c39345676c29b35172a913475ff73",
+  "selected_retrieval_configuration": "chunk-220-overlap-40",
+  "similarity_metric": "cosine_similarity",
+  "top_k": 5
+}

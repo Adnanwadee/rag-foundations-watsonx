@@ -1,6 +1,19 @@
 {
+  "changed_variable": "generation model",
   "comparison_basis": "comparison model with a smaller nominal documented parameter count",
   "comparison_model": "mistralai/mistral-small-3-1-24b-instruct-2503",
+  "controlled_variables": [
+    "corpus",
+    "selected index",
+    "Top-5 retrieval",
+    "prompt assets",
+    "temperature 0.0",
+    "top_p 1.0",
+    "tone inputs",
+    "scoring rubric"
+  ],
+  "dataset_version": "asteron-policies-v2.1",
+  "experiment_id": "granite-mistral-final-v2-model-comparison",
   "grounded": {
     "answerable_correct_rate_delta_comparison_minus_primary": -0.05,
     "comparison": {
@@ -37,13 +50,22 @@
     },
     "strict_accuracy_delta_comparison_minus_primary": 0.0
   },
+  "grounded_semantic_decisions_reviewed": 24,
   "independent_owner_signoff": true,
   "only_generation_model_changed": true,
+  "pricing_evidence": null,
   "primary_model": "ibm/granite-4-h-small",
+  "purpose_hypothesis": "Compare the primary Granite model with a comparison model with a smaller nominal documented parameter count while holding retrieval, prompts, and parameters constant.",
   "retrieval_and_embeddings_shared": true,
   "scoring_layer": "owner_verified_hybrid_final",
   "semantic_review_method": "manual owner verification",
+  "source_artifact_hashes": {
+    "data/evaluation/final_v2/scoring/model_comparison.json": "ccc9b98bf783c74cbf1d5f214d6659617c9c515e4d424dce7305f0069e7ccaf3"
+  },
+  "source_commit": "2e0d1742eb1a3b49f41e1be9043d80fccbe2eed2",
   "status": "complete",
+  "title": "Granite versus Mistral Final v2 comparison",
+  "tone_triplets_reviewed": 40,
   "tones": {
     "comparison": {
       "deterministic_clean_triplets": 0,

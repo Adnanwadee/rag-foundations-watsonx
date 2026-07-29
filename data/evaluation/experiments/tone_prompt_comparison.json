@@ -1,0 +1,424 @@
+{
+  "changed_variable": "tone prompt design",
+  "configurations": [
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 6
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 6
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 2
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 3
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 2
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 13
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 8
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 7
+        }
+      },
+      "prompt_version_and_tone": "baseline_v2::casual_message",
+      "runs": 18
+    },
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 6
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 6
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 4
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 6
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 4
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 15
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 1
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 7
+        }
+      },
+      "prompt_version_and_tone": "baseline_v2::concise_executive_briefing",
+      "runs": 18
+    },
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 7
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 5
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 3
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 17
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 7
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 3
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 13
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 7
+        }
+      },
+      "prompt_version_and_tone": "baseline_v2::formal_report_summary",
+      "runs": 18
+    },
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 6
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 6
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 7
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 8
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 4
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 15
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 4
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 8
+        }
+      },
+      "prompt_version_and_tone": "protected_v2_1::casual_message",
+      "runs": 18
+    },
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 7
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 6
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 5
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 17
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 8
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 4
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 15
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 0
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 7
+        }
+      },
+      "prompt_version_and_tone": "protected_v2_1::concise_executive_briefing",
+      "runs": 18
+    },
+    {
+      "metrics": {
+        "approval_authorities_preserved": {
+          "applicable": 7,
+          "passed": 7
+        },
+        "citation_metadata_absent": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "conditions_preserved": {
+          "applicable": 6,
+          "passed": 6
+        },
+        "currency_preserved": {
+          "applicable": 2,
+          "passed": 2
+        },
+        "dates_deadlines_preserved": {
+          "applicable": 0,
+          "passed": 0
+        },
+        "exact_copy": {
+          "applicable": 18,
+          "passed": 7
+        },
+        "exceptions_preserved": {
+          "applicable": 1,
+          "passed": 1
+        },
+        "language_preserved": {
+          "applicable": 18,
+          "passed": 17
+        },
+        "modality_preserved": {
+          "applicable": 9,
+          "passed": 9
+        },
+        "negation_preserved": {
+          "applicable": 4,
+          "passed": 4
+        },
+        "numbers_preserved": {
+          "applicable": 15,
+          "passed": 14
+        },
+        "rough_style_signal": {
+          "applicable": 18,
+          "passed": 17
+        },
+        "scope_preserved": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "structure_valid": {
+          "applicable": 18,
+          "passed": 18
+        },
+        "units_preserved": {
+          "applicable": 8,
+          "passed": 8
+        }
+      },
+      "prompt_version_and_tone": "protected_v2_1::formal_report_summary",
+      "runs": 18
+    }
+  ],
+  "controlled_variables": [
+    "same tone inputs",
+    "same model",
+    "temperature 0.0",
+    "top_p 1.0",
+    "same output schema",
+    "same repair policy"
+  ],
+  "dataset_version": "asteron-policies-v2.1",
+  "experiment_id": "tone-prompt-comparison-v2",
+  "final_generalization_note": "Strong development behavior did not fully generalize to Final v2: Granite produced 8/20 fully valid triplets and 16/20 distinct triplets; Mistral produced 9/20 fully valid triplets and 20/20 distinct triplets.",
+  "limitations": [
+    "deterministic style signals are conservative and do not replace owner review",
+    "Final v2 exposed tone brittleness not fully visible in development"
+  ],
+  "purpose_hypothesis": "Compare baseline v2 tone prompts with a protected alternate design on structure, preservation, and recognizability signals.",
+  "selected_configuration": "baseline_v2 tone prompts",
+  "selection_rationale": "Baseline v2 remained selected because it was the already integrated prompt family with stable schema behavior and few-shot coverage. The protected alternate improved some preservation dimensions in development but did not prove enough overall tone recognizability advantage to justify post-final prompt switching.",
+  "source_artifact_hashes": {
+    "read_only_tone_metrics_pre_adjudication_sha256": "40c8d59d2de016aa2bc3109d583290097d1df5452f30f69ec3d1450b3cc83564"
+  },
+  "source_commit": "e331199700169af64a0dabd38fded800e8d79901",
+  "title": "Tone prompt baseline versus protected alternate design"
+}

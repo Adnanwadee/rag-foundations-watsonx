@@ -1,11 +1,13 @@
 {
   "adjudication": {
-    "adjudicator": "Adnan Wadee Abdullah (AI-assisted semantic review)",
+    "adjudicator": "Adnan Wadee Abdullah",
+    "deterministic_clean_grounded_labels_retained": true,
     "grounded_reviewed_count": 24,
-    "human_adjudication_sha256": "b8ff4438b2f0c808abdccee07f508926852b49176137751432d5e46df064f3b1",
-    "independent_human_signoff": false,
-    "reviewed_at_utc": "2026-07-28T17:50:19+00:00",
-    "semantic_review_method": "tool-assisted semantic adjudication",
+    "independent_owner_signoff": true,
+    "owner_adjudication_sha256": "5323c808a6c36baa66e68470173479e392203cfefea972932df578e60001548c",
+    "reviewed_at_utc": "2026-07-29T15:46:41+00:00",
+    "reviewer": "Adnan Wadee Abdullah",
+    "semantic_review_method": "manual owner verification",
     "tone_triplet_reviewed_count": 40
   },
   "grounded": {
@@ -46,6 +48,7 @@
     "deterministic_clean_records_used_for_unreviewed_clean_cases": true,
     "deterministic_layer_preserved": true,
     "human_layer_preserved": true,
+    "owner_review_layer_preserved": true,
     "raw_evidence_mutated": false
   },
   "record_details": {
@@ -2388,7 +2391,7 @@
     "hit_at_5": 1.0,
     "mrr": 0.975
   },
-  "scoring_layer": "hybrid_final",
+  "scoring_layer": "owner_verified_hybrid_final",
   "status": "complete",
   "tones": {
     "by_model": {

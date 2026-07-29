@@ -27,7 +27,7 @@
       ],
       "sha256": "ecc1b777a3ae4d9aef4c668adc1770df341774ad4c05c46a2c3a48b5e2438ebd",
       "source_path": "data/documents_v2_1/employee_leave_attendance_policy.md",
-      "summary": "Clean development-corpus version of Employee Leave and Attendance Policy for Phase C retrieval and prompt experiments.",
+      "summary": "Clean development-corpus version of Employee Leave and Attendance Policy for controlled retrieval and prompt experiments.",
       "synthetic_training_content": true,
       "tags": [
         "asteron",
@@ -64,7 +64,7 @@
       ],
       "sha256": "192081d9023c13c69315153a8fba4400ae6a13cf9f6833aaff660a1455adfc74",
       "source_path": "data/documents_v2_1/flexible_work_workplace_access_policy.md",
-      "summary": "Clean development-corpus version of Flexible Work and Workplace Access Policy for Phase C retrieval and prompt experiments.",
+      "summary": "Clean development-corpus version of Flexible Work and Workplace Access Policy for controlled retrieval and prompt experiments.",
       "synthetic_training_content": true,
       "tags": [
         "asteron",
@@ -101,7 +101,7 @@
       ],
       "sha256": "26eff2214883ed52f212537a3c3ae09fb889120e101a6528d660f34e744dffd3",
       "source_path": "data/documents_v2_1/information_security_access_control_policy.md",
-      "summary": "Clean development-corpus version of Information Security and Access Control Policy for Phase C retrieval and prompt experiments.",
+      "summary": "Clean development-corpus version of Information Security and Access Control Policy for controlled retrieval and prompt experiments.",
       "synthetic_training_content": true,
       "tags": [
         "asteron",
@@ -138,7 +138,7 @@
       ],
       "sha256": "7dd7c6d40f71894a7dc9f42ccdcca60824666886d1bcd0f2a555fbdc4ffe5881",
       "source_path": "data/documents_v2_1/travel_expense_corporate_card_policy.md",
-      "summary": "Clean development-corpus version of Travel, Expense, and Corporate Card Policy for Phase C retrieval and prompt experiments.",
+      "summary": "Clean development-corpus version of Travel, Expense, and Corporate Card Policy for controlled retrieval and prompt experiments.",
       "synthetic_training_content": true,
       "tags": [
         "asteron",
@@ -175,7 +175,7 @@
       ],
       "sha256": "60f84a61509da8d64b749c04d892b31e2eddba53d33fa797696832d4f8cdb9e4",
       "source_path": "data/documents_v2_1/code_conduct_conflicts_reporting_policy.md",
-      "summary": "Clean development-corpus version of Code of Conduct, Conflicts, and Reporting Policy for Phase C retrieval and prompt experiments.",
+      "summary": "Clean development-corpus version of Code of Conduct, Conflicts, and Reporting Policy for controlled retrieval and prompt experiments.",
       "synthetic_training_content": true,
       "tags": [
         "asteron",

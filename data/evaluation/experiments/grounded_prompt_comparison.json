@@ -1,0 +1,68 @@
+{
+  "changed_variable": "grounded prompt candidate",
+  "configurations": [
+    {
+      "candidate": "A",
+      "design_change": "balanced grounding, citation, and refusal instructions",
+      "metrics": {
+        "application_canonical_refusals": 6,
+        "invented_requested_attributes": 0,
+        "raw_canonical_refusals": 0,
+        "repairs_or_normalizations": 6,
+        "runs": 36,
+        "structured_json_valid": 36,
+        "unsupported_answered": 0,
+        "unsupported_decisions_correct": 6
+      }
+    },
+    {
+      "candidate": "B",
+      "design_change": "more explicit canonical-refusal wording",
+      "metrics": {
+        "application_canonical_refusals": 6,
+        "invented_requested_attributes": 0,
+        "raw_canonical_refusals": 5,
+        "repairs_or_normalizations": 1,
+        "runs": 36,
+        "structured_json_valid": 31,
+        "unsupported_answered": 0,
+        "unsupported_decisions_correct": 6
+      }
+    },
+    {
+      "candidate": "C",
+      "design_change": "alternate completeness and constraint emphasis",
+      "metrics": {
+        "application_canonical_refusals": 6,
+        "invented_requested_attributes": 0,
+        "raw_canonical_refusals": 0,
+        "repairs_or_normalizations": 6,
+        "runs": 36,
+        "structured_json_valid": 36,
+        "unsupported_answered": 0,
+        "unsupported_decisions_correct": 6
+      }
+    }
+  ],
+  "controlled_variables": [
+    "same selected retrieval context",
+    "same model",
+    "temperature 0.0",
+    "top_p 1.0",
+    "same repair policy",
+    "same development cases"
+  ],
+  "dataset_version": "asteron-policies-v2.1",
+  "experiment_id": "grounded-prompt-comparison-v2",
+  "limitations": [
+    "pre-adjudication metrics emphasize structural and unsupported behavior, not complete semantic grading for every answer"
+  ],
+  "purpose_hypothesis": "Compare grounded prompt variants for strict JSON validity, unsupported-question handling, and resistance to invented attributes.",
+  "selected_configuration": "Candidate A",
+  "selection_rationale": "Candidate A combined complete structured JSON validity, correct unsupported decisions, no invented requested attributes, and concise output behavior. Candidate B had malformed JSON in 5 of 36 runs; Candidate C matched A on structural checks but did not provide a stronger practical advantage.",
+  "source_artifact_hashes": {
+    "read_only_grounded_metrics_pre_adjudication_sha256": "1bc2b8f001b8db99b25de61e52c9de514dfaad8772aa454338b55878b064640b"
+  },
+  "source_commit": "e331199700169af64a0dabd38fded800e8d79901",
+  "title": "Grounded prompt Candidate A/B/C comparison"
+}

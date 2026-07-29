@@ -1,0 +1,57 @@
+{
+  "changed_variable": "chunk size and overlap",
+  "configurations": [
+    {
+      "chunk_overlap_tokens": 40,
+      "chunk_size_tokens": 220,
+      "configuration_id": "chunk-220-overlap-40",
+      "metrics": {
+        "development_records": 36,
+        "expected_source_hit_rate_at_5": 0.9444,
+        "multi_source_full_coverage_count": 5
+      }
+    },
+    {
+      "chunk_overlap_tokens": 20,
+      "chunk_size_tokens": 160,
+      "configuration_id": "chunk-160-overlap-20",
+      "metrics": {
+        "development_records": 36,
+        "expected_source_hit_rate_at_5": 0.9444,
+        "multi_source_full_coverage_count": 5
+      }
+    },
+    {
+      "chunk_overlap_tokens": 60,
+      "chunk_size_tokens": 160,
+      "configuration_id": "chunk-160-overlap-60",
+      "metrics": {
+        "development_records": 36,
+        "expected_source_hit_rate_at_5": 0.9444,
+        "multi_source_full_coverage_count": 5
+      }
+    }
+  ],
+  "controlled_variables": [
+    "five synthetic Markdown documents",
+    "development questions",
+    "Watsonx Granite multilingual embeddings",
+    "FAISS IndexFlatIP",
+    "Top-5 retrieval",
+    "cosine similarity"
+  ],
+  "dataset_version": "asteron-policies-v2.1",
+  "experiment_id": "retrieval-chunking-comparison-v2-1",
+  "limitations": [
+    "development retrieval evidence does not measure live generation quality",
+    "synthetic corpus patterns may not transfer directly to production corpora"
+  ],
+  "purpose_hypothesis": "Compare fixed chunk size/overlap settings for retrieval disambiguation and multi-source coverage.",
+  "selected_configuration": "chunk-220-overlap-40",
+  "selection_rationale": "All three configurations tied on expected-source hit rate and multi-source full coverage; 220/40 retained full Top-5 performance with a smaller, simpler selected index than the 160/60 alternative.",
+  "source_artifact_hashes": {
+    "read_only_retrieval_results_sha256": "0fdba60cf0217b2ce5281d1ac9eea70b2dcc30229c9932d6d11f575611036ed2"
+  },
+  "source_commit": "2e0d1742eb1a3b49f41e1be9043d80fccbe2eed2",
+  "title": "Retrieval chunking comparison for Asteron Policies Corpus v2.1"
+}

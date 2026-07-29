@@ -9,7 +9,7 @@
   "creation_timestamp": "2026-07-27T23:46:35+00:00",
   "embedding_dimension": 768,
   "embedding_model_id": "ibm/granite-embedding-278m-multilingual",
-  "index_id": "phase-c-chunk-220-overlap-40",
+  "index_id": "selected-chunk-220-overlap-40",
   "index_version": "faiss-flat-ip-v1",
   "similarity_metric": "cosine_similarity",
   "vector_count": 70

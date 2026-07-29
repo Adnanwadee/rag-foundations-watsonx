@@ -1,5 +1,7 @@
 {
-  "adjudicator": "Adnan Wadee Abdullah (AI-assisted semantic review)",
+  "artifact_id": "final-v2-owner-adjudication",
+  "deterministic_clean_grounded_labels": "retained from structural scoring and combined with the owner-reviewed semantic subset",
+  "existing_decisions_approved_without_changes": true,
   "grounded_decisions": [
     {
       "final_label": "correct",
@@ -122,7 +124,11 @@
       "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-024"
     }
   ],
-  "reviewed_at_utc": "2026-07-28T17:50:19+00:00",
+  "grounded_semantic_decisions_reviewed": 24,
+  "independent_owner_signoff": true,
+  "review_method": "Manual verification against retained source documents, retrieved contexts, saved model outputs, and the documented scoring rubric",
+  "reviewed_at_utc": "2026-07-29T15:46:41+00:00",
+  "reviewer": "Adnan Wadee Abdullah",
   "tone_triplet_decisions": [
     {
       "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-001",
@@ -1324,5 +1330,6 @@
         "triplet_distinct": true
       }
     }
-  ]
+  ],
+  "tone_triplets_reviewed": 40
 }
