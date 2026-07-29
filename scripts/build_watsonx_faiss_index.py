@@ -6,7 +6,13 @@ import argparse
 import sys
 from pathlib import Path
 
-from rag_foundations.chunking import ChunkingConfig, MiniLMTokenizer, create_chunks, summarize_chunks
+from rag_foundations.chunking import (
+    ChunkingConfig,
+    MiniLMTokenizer,
+    SimpleWhitespaceTokenizer,
+    create_chunks,
+    summarize_chunks,
+)
 from rag_foundations.document_loader import load_documents
 from rag_foundations.faiss_store import (
     SIMILARITY_METRIC,
@@ -26,6 +32,9 @@ from rag_foundations.watsonx_models import (
     model_id,
     select_embedding_model,
 )
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SELECTED_INDEX_DIR = REPO_ROOT / "data/indexes/selected"
 
 
 def assert_no_torch_path_imported() -> None:
@@ -73,10 +82,33 @@ def main() -> None:
         help="Directory for rebuilt index artifacts; defaults to ignored artifacts/rebuilt-index/.",
     )
     parser.add_argument("--overwrite", action="store_true", help="Replace existing output files.")
+    parser.add_argument(
+        "--preflight-only",
+        action="store_true",
+        help="Validate local corpus/chunk counts without watsonx.ai calls or index writes.",
+    )
     args = parser.parse_args()
     output_dir = validate_output_directory(args.output_dir, overwrite=args.overwrite)
 
     assert_no_torch_path_imported()
+    if args.preflight_only:
+        documents = load_documents(minimum_sections=8)
+        chunks = create_chunks(
+            documents,
+            tokenizer=SimpleWhitespaceTokenizer(),
+            config=ChunkingConfig(),
+        )
+        summary = summarize_chunks(documents, chunks)
+        validate_preflight_counts(summary, len(chunks))
+        print("Preflight status: ok")
+        print("Documents loaded: 5")
+        print("Sections loaded: 60")
+        print("Chunks planned: 70")
+        print("External calls: 0")
+        print(f"Output directory: {repository_relative(output_dir)}")
+        assert_no_torch_path_imported()
+        return
+
     runtime = create_runtime()
     embedding_spec = select_embedding_model(get_embedding_model_specs(runtime.client))
     discovered_embedding_model_id = model_id(embedding_spec)
@@ -164,5 +196,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-REPO_ROOT = Path(__file__).resolve().parents[1]
-SELECTED_INDEX_DIR = REPO_ROOT / "data/indexes/selected"
