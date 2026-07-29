@@ -21,7 +21,6 @@ ABSOLUTE_PATTERNS = [re.compile(r"(?<![A-Za-z])[A-Za-z]:[\\/]"), re.compile(r"/U
 VALIDATOR_ALLOWLIST = {"scripts/validate_references.py", "scripts/validate_documentation.py"}
 SECRET_PATTERNS = [re.compile(r"(?i)api[_-]?key['\"]?\s*[:=]\s*['\"][A-Za-z0-9_\-]{16,}"), re.compile(r"(?im)^WATSONX_API_KEY=\S+")]
 SKIP_PARTS = {".git", ".ruff_cache", ".pytest_cache", "__pycache__"}
-SKIP_NAMES = {".env"}
 
 
 def fail(msg: str) -> None:
@@ -33,7 +32,7 @@ def rel(path: Path) -> str:
 
 
 def should_skip(path: Path) -> bool:
-    return path.name in SKIP_NAMES or any(part in SKIP_PARTS for part in path.parts)
+    return path == REPO_ROOT / ".env" or any(part in SKIP_PARTS for part in path.parts)
 
 
 def parse_json_files() -> int:

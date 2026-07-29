@@ -53,6 +53,7 @@ jobs:
           python -m rag_foundations.cli --help
           python -m rag_foundations.cli ask --help
           python scripts/run_final_v2.py --dry-run
+          python scripts/build_watsonx_faiss_index.py --preflight-only
 
       - name: Reject public fake evidence modes
         shell: bash
@@ -89,6 +90,7 @@ jobs:
           python scripts/validate_final_v2.py
           python scripts/validate_project_complete.py
           python scripts/run_final_v2.py --dry-run
+          python scripts/build_watsonx_faiss_index.py --preflight-only
 
       - name: Check whitespace
         shell: bash

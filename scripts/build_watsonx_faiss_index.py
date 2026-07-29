@@ -9,7 +9,6 @@ from pathlib import Path
 from rag_foundations.chunking import (
     ChunkingConfig,
     MiniLMTokenizer,
-    SimpleWhitespaceTokenizer,
     create_chunks,
     summarize_chunks,
 )
@@ -24,6 +23,7 @@ from rag_foundations.faiss_store import (
     load_faiss_store,
     metadata_records_for_chunks,
     save_faiss_store,
+    validate_index_configuration,
 )
 from rag_foundations.watsonx_embeddings import WatsonxEmbeddingProvider
 from rag_foundations.watsonx_models import (
@@ -35,6 +35,7 @@ from rag_foundations.watsonx_models import (
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SELECTED_INDEX_DIR = REPO_ROOT / "data/indexes/selected"
+MANIFEST_PATH = REPO_ROOT / "data/manifest_v2_1.json"
 
 
 def assert_no_torch_path_imported() -> None:
@@ -65,12 +66,72 @@ def validate_preflight_counts(summary: dict[str, int], chunk_count: int) -> None
 
 
 def validate_output_directory(output_dir: Path, *, overwrite: bool) -> Path:
-    resolved = output_dir.resolve()
+    resolved = output_dir if output_dir.is_absolute() else REPO_ROOT / output_dir
+    resolved = resolved.resolve()
     if resolved == SELECTED_INDEX_DIR.resolve() and not overwrite:
         raise FileExistsError(
             "data/indexes/selected is frozen evidence; pass --overwrite to replace it explicitly"
         )
     return resolved
+
+
+def run_preflight(output_dir: Path) -> None:
+    documents = load_documents(
+        MANIFEST_PATH,
+        repository_root=REPO_ROOT,
+        minimum_sections=8,
+    )
+    document_count = len(documents)
+    section_count = sum(len(document.sections) for document in documents)
+    store = load_faiss_store(SELECTED_INDEX_DIR)
+    validate_index_configuration(
+        index=store.index,
+        metadata=store.metadata,
+        config=store.config,
+        expected_embedding_model_id=WATSONX_EMBEDDING_MODEL_ID,
+    )
+
+    chunk_config = store.config.get("chunker_configuration", {})
+    vector_count = int(store.config.get("vector_count", -1))
+    metadata_count = len(store.metadata)
+    embedding_dimension = int(store.config.get("embedding_dimension", -1))
+    validate_preflight_counts(
+        {"documents_loaded": document_count, "sections_loaded": section_count},
+        metadata_count,
+    )
+    if vector_count != 70:
+        raise RuntimeError(f"Expected selected vector_count 70, got {vector_count}.")
+    if int(store.index.ntotal) != 70:
+        raise RuntimeError(f"Expected selected FAISS vectors 70, got {store.index.ntotal}.")
+    if embedding_dimension != WATSONX_EMBEDDING_DIMENSION:
+        raise RuntimeError(
+            f"Expected embedding dimension {WATSONX_EMBEDDING_DIMENSION}, "
+            f"got {embedding_dimension}."
+        )
+    if int(chunk_config.get("chunk_size_tokens", -1)) != 220:
+        raise RuntimeError("Expected selected chunk_size_tokens 220.")
+    if int(chunk_config.get("chunk_overlap_tokens", -1)) != 40:
+        raise RuntimeError("Expected selected chunk_overlap_tokens 40.")
+    if any(record.get("embedding_model_id") != WATSONX_EMBEDDING_MODEL_ID for record in store.metadata):
+        raise RuntimeError("Selected metadata embedding model does not match expected model.")
+    if any(int(record.get("embedding_dimension", -1)) != WATSONX_EMBEDDING_DIMENSION for record in store.metadata):
+        raise RuntimeError("Selected metadata embedding dimension does not match expected dimension.")
+
+    print("Preflight status: ok")
+    print(f"Manifest path: {repository_relative(MANIFEST_PATH)}")
+    print(f"Documents loaded: {document_count}")
+    print(f"Sections loaded: {section_count}")
+    print(f"Selected index directory: {repository_relative(SELECTED_INDEX_DIR)}")
+    print(f"Selected vectors: {int(store.index.ntotal)}")
+    print(f"Selected metadata records: {metadata_count}")
+    print(f"Selected chunk size tokens: {int(chunk_config['chunk_size_tokens'])}")
+    print(f"Selected chunk overlap tokens: {int(chunk_config['chunk_overlap_tokens'])}")
+    print(f"Selected vector count: {vector_count}")
+    print(f"Embedding model: {store.config['embedding_model_id']}")
+    print(f"Embedding dimension: {embedding_dimension}")
+    print("External calls: 0")
+    print("Files written: 0")
+    print(f"Output directory: {repository_relative(output_dir)}")
 
 
 def main() -> None:
@@ -92,20 +153,7 @@ def main() -> None:
 
     assert_no_torch_path_imported()
     if args.preflight_only:
-        documents = load_documents(minimum_sections=8)
-        chunks = create_chunks(
-            documents,
-            tokenizer=SimpleWhitespaceTokenizer(),
-            config=ChunkingConfig(),
-        )
-        summary = summarize_chunks(documents, chunks)
-        validate_preflight_counts(summary, len(chunks))
-        print("Preflight status: ok")
-        print("Documents loaded: 5")
-        print("Sections loaded: 60")
-        print("Chunks planned: 70")
-        print("External calls: 0")
-        print(f"Output directory: {repository_relative(output_dir)}")
+        run_preflight(output_dir)
         assert_no_torch_path_imported()
         return
 
@@ -119,7 +167,7 @@ def main() -> None:
         )
     assert_no_torch_path_imported()
 
-    documents = load_documents(minimum_sections=8)
+    documents = load_documents(MANIFEST_PATH, repository_root=REPO_ROOT, minimum_sections=8)
     tokenizer = MiniLMTokenizer()
     chunks = create_chunks(documents, tokenizer=tokenizer, config=ChunkingConfig())
     summary = summarize_chunks(documents, chunks)

@@ -158,6 +158,77 @@ def test_json_output_remains_parseable_when_debug_logging_enabled(
     assert "diagnostic without secrets" not in captured.out
 
 
+def test_cli_logging_configuration_is_idempotent(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setenv("LOG_LEVEL", "DEBUG")
+    calls = {"count": 0}
+
+    def noisy_run_question(*args: object, **kwargs: object) -> PipelineResult:
+        calls["count"] += 1
+        logging.getLogger("rag_foundations.cli").debug("one project diagnostic")
+        return result()
+
+    monkeypatch.setattr(cli, "run_question", noisy_run_question)
+
+    assert cli.main(["ask", "How many remote days?", "--json"]) == 0
+    first = capsys.readouterr()
+    assert cli.main(["ask", "How many remote days?", "--json"]) == 0
+    second = capsys.readouterr()
+
+    assert calls["count"] == 2
+    assert first.err.count("one project diagnostic") == 1
+    assert second.err.count("one project diagnostic") == 1
+
+
+def test_cli_logging_does_not_reset_root_or_third_party_loggers(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setenv("LOG_LEVEL", "DEBUG")
+    root_logger = logging.getLogger()
+    third_party_logger = logging.getLogger("httpx")
+    original_root_level = root_logger.level
+    original_root_handlers = list(root_logger.handlers)
+    original_httpx_level = third_party_logger.level
+
+    def noisy_run_question(*args: object, **kwargs: object) -> PipelineResult:
+        logging.getLogger("rag_foundations.cli").debug("project debug visible")
+        logging.getLogger("httpx").debug("third party debug hidden")
+        return result()
+
+    monkeypatch.setattr(cli, "run_question", noisy_run_question)
+
+    assert cli.main(["ask", "How many remote days?", "--json"]) == 0
+    captured = capsys.readouterr()
+
+    assert root_logger.level == original_root_level
+    assert root_logger.handlers == original_root_handlers
+    assert third_party_logger.level == original_httpx_level
+    assert "project debug visible" in captured.err
+    assert "third party debug hidden" not in captured.err
+
+
+def test_cli_help_does_not_instantiate_watsonx_client(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    def fail_run_question(*args: object, **kwargs: object) -> PipelineResult:
+        raise AssertionError("run_question must not be called for help")
+
+    monkeypatch.delenv("WATSONX_URL", raising=False)
+    monkeypatch.delenv("WATSONX_PROJECT_ID", raising=False)
+    monkeypatch.delenv("WATSONX_API_KEY", raising=False)
+    monkeypatch.setattr(cli, "run_question", fail_run_question)
+
+    exit_code = cli.main(["ask", "--help"])
+    captured = capsys.readouterr()
+
+    assert exit_code == 0
+    assert "usage:" in captured.out
+
+
 def test_human_readable_output_includes_answer_and_sources(
     monkeypatch: pytest.MonkeyPatch,
     capsys: pytest.CaptureFixture[str],
