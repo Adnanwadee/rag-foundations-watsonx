@@ -1,0 +1,14 @@
+{
+  "capture_limitations": [
+    "Historical Final v2 live_started_at_utc is unknown because the original runner did not persist a start timestamp.",
+    "Historical latency_seconds values are null where the original runner did not capture per-call durations.",
+    "Transport retry counts are preserved where saved; unavailable transport details were not fabricated."
+  ],
+  "completed_at_utc": "2026-07-28T17:10:28+00:00",
+  "created_at_utc": "2026-07-28T14:25:45+00:00",
+  "first_saved_result_at_utc": "2026-07-28T14:55:54+00:00",
+  "last_saved_result_at_utc": "2026-07-28T16:56:09+00:00",
+  "live_started_at_utc": null,
+  "sdk_version": "1.6.0",
+  "status": "live_complete"
+}

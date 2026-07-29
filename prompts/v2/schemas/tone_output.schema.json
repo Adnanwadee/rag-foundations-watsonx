@@ -1,0 +1,21 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "output": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "tone": {
+      "enum": [
+        "formal_report_summary",
+        "casual_message",
+        "concise_executive_briefing"
+      ]
+    }
+  },
+  "required": [
+    "tone",
+    "output"
+  ],
+  "type": "object"
+}

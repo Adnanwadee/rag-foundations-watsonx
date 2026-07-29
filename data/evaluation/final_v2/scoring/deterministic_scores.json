@@ -1,0 +1,2498 @@
+{
+  "grounded": {
+    "ibm/granite-4-h-small": {
+      "answerable_correct_rate": 0.8,
+      "answerable_partial_rate": 0.2,
+      "citation_validity": 20,
+      "correct": 16,
+      "deterministic_clean_records": 24,
+      "human_reviewed_records": 0,
+      "normalization_count": 3,
+      "partial": 4,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.7917,
+      "unsupported_correct": 3,
+      "unsupported_refusal_rate": 0.75,
+      "unsupported_wrong": 1,
+      "wrong": 0
+    },
+    "mistralai/mistral-small-3-1-24b-instruct-2503": {
+      "answerable_correct_rate": 0.7,
+      "answerable_partial_rate": 0.3,
+      "citation_validity": 19,
+      "correct": 14,
+      "deterministic_clean_records": 24,
+      "human_reviewed_records": 0,
+      "normalization_count": 0,
+      "partial": 6,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.75,
+      "unsupported_correct": 4,
+      "unsupported_refusal_rate": 1.0,
+      "unsupported_wrong": 0,
+      "wrong": 0
+    }
+  },
+  "record_details": {
+    "grounded": {
+      "final2-grounded::ibm/granite-4-h-small::final2-g-001": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-001",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-002": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-002",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-003": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-003",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-004": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-004",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-005": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-005",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-006": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-006",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-007": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-007",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-008": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-008",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-009": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-009",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-010": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-010",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-011": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-011",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-012": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-012",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-013": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-013",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-014": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-014",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-015": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-015",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-016": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-016",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-017": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-017",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-018": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-018",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-019": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-019",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-020": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-020",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-021": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-021",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-022": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-022",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-023": {
+        "deterministic_label": "unsupported_wrong",
+        "expected_answerable": false,
+        "final_label": "unsupported_wrong",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-023",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-024": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-024",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-001": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-001",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-002": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-002",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-003": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-003",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-004": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-004",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-005": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-005",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-006": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-006",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-007": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-007",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-008": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-008",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-009": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-009",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-010": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-010",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-011": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-011",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-012": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-012",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-013": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-013",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-014": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-014",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-015": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-015",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-016": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-016",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-017": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-017",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-018": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-018",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-019": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-019",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-020": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-020",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-021": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-021",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-022": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-022",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-023": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-023",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-024": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-024",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      }
+    },
+    "tones": {
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::casual_message": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure",
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::formal_report_summary": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::formal_report_summary": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::formal_report_summary": {
+        "deterministic_triggers": [
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::casual_message": {
+        "deterministic_triggers": [
+          "conditions_preserved_failure",
+          "exceptions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "exceptions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::formal_report_summary": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::casual_message": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::casual_message": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "negation_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": null,
+        "label_source": "deterministic_clean",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      }
+    }
+  },
+  "retrieval": {
+    "all_expected_source_coverage_at_5": 0.9,
+    "hit_at_1": 0.95,
+    "hit_at_3": 1.0,
+    "hit_at_5": 1.0,
+    "mrr": 0.975
+  },
+  "scoring_layer": "deterministic",
+  "status": "complete",
+  "tones": {
+    "by_model": {
+      "ibm/granite-4-h-small": {
+        "deterministic_clean_triplets": 20,
+        "fully_valid_triplet_rate": 0.0,
+        "fully_valid_triplets": 0,
+        "human_reviewed_triplets": 0,
+        "tone_input_triplets": 20,
+        "triplet_distinct": 20,
+        "triplet_distinct_rate": 1.0
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503": {
+        "deterministic_clean_triplets": 20,
+        "fully_valid_triplet_rate": 0.0,
+        "fully_valid_triplets": 0,
+        "human_reviewed_triplets": 0,
+        "tone_input_triplets": 20,
+        "triplet_distinct": 20,
+        "triplet_distinct_rate": 1.0
+      }
+    },
+    "by_model_tone": {
+      "ibm/granite-4-h-small::casual_message": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 3,
+        "factual_preservation_rate": 0.15,
+        "final_valid": 3,
+        "final_valid_rate": 0.15,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 14,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 13,
+        "target_tone_recognizable_rate": 0.65
+      },
+      "ibm/granite-4-h-small::concise_executive_briefing": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 2,
+        "factual_preservation_rate": 0.1,
+        "final_valid": 2,
+        "final_valid_rate": 0.1,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 18,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 3,
+        "target_tone_recognizable_rate": 0.15
+      },
+      "ibm/granite-4-h-small::formal_report_summary": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 15,
+        "factual_preservation_rate": 0.75,
+        "final_valid": 15,
+        "final_valid_rate": 0.75,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 18,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 20,
+        "target_tone_recognizable_rate": 1.0
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::casual_message": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 4,
+        "factual_preservation_rate": 0.2,
+        "final_valid": 4,
+        "final_valid_rate": 0.2,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 19,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 11,
+        "target_tone_recognizable_rate": 0.55
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::concise_executive_briefing": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 2,
+        "factual_preservation_rate": 0.1,
+        "final_valid": 2,
+        "final_valid_rate": 0.1,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 20,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 4,
+        "target_tone_recognizable_rate": 0.2
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::formal_report_summary": {
+        "deterministic_clean_records": 20,
+        "factual_preservation_pass": 18,
+        "factual_preservation_rate": 0.9,
+        "final_valid": 18,
+        "final_valid_rate": 0.9,
+        "human_reviewed_records": 0,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 19,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 20,
+        "target_tone_recognizable_rate": 1.0
+      }
+    }
+  }
+}

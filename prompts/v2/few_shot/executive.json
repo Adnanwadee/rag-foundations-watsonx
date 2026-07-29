@@ -1,0 +1,65 @@
+[
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-001",
+    "expected_output": "Entitlement: 3 paid equipment-inspection days per year for eligible technicians.",
+    "grounded_answer": "Eligible technicians receive 3 paid equipment-inspection days per year.",
+    "original_question": "What inspection-leave entitlement do eligible technicians receive?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  },
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-002",
+    "expected_output": "Access limit: up to 4 calendar days. Approval: written laboratory-manager approval. Exception: Safety may suspend access during an active incident.",
+    "grounded_answer": "Temporary laboratory access may be approved for up to 4 calendar days when the laboratory manager gives written approval, unless Safety suspends access because of an active incident.",
+    "original_question": "When may temporary laboratory access be approved?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  },
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-003",
+    "expected_output": "Lockout duration: 15 minutes.",
+    "grounded_answer": "15 minutes.",
+    "original_question": "How long is the account lockout?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  }
+]

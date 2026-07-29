@@ -1,0 +1,1109 @@
+{
+  "category_counts": {
+    "condition_or_exception": 5,
+    "direct_fact": 5,
+    "multi_fact": 5,
+    "multi_section_or_source": 5,
+    "unsupported": 4
+  },
+  "corpus_version": "asteron-policies-v2.1",
+  "dataset_id": "final-grounded-v2",
+  "frozen": true,
+  "frozen_at_utc": "2026-07-28T14:25:45+00:00",
+  "integrity_rules": [
+    "Do not edit after freeze.",
+    "Do not use Final v2 outputs to tune prompts, datasets, retrieval, or scoring thresholds.",
+    "Expected answers and scoring metadata are local-only and must not be sent to grounded generation models."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "atomic_claims": [
+        {
+          "claim": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours.",
+          "claim_id": "EL-002",
+          "fact_id": "EL-002",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "clause_ids": [
+        "EL-002-C1"
+      ],
+      "difficulty": "easy",
+      "exact_source_quotes": [
+        "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours."
+      ],
+      "expected_answer": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-employee-leave-v2-1"
+      ],
+      "expected_section_titles": [
+        "3. Annual Leave Entitlement and Accrual"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours."
+        }
+      ],
+      "fact_ids": [
+        "EL-002"
+      ],
+      "materiality": "core",
+      "question": "How is annual leave calculated for a part-time employee?",
+      "question_id": "final2-g-001"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+          "claim_id": "FW-017",
+          "fact_id": "FW-017",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "clause_ids": [
+        "FW-017-C1"
+      ],
+      "difficulty": "easy",
+      "exact_source_quotes": [
+        "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days."
+      ],
+      "expected_answer": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-flexible-work-v2-1"
+      ],
+      "expected_section_titles": [
+        "11. Workplace Access, Visitors, and Records"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "11. Workplace Access, Visitors, and Records",
+          "source_quote": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days."
+        }
+      ],
+      "fact_ids": [
+        "FW-017"
+      ],
+      "materiality": "core",
+      "question": "What records rule applies to visitors in restricted workplace areas?",
+      "question_id": "final2-g-002"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts.",
+          "claim_id": "IS-003",
+          "fact_id": "IS-003",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "clause_ids": [
+        "IS-003-C1"
+      ],
+      "difficulty": "easy",
+      "exact_source_quotes": [
+        "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts."
+      ],
+      "expected_answer": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "3. Multi-Factor Authentication and Session Security"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "3. Multi-Factor Authentication and Session Security",
+          "source_quote": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts."
+        }
+      ],
+      "fact_ids": [
+        "IS-003"
+      ],
+      "materiality": "core",
+      "question": "Which company systems require multi-factor authentication?",
+      "question_id": "final2-g-003"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An itemized receipt is required for every expense of KWD 3 or more.",
+          "claim_id": "EX-016",
+          "fact_id": "EX-016",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "clause_ids": [
+        "EX-016-C1"
+      ],
+      "difficulty": "easy",
+      "exact_source_quotes": [
+        "An itemized receipt is required for every expense of KWD 3 or more."
+      ],
+      "expected_answer": "An itemized receipt is required for every expense of KWD 3 or more.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-travel-expense-v2-1"
+      ],
+      "expected_section_titles": [
+        "9. Receipts and Missing Documentation"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "9. Receipts and Missing Documentation",
+          "source_quote": "An itemized receipt is required for every expense of KWD 3 or more."
+        }
+      ],
+      "fact_ids": [
+        "EX-016"
+      ],
+      "materiality": "core",
+      "question": "What receipt threshold applies to expense documentation?",
+      "question_id": "final2-g-004"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently.",
+          "claim_id": "CO-007",
+          "fact_id": "CO-007",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "clause_ids": [
+        "CO-007-C1"
+      ],
+      "difficulty": "easy",
+      "exact_source_quotes": [
+        "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently."
+      ],
+      "expected_answer": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-code-conduct-v2-1"
+      ],
+      "expected_section_titles": [
+        "7. Confidentiality and Records Accuracy"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "7. Confidentiality and Records Accuracy",
+          "source_quote": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently."
+        }
+      ],
+      "fact_ids": [
+        "CO-007"
+      ],
+      "materiality": "core",
+      "question": "What standard applies to business records and corrections?",
+      "question_id": "final2-g-005"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month.",
+          "claim_id": "EL-004",
+          "fact_id": "EL-004",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "clause_ids": [
+        "EL-004-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month."
+      ],
+      "expected_answer": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-employee-leave-v2-1"
+      ],
+      "expected_section_titles": [
+        "3. Annual Leave Entitlement and Accrual"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month."
+        }
+      ],
+      "fact_ids": [
+        "EL-004"
+      ],
+      "materiality": "core",
+      "question": "When does a mid-month joiner accrue leave for the joining month?",
+      "question_id": "final2-g-006"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply.",
+          "claim_id": "FW-014",
+          "fact_id": "FW-014",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "clause_ids": [
+        "FW-014-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply."
+      ],
+      "expected_answer": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-flexible-work-v2-1"
+      ],
+      "expected_section_titles": [
+        "9. Temporary and Business Continuity Arrangements"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "9. Temporary and Business Continuity Arrangements",
+          "source_quote": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply."
+        }
+      ],
+      "fact_ids": [
+        "FW-014"
+      ],
+      "materiality": "core",
+      "question": "When can the ordinary 2-day weekly remote-work limit be suspended?",
+      "question_id": "final2-g-007"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery.",
+          "claim_id": "IS-010",
+          "fact_id": "IS-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day.",
+          "claim_id": "IS-011",
+          "fact_id": "IS-011",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "clause_ids": [
+        "IS-010-C1",
+        "IS-011-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery.",
+        "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day."
+      ],
+      "expected_answer": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery; an employee who did not interact must use the phishing-report button by the end of the working day.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "8. Phishing and Suspicious Messages"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "8. Phishing and Suspicious Messages",
+          "source_quote": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "8. Phishing and Suspicious Messages",
+          "source_quote": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day."
+        }
+      ],
+      "fact_ids": [
+        "IS-010",
+        "IS-011"
+      ],
+      "materiality": "core",
+      "question": "What reporting timing changes if an employee did or did not interact with a suspected phishing message?",
+      "question_id": "final2-g-008"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control.",
+          "claim_id": "EX-019",
+          "fact_id": "EX-019",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "clause_ids": [
+        "EX-019-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control."
+      ],
+      "expected_answer": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-travel-expense-v2-1"
+      ],
+      "expected_section_titles": [
+        "10. Submission Deadlines and Currency Conversion"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "10. Submission Deadlines and Currency Conversion",
+          "source_quote": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control."
+        }
+      ],
+      "fact_ids": [
+        "EX-019"
+      ],
+      "materiality": "core",
+      "question": "When can a late expense claim require Finance Manager approval or still be rejected?",
+      "question_id": "final2-g-009"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins.",
+          "claim_id": "CO-003",
+          "fact_id": "CO-003",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "clause_ids": [
+        "CO-003-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins."
+      ],
+      "expected_answer": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-code-conduct-v2-1"
+      ],
+      "expected_section_titles": [
+        "4. Outside Employment and Personal Relationships"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "4. Outside Employment and Personal Relationships",
+          "source_quote": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins."
+        }
+      ],
+      "fact_ids": [
+        "CO-003"
+      ],
+      "materiality": "core",
+      "question": "Before outside employment involving a competitor or vendor begins, whose approval is required?",
+      "question_id": "final2-g-010"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval.",
+          "claim_id": "EL-006",
+          "fact_id": "EL-006",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "clause_ids": [
+        "EL-006-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval."
+      ],
+      "expected_answer": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-employee-leave-v2-1"
+      ],
+      "expected_section_titles": [
+        "4. Probation, Advance Leave, and Eligibility"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "4. Probation, Advance Leave, and Eligibility",
+          "source_quote": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval."
+        }
+      ],
+      "fact_ids": [
+        "EL-006"
+      ],
+      "materiality": "core",
+      "question": "What conditions and approvals apply before advance annual leave can be granted?",
+      "question_id": "final2-g-011"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR.",
+          "claim_id": "FW-003",
+          "fact_id": "FW-003",
+          "materiality": "core"
+        },
+        {
+          "claim": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data.",
+          "claim_id": "FW-004",
+          "fact_id": "FW-004",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "clause_ids": [
+        "FW-003-C1",
+        "FW-004-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR.",
+        "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data."
+      ],
+      "expected_answer": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR. IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-flexible-work-v2-1"
+      ],
+      "expected_section_titles": [
+        "4. Approval Workflow and Decision Records"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "4. Approval Workflow and Decision Records",
+          "source_quote": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "4. Approval Workflow and Decision Records",
+          "source_quote": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data."
+        }
+      ],
+      "fact_ids": [
+        "FW-003",
+        "FW-004"
+      ],
+      "materiality": "core",
+      "question": "Who must approve ordinary flexible work, and when must IT Operations also review the request?",
+      "question_id": "final2-g-012"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date.",
+          "claim_id": "IS-017",
+          "fact_id": "IS-017",
+          "materiality": "core"
+        },
+        {
+          "claim": "A security exception should normally expire within 30 calendar days.",
+          "claim_id": "IS-018",
+          "fact_id": "IS-018",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "clause_ids": [
+        "IS-017-C1",
+        "IS-018-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date.",
+        "A security exception should normally expire within 30 calendar days."
+      ],
+      "expected_answer": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date. It should normally expire within 30 calendar days.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "12. Exceptions, Endpoint Protection, and Review"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "A security exception should normally expire within 30 calendar days."
+        }
+      ],
+      "fact_ids": [
+        "IS-017",
+        "IS-018"
+      ],
+      "materiality": "core",
+      "question": "For a security exception, what approval, recorded details, and normal expiry rule apply?",
+      "question_id": "final2-g-013"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval.",
+          "claim_id": "EX-014",
+          "fact_id": "EX-014",
+          "materiality": "core"
+        },
+        {
+          "claim": "Training and conference claims must include the agenda or course description and proof of completion when available.",
+          "claim_id": "EX-015",
+          "fact_id": "EX-015",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "clause_ids": [
+        "EX-014-C1",
+        "EX-015-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval.",
+        "Training and conference claims must include the agenda or course description and proof of completion when available."
+      ],
+      "expected_answer": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval. Claims must include the agenda or course description and proof of completion when available.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-travel-expense-v2-1"
+      ],
+      "expected_section_titles": [
+        "8. Training, Conferences, Mobile, and Internet"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Training and conference claims must include the agenda or course description and proof of completion when available."
+        }
+      ],
+      "fact_ids": [
+        "EX-014",
+        "EX-015"
+      ],
+      "materiality": "core",
+      "question": "For training or conference expenses, what approvals are needed and what evidence should claims include?",
+      "question_id": "final2-g-014"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision.",
+          "claim_id": "CO-004",
+          "fact_id": "CO-004",
+          "materiality": "core"
+        },
+        {
+          "claim": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision.",
+          "claim_id": "CO-006",
+          "fact_id": "CO-006",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "clause_ids": [
+        "CO-004-C1",
+        "CO-006-C1"
+      ],
+      "difficulty": "medium",
+      "exact_source_quotes": [
+        "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision.",
+        "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision."
+      ],
+      "expected_answer": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision. An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-code-conduct-v2-1"
+      ],
+      "expected_section_titles": [
+        "4. Outside Employment and Personal Relationships",
+        "6. Vendor and Procurement Integrity"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "4. Outside Employment and Personal Relationships",
+          "source_quote": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "6. Vendor and Procurement Integrity",
+          "source_quote": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision."
+        }
+      ],
+      "fact_ids": [
+        "CO-004",
+        "CO-006"
+      ],
+      "materiality": "core",
+      "question": "When must a personal relationship be disclosed and what procurement actions must an involved employee take?",
+      "question_id": "final2-g-015"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+          "claim_id": "FW-017",
+          "fact_id": "FW-017",
+          "materiality": "core"
+        },
+        {
+          "claim": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery.",
+          "claim_id": "IS-013",
+          "fact_id": "IS-013",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "clause_ids": [
+        "FW-017-C1",
+        "IS-013-C1"
+      ],
+      "difficulty": "hard",
+      "exact_source_quotes": [
+        "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+        "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery."
+      ],
+      "expected_answer": "A workplace visitor must be pre-registered by the host and escorted in restricted areas, with visitor-access records retained for 90 calendar days. Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-flexible-work-v2-1",
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "10. Access Reviews and Removal",
+        "11. Workplace Access, Visitors, and Records"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "11. Workplace Access, Visitors, and Records",
+          "source_quote": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "10. Access Reviews and Removal",
+          "source_quote": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery."
+        }
+      ],
+      "fact_ids": [
+        "FW-017",
+        "IS-013"
+      ],
+      "materiality": "core",
+      "question": "For workplace access governance, what visitor handling rule and access-review schedule apply?",
+      "question_id": "final2-g-016"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage.",
+          "claim_id": "IS-007",
+          "fact_id": "IS-007",
+          "materiality": "core"
+        },
+        {
+          "claim": "Remote access requires a company-managed encrypted device and the approved company VPN.",
+          "claim_id": "IS-008",
+          "fact_id": "IS-008",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "clause_ids": [
+        "IS-007-C1",
+        "IS-008-C1"
+      ],
+      "difficulty": "hard",
+      "exact_source_quotes": [
+        "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage.",
+        "Remote access requires a company-managed encrypted device and the approved company VPN."
+      ],
+      "expected_answer": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage. Remote access requires a company-managed encrypted device and the approved company VPN.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "6. Data Classification and Approved Storage",
+        "7. Remote Access and Device Security"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "6. Data Classification and Approved Storage",
+          "source_quote": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "7. Remote Access and Device Security",
+          "source_quote": "Remote access requires a company-managed encrypted device and the approved company VPN."
+        }
+      ],
+      "fact_ids": [
+        "IS-007",
+        "IS-008"
+      ],
+      "materiality": "core",
+      "question": "If restricted information is accessed remotely, what storage rule and device/VPN controls apply?",
+      "question_id": "final2-g-017"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+          "claim_id": "IS-014",
+          "fact_id": "IS-014",
+          "materiality": "core"
+        },
+        {
+          "claim": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices.",
+          "claim_id": "FW-016",
+          "fact_id": "FW-016",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "clause_ids": [
+        "IS-014-C1",
+        "FW-016-C1"
+      ],
+      "difficulty": "hard",
+      "exact_source_quotes": [
+        "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+        "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices."
+      ],
+      "expected_answer": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day. Company equipment must be returned at the end of employment, and family members or visitors must not use company devices.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-flexible-work-v2-1",
+        "policy-information-security-v2-1"
+      ],
+      "expected_section_titles": [
+        "10. Equipment, Connectivity, and Workspace",
+        "11. Joiners, Movers, and Planned Exits"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "10. Equipment, Connectivity, and Workspace",
+          "source_quote": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices."
+        }
+      ],
+      "fact_ids": [
+        "IS-014",
+        "FW-016"
+      ],
+      "materiality": "core",
+      "question": "For a planned exit that also involves company equipment, what must HR, IT Operations, and the employee do?",
+      "question_id": "final2-g-018"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy.",
+          "claim_id": "EL-013",
+          "fact_id": "EL-013",
+          "materiality": "core"
+        },
+        {
+          "claim": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable.",
+          "claim_id": "EX-022",
+          "fact_id": "EX-022",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "clause_ids": [
+        "EL-013-C1",
+        "EX-022-C1"
+      ],
+      "difficulty": "hard",
+      "exact_source_quotes": [
+        "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy.",
+        "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable."
+      ],
+      "expected_answer": "A leave-policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy. An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-employee-leave-v2-1",
+        "policy-travel-expense-v2-1"
+      ],
+      "expected_section_titles": [
+        "12. Exceptions, Disputes, Ownership, and Review",
+        "12. Exceptions, Ownership, and Review"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "12. Exceptions, Ownership, and Review",
+          "source_quote": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "12. Exceptions, Disputes, Ownership, and Review",
+          "source_quote": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable."
+        }
+      ],
+      "fact_ids": [
+        "EL-013",
+        "EX-022"
+      ],
+      "materiality": "core",
+      "question": "Compare HR leave-policy exceptions with expense-policy exceptions: whose written approvals are needed and what must the expense exception record?",
+      "question_id": "final2-g-019"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "The next scheduled review date is 2027-01-15.",
+          "claim_id": "EL-014",
+          "fact_id": "EL-014",
+          "materiality": "core"
+        },
+        {
+          "claim": "The next scheduled review date is 2027-01-15.",
+          "claim_id": "FW-018",
+          "fact_id": "FW-018",
+          "materiality": "core"
+        },
+        {
+          "claim": "The next scheduled review date is 2027-01-15.",
+          "claim_id": "IS-019",
+          "fact_id": "IS-019",
+          "materiality": "core"
+        },
+        {
+          "claim": "The next scheduled review date is 2027-01-15.",
+          "claim_id": "EX-023",
+          "fact_id": "EX-023",
+          "materiality": "core"
+        },
+        {
+          "claim": "The next scheduled review date is 2027-01-15.",
+          "claim_id": "CO-015",
+          "fact_id": "CO-015",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "clause_ids": [
+        "EL-014-C1",
+        "FW-018-C1",
+        "IS-019-C1",
+        "EX-023-C1",
+        "CO-015-C1"
+      ],
+      "difficulty": "hard",
+      "exact_source_quotes": [
+        "The next scheduled review date is 2027-01-15.",
+        "The next scheduled review date is 2027-01-15.",
+        "The next scheduled review date is 2027-01-15.",
+        "The next scheduled review date is 2027-01-15.",
+        "The next scheduled review date is 2027-01-15."
+      ],
+      "expected_answer": "The Employee Leave, Flexible Work, Information Security, Travel Expense, and Code of Conduct policies each state the next scheduled review date as 2027-01-15.",
+      "expected_answerable": true,
+      "expected_document_ids": [
+        "policy-code-conduct-v2-1",
+        "policy-employee-leave-v2-1",
+        "policy-flexible-work-v2-1",
+        "policy-information-security-v2-1",
+        "policy-travel-expense-v2-1"
+      ],
+      "expected_section_titles": [
+        "12. Exceptions, Disputes, Ownership, and Review",
+        "12. Exceptions, Endpoint Protection, and Review",
+        "12. Exceptions, Ownership, and Review",
+        "12. Ownership, Guidance, and Review"
+      ],
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "12. Exceptions, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "12. Exceptions, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "12. Exceptions, Disputes, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "12. Ownership, Guidance, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15."
+        }
+      ],
+      "fact_ids": [
+        "EL-014",
+        "FW-018",
+        "IS-019",
+        "EX-023",
+        "CO-015"
+      ],
+      "materiality": "core",
+      "question": "Across the five v2.1 policy documents, what next scheduled review date is stated?",
+      "question_id": "final2-g-020"
+    },
+    {
+      "absence_assertion": "The corpus states repayment duties but does not provide an IBAN, bank account number, or payment account identifier.",
+      "atomic_claims": [],
+      "canonical_refusal": "I don't know based on the provided documents.",
+      "category": "unsupported",
+      "clause_ids": [],
+      "difficulty": "hard",
+      "exact_source_quotes": [],
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_document_ids": [],
+      "expected_section_titles": [],
+      "expected_sources": [],
+      "fact_ids": [],
+      "materiality": "core",
+      "prohibited_claim_types": [
+        "bank account identifier",
+        "IBAN",
+        "account number"
+      ],
+      "question": "What IBAN should employees use to repay accidental personal corporate-card charges?",
+      "question_id": "final2-g-021"
+    },
+    {
+      "absence_assertion": "The corpus does not define a dress-code color for client meeting days.",
+      "atomic_claims": [],
+      "canonical_refusal": "I don't know based on the provided documents.",
+      "category": "unsupported",
+      "clause_ids": [],
+      "difficulty": "hard",
+      "exact_source_quotes": [],
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_document_ids": [],
+      "expected_section_titles": [],
+      "expected_sources": [],
+      "fact_ids": [],
+      "materiality": "core",
+      "prohibited_claim_types": [
+        "dress-code color",
+        "uniform color"
+      ],
+      "question": "Which office dress-code color is mandatory on client meeting days?",
+      "question_id": "final2-g-022"
+    },
+    {
+      "absence_assertion": "The corpus contains travel meal limits but does not define a daily lunch allowance for ordinary office work in Kuwait.",
+      "atomic_claims": [],
+      "canonical_refusal": "I don't know based on the provided documents.",
+      "category": "unsupported",
+      "clause_ids": [],
+      "difficulty": "hard",
+      "exact_source_quotes": [],
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_document_ids": [],
+      "expected_section_titles": [],
+      "expected_sources": [],
+      "fact_ids": [],
+      "materiality": "core",
+      "prohibited_claim_types": [
+        "ordinary office lunch allowance",
+        "non-travel meal allowance"
+      ],
+      "question": "What daily lunch allowance is paid for ordinary office work in Kuwait?",
+      "question_id": "final2-g-023"
+    },
+    {
+      "absence_assertion": "The corpus describes reporting and investigations but does not specify a project code prefix for ethics investigations.",
+      "atomic_claims": [],
+      "canonical_refusal": "I don't know based on the provided documents.",
+      "category": "unsupported",
+      "clause_ids": [],
+      "difficulty": "hard",
+      "exact_source_quotes": [],
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_document_ids": [],
+      "expected_section_titles": [],
+      "expected_sources": [],
+      "fact_ids": [],
+      "materiality": "core",
+      "prohibited_claim_types": [
+        "project code prefix",
+        "case identifier prefix"
+      ],
+      "question": "What project code prefix must be entered for ethics investigations?",
+      "question_id": "final2-g-024"
+    }
+  ],
+  "tone_answerable_question_ids": [
+    "final2-g-001",
+    "final2-g-002",
+    "final2-g-003",
+    "final2-g-004",
+    "final2-g-005",
+    "final2-g-006",
+    "final2-g-007",
+    "final2-g-008",
+    "final2-g-009",
+    "final2-g-010",
+    "final2-g-011",
+    "final2-g-012",
+    "final2-g-013",
+    "final2-g-014",
+    "final2-g-015",
+    "final2-g-016",
+    "final2-g-017",
+    "final2-g-018",
+    "final2-g-019",
+    "final2-g-020"
+  ]
+}

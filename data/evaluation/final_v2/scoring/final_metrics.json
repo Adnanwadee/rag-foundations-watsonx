@@ -1,0 +1,2513 @@
+{
+  "adjudication": {
+    "adjudicator": "Adnan Wadee Abdullah (AI-assisted semantic review)",
+    "grounded_reviewed_count": 24,
+    "human_adjudication_sha256": "b8ff4438b2f0c808abdccee07f508926852b49176137751432d5e46df064f3b1",
+    "independent_human_signoff": false,
+    "reviewed_at_utc": "2026-07-28T17:50:19+00:00",
+    "semantic_review_method": "tool-assisted semantic adjudication",
+    "tone_triplet_reviewed_count": 40
+  },
+  "grounded": {
+    "ibm/granite-4-h-small": {
+      "answerable_correct_rate": 0.85,
+      "answerable_partial_rate": 0.1,
+      "citation_validity": 20,
+      "correct": 17,
+      "deterministic_clean_records": 13,
+      "human_reviewed_records": 11,
+      "normalization_count": 3,
+      "partial": 2,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.8333,
+      "unsupported_correct": 3,
+      "unsupported_refusal_rate": 0.75,
+      "unsupported_wrong": 1,
+      "wrong": 1
+    },
+    "mistralai/mistral-small-3-1-24b-instruct-2503": {
+      "answerable_correct_rate": 0.8,
+      "answerable_partial_rate": 0.2,
+      "citation_validity": 19,
+      "correct": 16,
+      "deterministic_clean_records": 11,
+      "human_reviewed_records": 13,
+      "normalization_count": 0,
+      "partial": 4,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.8333,
+      "unsupported_correct": 4,
+      "unsupported_refusal_rate": 1.0,
+      "unsupported_wrong": 0,
+      "wrong": 0
+    }
+  },
+  "layers_preserved": {
+    "deterministic_clean_records_used_for_unreviewed_clean_cases": true,
+    "deterministic_layer_preserved": true,
+    "human_layer_preserved": true,
+    "raw_evidence_mutated": false
+  },
+  "record_details": {
+    "grounded": {
+      "final2-grounded::ibm/granite-4-h-small::final2-g-001": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-001",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Exact answer and supporting citation."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-002": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-002",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Exact visitor handling and 90-calendar-day retention rule with supporting citation."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-003": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-003",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Fully lists the four systems; wording is concise but complete."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-004": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-004",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-005": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "wrong",
+        "human_label": "wrong",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-005",
+        "repair_retry_count": 0,
+        "reviewer_notes": "The response gives only the policy title and does not answer the requested records-and-corrections standard."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-006": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-006",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-007": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-007",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-008": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-008",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-009": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-009",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-010": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-010",
+        "repair_retry_count": 0,
+        "reviewer_notes": "The question asks whose approval is required; HR and the department head fully answers that scope."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-011": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-011",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-012": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-012",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-013": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-013",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-014": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-014",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-015": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-015",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-016": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-016",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-017": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-017",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-018": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-018",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correctly states HR notice and access-disable timing, but gives only a vague cross-policy reference for equipment return and omits the no-family-or-visitor-use rule."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-019": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-019",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-020": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-020",
+        "repair_retry_count": 0,
+        "reviewer_notes": "The date is correct, but the five-document claim is not fully supported because the citations omit the Information Security review section and include a duplicate Flexible Work source."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-021": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-021",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-022": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-022",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-023": {
+        "deterministic_label": "unsupported_wrong",
+        "expected_answerable": false,
+        "final_label": "unsupported_wrong",
+        "human_label": "unsupported_wrong",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": null,
+        "question_id": "final2-g-023",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Incorrectly substitutes the travel meal limit for a nonexistent ordinary-office lunch allowance."
+      },
+      "final2-grounded::ibm/granite-4-h-small::final2-g-024": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "ibm/granite-4-h-small",
+        "normalization_status": "unsupported_false_empty_citations_to_canonical_refusal",
+        "question_id": "final2-g-024",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-001": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-001",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Exact answer and supporting citation."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-002": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-002",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correctly states the 90-calendar-day retention rule but omits pre-registration and escort requirements from the curated answer."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-003": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-003",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Fully lists the four systems; wording is concise but complete."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-004": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-004",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Exact threshold and receipt requirement with supporting citation."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-005": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-005",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-006": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-006",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-007": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-007",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-008": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-008",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-009": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-009",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-010": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-010",
+        "repair_retry_count": 0,
+        "reviewer_notes": "The question asks whose approval is required; HR and the department head fully answers that scope."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-011": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-011",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-012": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": "correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-012",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Both approval authorities and the IT Operations review condition are fully preserved."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-013": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-013",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-014": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-014",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-015": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-015",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-016": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-016",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Preserves visitor pre-registration/escort and quarterly manager review, but omits 90-day retention, monthly system-owner review, and the 3-working-day removal rule."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-017": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-017",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-018": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-018",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Preserves HR notice, access-disable timing, and equipment return at a high level, but omits the explicit end-of-employment timing and the no-family-or-visitor-use rule."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-019": {
+        "deterministic_label": "correct",
+        "expected_answerable": true,
+        "final_label": "correct",
+        "human_label": null,
+        "label_source": "deterministic_clean",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-019",
+        "repair_retry_count": 0,
+        "reviewer_notes": ""
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-020": {
+        "deterministic_label": "partial",
+        "expected_answerable": true,
+        "final_label": "partial",
+        "human_label": "partial",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-020",
+        "repair_retry_count": 0,
+        "reviewer_notes": "The date is correct, but the five-document claim lacks the Information Security citation."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-021": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-021",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-022": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-022",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-023": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-023",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correctly refuses because the documents do not define an ordinary-office lunch allowance."
+      },
+      "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-024": {
+        "deterministic_label": "unsupported_correct",
+        "expected_answerable": false,
+        "final_label": "unsupported_correct",
+        "human_label": "unsupported_correct",
+        "label_source": "human",
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "normalization_status": null,
+        "question_id": "final2-g-024",
+        "repair_retry_count": 0,
+        "reviewer_notes": "Correct canonical refusal with no citations."
+      }
+    },
+    "tones": {
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Conversational paraphrase is recognizably casual.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "This is identical to the formal/source sentence and lacks executive framing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-001::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Adds 'at all times', which overstates the escort requirement.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Imperative, labelled rule is recognizably executive and preserves the obligation.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-002::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Natural wording and abbreviated admin accounts make the message recognizably casual.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Plain restatement without executive framing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-003::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "The label-plus-requirement format is concise and executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-004::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Changes mandatory correction language to 'should', weakening the policy obligation.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Short, direct policy imperatives are recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-005::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Drops the material unit 'calendar' from 15 calendar days.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "A plain sentence with no distinctive executive framing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-006::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Conversational wording preserves the exception and continuing controls.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-007::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::casual_message": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure",
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Narrows any interaction with a suspected phishing message to clicking a suspicious email, which omits other possible interactions.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Two direct conditional actions are suitable for an executive briefing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-008::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'one hour' is semantically equivalent to '1 hour'.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Drops the material unit 'calendar' from 45 calendar days.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Drops the material unit 'calendar' from 45 calendar days.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-009::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Need written approval preserves the mandatory requirement.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Labelled approval statement is recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-010::formal_report_summary": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Human Resources is equivalent to HR; mandatory approval is preserved.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::casual_message": {
+        "deterministic_triggers": [
+          "units_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Changes '5 working days' to '5 days' and shortens line manager to manager.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Compact condition list is recognizably executive and preserves all requirements.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-011::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Direct approval and review conditions are concise and decision-oriented.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-012::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'Normally, it expires within' preserves the qualified normal-expiry rule.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Compact approval/record/expiry summary is recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-013::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'any proof ... you have' preserves 'when available'.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "The output is essentially the source/formal wording and lacks executive reframing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-014::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Conversational prohibitions and action steps preserve the source.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-015::formal_report_summary": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'refrain from' preserves the prohibition.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Changes managers' mandatory quarterly review to 'should', weakening the obligation.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Drops 'calendar' from the 90-calendar-day retention period.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-016::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Conversational wording preserves the prohibitions and requirements.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Compact storage and access controls are recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-017::formal_report_summary": {
+        "deterministic_triggers": [
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "The remote-access condition and all storage/device/VPN controls are preserved.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "units_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Changes HR's mandatory notice to 'should' and changes working days to workdays.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Narrows the blanket no-use rule to 'personal use' by family or visitors.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-018::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'two working days' is semantically equivalent to '2 working days'.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "'can't give the okay' preserves that a line manager alone cannot waive the policy.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Direct comparison of approvals and record fields is recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-019::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "The date conversion is factually equivalent, but the sentence is not recognizably casual.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "Plain restatement without executive framing.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::ibm/granite-4-h-small::final2-t-020::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "ibm/granite-4-h-small",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'get' wording is sufficiently conversational for this short input.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The Entitlement label is concise and executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-001"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The output is a plain policy restatement and is not recognizably casual.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Rule and retention labels are recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-002"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The output is a plain restatement and lacks conversational style.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "MFA-required label and compact list are recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-003"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Threshold and requirement labels are recognizably executive and imply KWD 3 or more.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-004"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Changes mandatory correction language to 'should', weakening the obligation.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The compact standards list is recognizably executive and preserves the required standard.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-005"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The output is concise but remains a plain policy sentence rather than a casual message.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Omits the condition that the employee joined after the first day and that accrual applies only if the threshold is met.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-006"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'can suspend' preserves the permission expressed by 'may'.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::concise_executive_briefing": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-007"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Second-person conditional wording is recognizably conversational.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Labelled conditional actions are concise and executive; imperatives preserve the obligations.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-008"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::casual_message": {
+        "deterministic_triggers": [
+          "conditions_preserved_failure",
+          "exceptions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'This only changes' ambiguously suggests both approval and rejection rules change when the delay is outside the employee's control; only rejection is excepted.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "conditions_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'possible' preserves 'may be rejected', and the labelled condition/exception structure is executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-009"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'need to get' preserves the mandatory written-approval requirement.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Human semantic/style review overrides the conservative lexical screening signal.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-010"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Labelled limit, conditions, and approval preserve all requirements.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-011"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::casual_message": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Broadens the IT Operations trigger from routinely handling restricted data to any restricted data.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-012"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'usually expires within' preserves the qualified normal-expiry rule.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "exceptions_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Drops 'should normally' and 'within', making the expiry appear fixed at 30 calendar days.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013::formal_report_summary": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Changes 'should normally expire within 30 calendar days' to an unqualified normal rule of exactly 30 days.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-013"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'if available' preserves the evidence qualification.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Omits 'when available' and therefore makes proof of completion appear unconditionally required.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-014"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::casual_message": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'can't gain' preserves the prohibition.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'no personal benefit' and the action labels preserve all procurement duties.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-015"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::casual_message": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Changes managers' mandatory quarterly review to 'should'.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Imperative/labelled requirements preserve the visitor, retention, review, and removal rules.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-016"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The output is accurate but remains a formal/plain instruction rather than a casual message.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": false,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Labelled storage and remote-access controls are recognizably executive; the prohibitions remain clear.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-017"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'needs to let' is conversational while preserving HR's obligation.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Role-labelled actions are recognizably executive and preserve the no-use requirement.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-018"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::casual_message": {
+        "deterministic_triggers": [
+          "negation_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "'can't approve it alone' preserves that a line manager alone cannot waive the policy.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "modality_preserved_failure",
+          "negation_preserved_failure",
+          "approval_authorities_preserved_failure"
+        ],
+        "factual_preservation": false,
+        "final_valid": false,
+        "human_final_valid": false,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Omits the material rule that a line manager alone cannot waive the leave policy.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019::formal_report_summary": {
+        "deterministic_triggers": [],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-019"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::casual_message": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty",
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "Natural wording is sufficiently conversational for this short factual input.",
+        "target_tone": "casual_message",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::concise_executive_briefing": {
+        "deterministic_triggers": [
+          "target_tone_recognizability_uncertainty"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "The date label and compact policy list are recognizably executive.",
+        "target_tone": "concise_executive_briefing",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      },
+      "final2-tone::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020::formal_report_summary": {
+        "deterministic_triggers": [
+          "numbers_preserved_failure"
+        ],
+        "factual_preservation": true,
+        "final_valid": true,
+        "human_final_valid": true,
+        "label_source": "human",
+        "language_preservation": true,
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "reviewer_notes": "January 15, 2027 is semantically identical to 2027-01-15.",
+        "target_tone": "formal_report_summary",
+        "target_tone_recognizable": true,
+        "tone_input_id": "final2-t-020"
+      }
+    }
+  },
+  "retrieval": {
+    "all_expected_source_coverage_at_5": 0.9,
+    "hit_at_1": 0.95,
+    "hit_at_3": 1.0,
+    "hit_at_5": 1.0,
+    "mrr": 0.975
+  },
+  "scoring_layer": "hybrid_final",
+  "status": "complete",
+  "tones": {
+    "by_model": {
+      "ibm/granite-4-h-small": {
+        "deterministic_clean_triplets": 0,
+        "fully_valid_triplet_rate": 0.4,
+        "fully_valid_triplets": 8,
+        "human_reviewed_triplets": 20,
+        "tone_input_triplets": 20,
+        "triplet_distinct": 16,
+        "triplet_distinct_rate": 0.8
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503": {
+        "deterministic_clean_triplets": 0,
+        "fully_valid_triplet_rate": 0.45,
+        "fully_valid_triplets": 9,
+        "human_reviewed_triplets": 20,
+        "tone_input_triplets": 20,
+        "triplet_distinct": 20,
+        "triplet_distinct_rate": 1.0
+      }
+    },
+    "by_model_tone": {
+      "ibm/granite-4-h-small::casual_message": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 12,
+        "factual_preservation_rate": 0.6,
+        "final_valid": 11,
+        "final_valid_rate": 0.55,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 14,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 19,
+        "target_tone_recognizable_rate": 0.95
+      },
+      "ibm/granite-4-h-small::concise_executive_briefing": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 17,
+        "factual_preservation_rate": 0.85,
+        "final_valid": 12,
+        "final_valid_rate": 0.6,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 18,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 15,
+        "target_tone_recognizable_rate": 0.75
+      },
+      "ibm/granite-4-h-small::formal_report_summary": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 20,
+        "factual_preservation_rate": 1.0,
+        "final_valid": 20,
+        "final_valid_rate": 1.0,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 18,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 20,
+        "target_tone_recognizable_rate": 1.0
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::casual_message": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 17,
+        "factual_preservation_rate": 0.85,
+        "final_valid": 13,
+        "final_valid_rate": 0.65,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 19,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 16,
+        "target_tone_recognizable_rate": 0.8
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::concise_executive_briefing": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 15,
+        "factual_preservation_rate": 0.75,
+        "final_valid": 15,
+        "final_valid_rate": 0.75,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 20,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 20,
+        "target_tone_recognizable_rate": 1.0
+      },
+      "mistralai/mistral-small-3-1-24b-instruct-2503::formal_report_summary": {
+        "deterministic_clean_records": 0,
+        "factual_preservation_pass": 19,
+        "factual_preservation_rate": 0.95,
+        "final_valid": 19,
+        "final_valid_rate": 0.95,
+        "human_reviewed_records": 20,
+        "language_preservation_pass": 20,
+        "language_preservation_rate": 1.0,
+        "quantity_unit_date_preservation_pass": 19,
+        "repair_count": 0,
+        "runs": 20,
+        "structured_valid": 20,
+        "target_tone_recognizable_pass": 20,
+        "target_tone_recognizable_rate": 1.0
+      }
+    }
+  }
+}

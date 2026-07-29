@@ -1,0 +1,16 @@
+{
+  "chunker_configuration": {
+    "chunk_overlap_tokens": 40,
+    "chunk_size_tokens": 220,
+    "chunker_config_id": "section-token-v1-size-220-overlap-40-minilm",
+    "token_counting_method": "sentence-transformers/all-MiniLM-L6-v2:tokenizer"
+  },
+  "corpus_version": "asteron-policies-v2.1",
+  "creation_timestamp": "2026-07-27T23:46:35+00:00",
+  "embedding_dimension": 768,
+  "embedding_model_id": "ibm/granite-embedding-278m-multilingual",
+  "index_id": "phase-c-chunk-220-overlap-40",
+  "index_version": "faiss-flat-ip-v1",
+  "similarity_metric": "cosine_similarity",
+  "vector_count": 70
+}

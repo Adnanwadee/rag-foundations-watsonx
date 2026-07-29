@@ -1,0 +1,7 @@
+Original question:
+{{ original_question }}
+
+Validated grounded answer:
+{{ grounded_answer }}
+
+Transform the answer into casual_message.

@@ -1,0 +1,29 @@
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.env.example text eol=lf
+.env.evaluation.example text eol=lf
+
+# Historical/frozen evidence and prompt assets are byte-preserved.
+data/** -text -eol
+prompts/** -text -eol
+
+*.index binary
+*.faiss binary
+*.npy binary
+*.npz binary
+*.pkl binary
+*.joblib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary

@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "chunk_overlap_tokens": 40,
+      "chunk_size_tokens": 220,
+      "experiment_id": "chunk-220-overlap-40",
+      "top_k": 5
+    },
+    {
+      "chunk_overlap_tokens": 20,
+      "chunk_size_tokens": 160,
+      "experiment_id": "chunk-160-overlap-20",
+      "top_k": 5
+    },
+    {
+      "chunk_overlap_tokens": 60,
+      "chunk_size_tokens": 160,
+      "experiment_id": "chunk-160-overlap-60",
+      "top_k": 5
+    }
+  ],
+  "corpus_version": "asteron-policies-v2.1",
+  "embedding_dimension": 768,
+  "embedding_model_id": "ibm/granite-embedding-278m-multilingual",
+  "faiss_type": "IndexFlatIP",
+  "plan_id": "phase-c-retrieval-experiment-plan",
+  "query_count": 36,
+  "similarity_metric": "cosine_similarity"
+}

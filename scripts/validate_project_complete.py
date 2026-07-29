@@ -1,0 +1,13 @@
+"""Validate project completion evidence after Phase D."""
+
+from __future__ import annotations
+
+import json
+
+from rag_foundations.final_v2 import validate_project_complete
+from validate_documentation import validate_documentation
+
+
+if __name__ == "__main__":
+    validate_documentation()
+    print(json.dumps(validate_project_complete(), indent=2, sort_keys=True))

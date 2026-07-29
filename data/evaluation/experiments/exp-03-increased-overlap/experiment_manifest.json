@@ -1,0 +1,60 @@
+{
+  "api_call_counts": {
+    "chat_generation_count": 12,
+    "embedding_document_text_count": 70,
+    "embedding_query_count": 12
+  },
+  "chunk_overlap_tokens": 80,
+  "chunk_size_tokens": 220,
+  "controlled_variables": [
+    "source_documents",
+    "chunk_size_tokens",
+    "prompt_version",
+    "embedding_model",
+    "generation_model",
+    "top_k",
+    "generation_parameters",
+    "citation_logic",
+    "repair_policy"
+  ],
+  "dataset_path": "data/evaluation/development_questions.json",
+  "dataset_sha256": "2fc8f039c4a710b77486bbf5d901c5f06285162f527b04e6823f9c4abff960f5",
+  "embedding_dimension": 768,
+  "embedding_model": "ibm/granite-embedding-278m-multilingual",
+  "end_utc": "2026-07-26T17:48:01+00:00",
+  "experiment_id": "exp-03-increased-overlap",
+  "frozen_final_v1_sha256": "17bc00fa11de97efa584995828b557575ed9ed4a03f623014823d0101f60bab9",
+  "frozen_final_v1_was_not_run": true,
+  "generation_model": "ibm/granite-4-h-small",
+  "generation_parameters": {
+    "generation_model_id": "ibm/granite-4-h-small",
+    "maximum_output_tokens": 500,
+    "prompt_version": "grounded-generation-v1.1",
+    "repair_retry_count": 1,
+    "request_timeout_seconds": 60.0,
+    "sdk_version": "1.6.0",
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "git_commit_at_run_start": "90914bbbfd60e5f0c33cbffa24682b26f2c52ca9",
+  "hypothesis": "Increased overlap may improve conditional-fact preservation by carrying more neighboring context into retrieved chunks.",
+  "independent_variable": "chunk_overlap_tokens",
+  "index_path": "data/evaluation/experiments/exp-03-increased-overlap/faiss_index",
+  "index_summary": {
+    "average_chunk_tokens": 138.47,
+    "chunks_created": 70,
+    "documents_loaded": 5,
+    "maximum_chunk_tokens": 207,
+    "minimum_chunk_tokens": 59,
+    "sections_loaded": 70
+  },
+  "infrastructure_failures": 0,
+  "malformed_count": 0,
+  "production_configuration_changed": false,
+  "prompt_version": "grounded-generation-v1.1",
+  "repair_count": 0,
+  "source_document_manifest": "data/manifest.json",
+  "start_utc": "2026-07-26T17:47:43+00:00",
+  "tones_were_not_run": true,
+  "top_k": 5
+}

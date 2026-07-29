@@ -1,0 +1,18 @@
+{
+  "category_counts": {
+    "condition_or_exception": 5,
+    "direct_fact": 5,
+    "multi_fact": 5,
+    "multi_section_or_source": 5,
+    "unsupported": 4
+  },
+  "created_at_utc": "2026-07-28T14:25:45+00:00",
+  "frozen": true,
+  "grounded_questions_sha256": "1b0ea3c2b41d6ee87d78721211260bdbee2c7a955ecf2c7b279bb9e7941af920",
+  "manifest_id": "final-v2-dataset-manifest",
+  "near_duplicate_screening": [],
+  "question_count": 24,
+  "run_plan_sha256": "714f662e9c484996ee09f32ad714025dfe9d1fda3b821e050d82c1a1318c74b1",
+  "tone_input_count": 20,
+  "tone_inputs_sha256": "70339c27060db7e89cdce63b0633ef42e45f5651f9baee837b2a4852e4450f42"
+}

@@ -1,0 +1,52 @@
+{
+  "configuration_id": "phase-c-v2-frozen-configuration",
+  "corpus_version": "asteron-policies-v2.1",
+  "created_at_utc": "2026-07-28T13:38:29+00:00",
+  "development_dataset_hashes": {
+    "diagnostic_regressions_v2_1": "d2530d56ca93195926199c6010263c4170b734fa4ad3b3f20b89959c6e7ecf30",
+    "grounded_questions_v2_1": "b43852855f8f2cc10713823eb0a66f5b661e08d6a65927baf2e7c8ce8d170da3",
+    "tone_inputs_v2_1": "e9f08ae3a328e8b3d48411cb414c7da514b443ad25b6b7a3202a28ecf76cfc96",
+    "validation_summary_v2_1": "60c00b793bbf248915029bcf62b10ce3127b96c5ef0eac9e0f37514f36a18325"
+  },
+  "document_manifest_sha256": "2efd50786b95eecdac049397b1b9e4efceed5583500a53c291e01f74ece2228a",
+  "embedding_configuration": {
+    "dimension": 768,
+    "faiss_type": "IndexFlatIP",
+    "index_manifest_path": "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json",
+    "model_id": "ibm/granite-embedding-278m-multilingual",
+    "similarity_metric": "cosine_similarity",
+    "top_k": 5
+  },
+  "fact_registry_sha256": "cba4eb67ecb4818846a748b644ae94654123475df27294f0ce7bbb248eac00be",
+  "generation_model_id": "ibm/granite-4-h-small",
+  "generation_parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "human_adjudication_sha256": "7ac2c0fc365ebb8a6e2d382c7e7d99a27ac7e4f4a42e825a275cb8f8e23cbe00",
+  "judge_model_id": "ibm/granite-4-h-small",
+  "judge_parameters": {
+    "max_tokens": 900,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "metric_references": {
+    "phase_c_final_metrics": "data/evaluation/phase_c/frozen/phase_c_final_metrics.json",
+    "pre_adjudication_grounded_metrics": "data/evaluation/phase_c/grounded/grounded_metrics_pre_adjudication.json",
+    "pre_adjudication_tone_metrics": "data/evaluation/phase_c/tones/tone_metrics_pre_adjudication.json",
+    "retrieval_results": "data/evaluation/phase_c/retrieval/retrieval_results.json",
+    "semantic_judge_summary": "data/evaluation/phase_c/judge/semantic_judge_summary.json"
+  },
+  "normalization_policy": "unsupported false plus empty citations normalizes to canonical refusal for application output",
+  "prompt_manifest_path": "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json",
+  "repair_policy": "one malformed JSON repair retry only; no retries for semantic defects",
+  "sdk_version": "1.6.0",
+  "selected_grounded_candidate": "A",
+  "selected_retrieval_configuration": "chunk-220-overlap-40",
+  "selected_tone_prompts": {
+    "casual_message": "baseline_v2",
+    "concise_executive_briefing": "baseline_v2",
+    "formal_report_summary": "baseline_v2"
+  },
+  "tokenizer_id": "section-token-v1"
+}

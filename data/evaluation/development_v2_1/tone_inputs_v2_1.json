@@ -1,0 +1,375 @@
+{
+  "dataset_id": "tone-development-v2-1",
+  "input_count": 18,
+  "inputs": [
+    {
+      "category": "very_short",
+      "grounded_answer": "Eligible employees receive 2 paid volunteer days per calendar year.",
+      "original_question": "What paid volunteer-leave entitlement do eligible employees receive each calendar year?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "entitlement_must_not_become_deadline",
+        "few_shot_frame_must_not_transfer"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "2"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-001"
+    },
+    {
+      "category": "very_short",
+      "grounded_answer": "15 minutes.",
+      "original_question": "How long does the account remain locked after repeated failed sign-ins?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "short_answer_must_become_self_contained",
+        "duration_must_not_change"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "15"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-002"
+    },
+    {
+      "category": "very_short",
+      "grounded_answer": "KWD 0.090 per kilometer.",
+      "original_question": "What is the personal-car mileage reimbursement rate?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "short_answer_must_become_self_contained",
+        "currency_and_quantity_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "0.090"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-003"
+    },
+    {
+      "category": "very_short",
+      "grounded_answer": "Within 10 working days after joining.",
+      "original_question": "When must a new employee acknowledge the Code of Conduct?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "short_answer_must_become_self_contained",
+        "deadline_role_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "10"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-004"
+    },
+    {
+      "category": "very_short",
+      "grounded_answer": "A maximum of 2 days per week.",
+      "original_question": "What is the ordinary weekly remote-work limit?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "short_answer_must_become_self_contained",
+        "limit_role_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "2"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-005"
+    },
+    {
+      "category": "condition_or_exception",
+      "grounded_answer": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+      "original_question": "When may premium economy be approved?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "may_must_not_become_must",
+        "condition_and_authority_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "6"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-006"
+    },
+    {
+      "category": "condition_or_exception",
+      "grounded_answer": "The employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception.",
+      "original_question": "When may a new employee take planned annual leave during the first 90 calendar days?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "prohibition_and_exception_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-007"
+    },
+    {
+      "category": "condition_or_exception",
+      "grounded_answer": "A manager normally gives at least 1 working day's notice, but shorter notice may be given in an emergency.",
+      "original_question": "What notice applies when office attendance is required on a planned remote day?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "normal_rule_and_emergency_exception_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "1"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-008"
+    },
+    {
+      "category": "condition_or_exception",
+      "grounded_answer": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+      "original_question": "What limits apply to a missing-receipt declaration?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "multiple_quantity_and_modality_preservation"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "20",
+          "3"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-009"
+    },
+    {
+      "category": "already_formal",
+      "grounded_answer": "Employees must report a lost company device to IT Operations and their line manager within 1 hour of discovery.",
+      "original_question": "What must an employee do after discovering a lost company device?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "already_target_like"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "1"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-010"
+    },
+    {
+      "category": "already_casual",
+      "grounded_answer": "Just submit the claim within 15 calendar days after you return to Kuwait.",
+      "original_question": "When should you submit a business-travel claim?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "already_target_like"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "15"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-011"
+    },
+    {
+      "category": "already_executive",
+      "grounded_answer": "Key rule: temporary privileged access expires automatically and may not exceed 7 calendar days.",
+      "original_question": "What is the temporary privileged-access limit?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "already_target_like"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "7"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-012"
+    },
+    {
+      "category": "non_english",
+      "grounded_answer": "يجب على الموظف إبلاغ إدارة تقنية المعلومات ومديره المباشر خلال ساعة واحدة من اكتشاف فقدان الجهاز.",
+      "original_question": "متى يجب الإبلاغ عن فقدان جهاز تابع للشركة؟",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "preserve_source_language"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [],
+        "subject": "from original question"
+      },
+      "source_language": "ar",
+      "tone_input_id": "tone2-013"
+    },
+    {
+      "category": "non_english",
+      "grounded_answer": "Le mot de passe doit contenir au moins 14 caractères.",
+      "original_question": "Quelle est la longueur minimale du mot de passe ?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "preserve_source_language"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "14"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "fr",
+      "tone_input_id": "tone2-014"
+    },
+    {
+      "category": "non_english",
+      "grounded_answer": "La solicitud de gastos debe presentarse dentro de los 15 días calendario posteriores al regreso a Kuwait.",
+      "original_question": "¿Cuándo debe presentarse una reclamación de gastos después de un viaje?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "preserve_source_language"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "15"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "es",
+      "tone_input_id": "tone2-015"
+    },
+    {
+      "category": "numeric_date_approval",
+      "grounded_answer": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+      "original_question": "What notice and approvals apply to annual leave longer than 10 working days?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "numeric_date_approval"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "10",
+          "30"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-016"
+    },
+    {
+      "category": "numeric_date_approval",
+      "grounded_answer": "Working from outside Kuwait requires written approval from the department head, HR, and IT Operations, must be requested at least 15 working days before travel, and is normally limited to 10 working days per calendar year.",
+      "original_question": "What controls apply to working from outside Kuwait?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "numeric_date_approval"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [
+          "15",
+          "10"
+        ],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-017"
+    },
+    {
+      "category": "numeric_date_approval",
+      "grounded_answer": "An employee must disclose a potential conflict to HR as soon as the employee becomes aware of it and before participating in the related decision. HR may approve a conflict-management plan.",
+      "original_question": "When must a conflict be disclosed and what may HR approve?",
+      "preserve_source_language": true,
+      "regression_tags": [
+        "numeric_date_approval"
+      ],
+      "semantic_slots": {
+        "modality": "must/may/should when present",
+        "object_policy_concept": "from grounded answer",
+        "predicate_action": "from grounded answer",
+        "quantity": [],
+        "subject": "from original question"
+      },
+      "source_language": "en",
+      "tone_input_id": "tone2-018"
+    }
+  ],
+  "language_policy": "preserve source language for every tone output",
+  "tones": [
+    "formal_report_summary",
+    "casual_message",
+    "concise_executive_briefing"
+  ]
+}

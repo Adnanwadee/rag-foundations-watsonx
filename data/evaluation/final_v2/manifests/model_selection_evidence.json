@@ -1,0 +1,108 @@
+{
+  "comparison_basis": "comparison model with a smaller nominal documented parameter count",
+  "created_at_utc": "2026-07-28T17:10:25+00:00",
+  "models": [
+    {
+      "accessible_in_current_project": true,
+      "chat_support": true,
+      "model_id": "ibm/granite-4-h-small",
+      "parameter_size_evidence": {
+        "documented_parameter_count_billion": 30,
+        "official_source_url": "https://www.ibm.com/docs/en/watsonx/saas?topic=models-foundation",
+        "publisher": "IBM",
+        "retrieved_at_utc": "2026-07-29",
+        "supported_claim": "IBM documents Granite 4 Small as a 30 billion parameter model in watsonx.ai foundation-model documentation."
+      },
+      "pricing_evidence": null,
+      "raw_spec_summary": {
+        "functions": [
+          {
+            "id": "autoai_rag"
+          },
+          {
+            "id": "text_chat"
+          },
+          {
+            "id": "text_generation"
+          }
+        ],
+        "label": "granite-4-h-small",
+        "lifecycle": [
+          {
+            "id": "available",
+            "start_date": "2025-10-02"
+          }
+        ],
+        "model_id": "ibm/granite-4-h-small",
+        "provider": "IBM",
+        "task_ids": [
+          "question_answering",
+          "summarization",
+          "retrieval_augmented_generation",
+          "classification",
+          "generation",
+          "code",
+          "extraction",
+          "translation",
+          "function_calling",
+          "code-generation",
+          "code-explanation",
+          "code-fixing"
+        ]
+      }
+    },
+    {
+      "accessible_in_current_project": true,
+      "chat_support": true,
+      "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+      "parameter_size_evidence": {
+        "documented_parameter_count_billion": 24,
+        "official_source_url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+        "publisher": "Mistral AI",
+        "retrieved_at_utc": "2026-07-29",
+        "supported_claim": "Mistral's official model card identifies Mistral Small 3.1 24B Instruct 2503 as a 24 billion parameter model."
+      },
+      "pricing_evidence": null,
+      "raw_spec_summary": {
+        "functions": [
+          {
+            "id": "autoai_rag"
+          },
+          {
+            "id": "autoai_sql_rag"
+          },
+          {
+            "id": "image_chat"
+          },
+          {
+            "id": "text_chat"
+          },
+          {
+            "id": "text_generation"
+          }
+        ],
+        "label": "mistral-small-3-1-24b-instruct-2503",
+        "lifecycle": [
+          {
+            "id": "available",
+            "start_date": "2025-04-22"
+          }
+        ],
+        "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+        "provider": "Mistral AI",
+        "task_ids": [
+          "question_answering",
+          "summarization",
+          "retrieval_augmented_generation",
+          "retrieval_augmented_generation",
+          "classification",
+          "generation",
+          "code",
+          "extraction",
+          "function_calling"
+        ]
+      }
+    }
+  ],
+  "selected_comparison_model_id": "mistralai/mistral-small-3-1-24b-instruct-2503"
+}

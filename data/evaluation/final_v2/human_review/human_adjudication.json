@@ -1,0 +1,1328 @@
+{
+  "adjudicator": "Adnan Wadee Abdullah (AI-assisted semantic review)",
+  "grounded_decisions": [
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Exact answer and supporting citation.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-001"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Exact visitor handling and 90-calendar-day retention rule with supporting citation.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-002"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Fully lists the four systems; wording is concise but complete.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-003"
+    },
+    {
+      "final_label": "wrong",
+      "reviewer_notes": "The response gives only the policy title and does not answer the requested records-and-corrections standard.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-005"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "The question asks whose approval is required; HR and the department head fully answers that scope.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-010"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "Correctly states HR notice and access-disable timing, but gives only a vague cross-policy reference for equipment return and omits the no-family-or-visitor-use rule.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-018"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "The date is correct, but the five-document claim is not fully supported because the citations omit the Information Security review section and include a duplicate Flexible Work source.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-020"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-021"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-022"
+    },
+    {
+      "final_label": "unsupported_wrong",
+      "reviewer_notes": "Incorrectly substitutes the travel meal limit for a nonexistent ordinary-office lunch allowance.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-023"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::ibm/granite-4-h-small::final2-g-024"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Exact answer and supporting citation.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-001"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "Correctly states the 90-calendar-day retention rule but omits pre-registration and escort requirements from the curated answer.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-002"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Fully lists the four systems; wording is concise but complete.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-003"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Exact threshold and receipt requirement with supporting citation.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-004"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "The question asks whose approval is required; HR and the department head fully answers that scope.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-010"
+    },
+    {
+      "final_label": "correct",
+      "reviewer_notes": "Both approval authorities and the IT Operations review condition are fully preserved.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-012"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "Preserves visitor pre-registration/escort and quarterly manager review, but omits 90-day retention, monthly system-owner review, and the 3-working-day removal rule.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-016"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "Preserves HR notice, access-disable timing, and equipment return at a high level, but omits the explicit end-of-employment timing and the no-family-or-visitor-use rule.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-018"
+    },
+    {
+      "final_label": "partial",
+      "reviewer_notes": "The date is correct, but the five-document claim lacks the Information Security citation.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-020"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-021"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-022"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correctly refuses because the documents do not define an ordinary-office lunch allowance.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-023"
+    },
+    {
+      "final_label": "unsupported_correct",
+      "reviewer_notes": "Correct canonical refusal with no citations.",
+      "run_id": "final2-grounded::mistralai/mistral-small-3-1-24b-instruct-2503::final2-g-024"
+    }
+  ],
+  "reviewed_at_utc": "2026-07-28T17:50:19+00:00",
+  "tone_triplet_decisions": [
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-001",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Conversational paraphrase is recognizably casual.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "This is identical to the formal/source sentence and lacks executive framing.",
+          "tone_recognizable": false
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "Formal and executive outputs are identical, so the triplet is not stylistically distinct.",
+        "triplet_distinct": false
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-002",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Adds 'at all times', which overstates the escort requirement.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Imperative, labelled rule is recognizably executive and preserves the obligation.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-003",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Natural wording and abbreviated admin accounts make the message recognizably casual.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Plain restatement without executive framing.",
+          "tone_recognizable": false
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "Formal and executive outputs are materially the same register.",
+        "triplet_distinct": false
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-004",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "The label-plus-requirement format is concise and executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-005",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes mandatory correction language to 'should', weakening the policy obligation.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Short, direct policy imperatives are recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-006",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Drops the material unit 'calendar' from 15 calendar days.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "A plain sentence with no distinctive executive framing.",
+          "tone_recognizable": false
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-007",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Conversational wording preserves the exception and continuing controls.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-008",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Narrows any interaction with a suspected phishing message to clicking a suspicious email, which omits other possible interactions.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Two direct conditional actions are suitable for an executive briefing.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'one hour' is semantically equivalent to '1 hour'.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-009",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Drops the material unit 'calendar' from 45 calendar days.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Drops the material unit 'calendar' from 45 calendar days.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-010",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Need written approval preserves the mandatory requirement.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Labelled approval statement is recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Human Resources is equivalent to HR; mandatory approval is preserved.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-011",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes '5 working days' to '5 days' and shortens line manager to manager.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Compact condition list is recognizably executive and preserves all requirements.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-012",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Direct approval and review conditions are concise and decision-oriented.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-013",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'Normally, it expires within' preserves the qualified normal-expiry rule.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Compact approval/record/expiry summary is recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-014",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'any proof ... you have' preserves 'when available'.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The output is essentially the source/formal wording and lacks executive reframing.",
+          "tone_recognizable": false
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "Formal and executive outputs are too similar to count as recognizably distinct.",
+        "triplet_distinct": false
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-015",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Conversational prohibitions and action steps preserve the source.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'refrain from' preserves the prohibition.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-016",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes managers' mandatory quarterly review to 'should', weakening the obligation.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Drops 'calendar' from the 90-calendar-day retention period.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-017",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Conversational wording preserves the prohibitions and requirements.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Compact storage and access controls are recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "The remote-access condition and all storage/device/VPN controls are preserved.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-018",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes HR's mandatory notice to 'should' and changes working days to workdays.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Narrows the blanket no-use rule to 'personal use' by family or visitors.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'two working days' is semantically equivalent to '2 working days'.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-019",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'can't give the okay' preserves that a line manager alone cannot waive the policy.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Direct comparison of approvals and record fields is recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::ibm/granite-4-h-small::final2-t-020",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The date conversion is factually equivalent, but the sentence is not recognizably casual.",
+          "tone_recognizable": false
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Plain restatement without executive framing.",
+          "tone_recognizable": false
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "Formal and executive outputs are nearly identical, and the casual output differs mainly by date formatting.",
+        "triplet_distinct": false
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-001",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'get' wording is sufficiently conversational for this short input.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "The Entitlement label is concise and executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-002",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The output is a plain policy restatement and is not recognizably casual.",
+          "tone_recognizable": false
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Rule and retention labels are recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-003",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The output is a plain restatement and lacks conversational style.",
+          "tone_recognizable": false
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "MFA-required label and compact list are recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-004",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Threshold and requirement labels are recognizably executive and imply KWD 3 or more.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-005",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes mandatory correction language to 'should', weakening the obligation.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "The compact standards list is recognizably executive and preserves the required standard.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-006",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The output is concise but remains a plain policy sentence rather than a casual message.",
+          "tone_recognizable": false
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Omits the condition that the employee joined after the first day and that accrual applies only if the threshold is met.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-007",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'can suspend' preserves the permission expressed by 'may'.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-008",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Second-person conditional wording is recognizably conversational.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Labelled conditional actions are concise and executive; imperatives preserve the obligations.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-009",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "'This only changes' ambiguously suggests both approval and rejection rules change when the delay is outside the employee's control; only rejection is excepted.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'possible' preserves 'may be rejected', and the labelled condition/exception structure is executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-010",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'need to get' preserves the mandatory written-approval requirement.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Human semantic/style review overrides the conservative lexical screening signal.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-011",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Labelled limit, conditions, and approval preserve all requirements.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-012",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Broadens the IT Operations trigger from routinely handling restricted data to any restricted data.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-013",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'usually expires within' preserves the qualified normal-expiry rule.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Drops 'should normally' and 'within', making the expiry appear fixed at 30 calendar days.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes 'should normally expire within 30 calendar days' to an unqualified normal rule of exactly 30 days.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-014",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'if available' preserves the evidence qualification.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Omits 'when available' and therefore makes proof of completion appear unconditionally required.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-015",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'can't gain' preserves the prohibition.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'no personal benefit' and the action labels preserve all procurement duties.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-016",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Changes managers' mandatory quarterly review to 'should'.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Imperative/labelled requirements preserve the visitor, retention, review, and removal rules.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-017",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "The output is accurate but remains a formal/plain instruction rather than a casual message.",
+          "tone_recognizable": false
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Labelled storage and remote-access controls are recognizably executive; the prohibitions remain clear.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-018",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'needs to let' is conversational while preserving HR's obligation.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Role-labelled actions are recognizably executive and preserve the no-use requirement.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-019",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "'can't approve it alone' preserves that a line manager alone cannot waive the policy.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": false,
+          "final_valid": false,
+          "language_preservation": true,
+          "reviewer_notes": "Omits the material rule that a line manager alone cannot waive the leave policy.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    },
+    {
+      "run_id": "final2-tone-triplet::mistralai/mistral-small-3-1-24b-instruct-2503::final2-t-020",
+      "tone_decisions": {
+        "casual_message": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "Natural wording is sufficiently conversational for this short factual input.",
+          "tone_recognizable": true
+        },
+        "concise_executive_briefing": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "The date label and compact policy list are recognizably executive.",
+          "tone_recognizable": true
+        },
+        "formal_report_summary": {
+          "factual_preservation": true,
+          "final_valid": true,
+          "language_preservation": true,
+          "reviewer_notes": "January 15, 2027 is semantically identical to 2027-01-15.",
+          "tone_recognizable": true
+        }
+      },
+      "triplet_decision": {
+        "reviewer_notes": "",
+        "triplet_distinct": true
+      }
+    }
+  ]
+}

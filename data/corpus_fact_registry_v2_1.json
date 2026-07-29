@@ -1,0 +1,2729 @@
+{
+  "corpus_version": "asteron-policies-v2.1",
+  "fact_count": 89,
+  "facts": [
+    {
+      "canonical_statement": "Full-time employees receive 24 working days of paid annual leave per calendar year.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-001",
+      "normative": true,
+      "section_title": "3. Annual Leave Entitlement and Accrual",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-001-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Full-time employees receive 24 working days of paid annual leave per calendar year.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "24"
+            }
+          ],
+          "scope": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "Full-time employees receive 24 working days of paid annual leave per calendar year.",
+          "subject": "Full-time employees receive 24 working days of paid annual leave per calendar year"
+        }
+      ],
+      "source_quote": "Full-time employees receive 24 working days of paid annual leave per calendar year."
+    },
+    {
+      "canonical_statement": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-002",
+      "normative": true,
+      "section_title": "3. Annual Leave Entitlement and Accrual",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-002-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours.",
+          "subject": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours"
+        }
+      ],
+      "source_quote": "Part-time employees receive a pro-rated annual-leave entitlement based on their contracted weekly hours."
+    },
+    {
+      "canonical_statement": "Full-time annual leave accrues at 2 working days per completed month.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-003",
+      "normative": true,
+      "section_title": "3. Annual Leave Entitlement and Accrual",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-003-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Full-time annual leave accrues at 2 working days per completed month.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            }
+          ],
+          "scope": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "Full-time annual leave accrues at 2 working days per completed month.",
+          "subject": "Full-time annual leave accrues at 2 working days per completed month"
+        }
+      ],
+      "source_quote": "Full-time annual leave accrues at 2 working days per completed month."
+    },
+    {
+      "canonical_statement": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-004",
+      "normative": true,
+      "section_title": "3. Annual Leave Entitlement and Accrual",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-004-C1",
+          "conditions": [
+            "the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month"
+          ],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "15"
+            }
+          ],
+          "scope": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month.",
+          "subject": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month"
+        }
+      ],
+      "source_quote": "An employee who joins after the first day of a month accrues leave for that month only if the employee works at least 15 calendar days in that month."
+    },
+    {
+      "canonical_statement": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-005",
+      "normative": true,
+      "section_title": "4. Probation, Advance Leave, and Eligibility",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "EL-005-C1",
+          "conditions": [
+            "it was agreed in the offer letter or HR approves a written exception"
+          ],
+          "exceptions": [
+            "it was agreed in the offer letter or HR approves a written exception"
+          ],
+          "modality": "may",
+          "negated": true,
+          "object": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception.",
+          "predicate": "may not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "90"
+            }
+          ],
+          "scope": "4. Probation, Advance Leave, and Eligibility",
+          "source_quote": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception.",
+          "subject": "During the first 90 calendar days of employment, an employee"
+        }
+      ],
+      "source_quote": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception."
+    },
+    {
+      "canonical_statement": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-006",
+      "normative": true,
+      "section_title": "4. Probation, Advance Leave, and Eligibility",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "HR"
+          ],
+          "clause_id": "EL-006-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval.",
+          "predicate": "requires",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "5"
+            }
+          ],
+          "scope": "4. Probation, Advance Leave, and Eligibility",
+          "source_quote": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval.",
+          "subject": "Advance annual leave"
+        }
+      ],
+      "source_quote": "Advance annual leave is limited to 5 working days and requires completed probation, no active disciplinary warning, confirmation of coverage by the line manager, and written HR approval."
+    },
+    {
+      "canonical_statement": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-007",
+      "normative": true,
+      "section_title": "5. Long Leave Requests and Approval Workflow",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "department head"
+          ],
+          "clause_id": "EL-007-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "10"
+            },
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "30"
+            }
+          ],
+          "scope": "5. Long Leave Requests and Approval Workflow",
+          "source_quote": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+          "subject": "Annual leave longer than 10 working days"
+        }
+      ],
+      "source_quote": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head."
+    },
+    {
+      "canonical_statement": "An employee must notify the line manager before the scheduled shift or no later than 1 hour after the shift starts when illness prevents attendance.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-008",
+      "normative": true,
+      "section_title": "6. Sick Leave Notification and Evidence",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager"
+          ],
+          "clause_id": "EL-008-C1",
+          "conditions": [
+            "the scheduled shift or no later than 1 hour after the shift starts when illness prevents attendance"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "An employee must notify the line manager before the scheduled shift or no later than 1 hour after the shift starts when illness prevents attendance.",
+          "predicate": "must not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "1"
+            }
+          ],
+          "scope": "6. Sick Leave Notification and Evidence",
+          "source_quote": "An employee must notify the line manager before the scheduled shift or no later than 1 hour after the shift starts when illness prevents attendance.",
+          "subject": "An employee"
+        }
+      ],
+      "source_quote": "An employee must notify the line manager before the scheduled shift or no later than 1 hour after the shift starts when illness prevents attendance."
+    },
+    {
+      "canonical_statement": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-009",
+      "normative": true,
+      "section_title": "6. Sick Leave Notification and Evidence",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-009-C1",
+          "conditions": [
+            "more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period"
+          ],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period.",
+          "predicate": "is required",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "3"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "60"
+            }
+          ],
+          "scope": "6. Sick Leave Notification and Evidence",
+          "source_quote": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period.",
+          "subject": "A medical certificate"
+        }
+      ],
+      "source_quote": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period."
+    },
+    {
+      "canonical_statement": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-010",
+      "normative": true,
+      "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-010-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "7"
+            },
+            {
+              "role": "policy value",
+              "unit": "March",
+              "value": "31"
+            }
+          ],
+          "scope": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March.",
+          "subject": "A maximum of 7 unused working days"
+        }
+      ],
+      "source_quote": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March."
+    },
+    {
+      "canonical_statement": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-011",
+      "normative": true,
+      "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head",
+            "HR"
+          ],
+          "clause_id": "EL-011-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "April",
+              "value": "30"
+            }
+          ],
+          "scope": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement.",
+          "subject": "HR and the department head"
+        }
+      ],
+      "source_quote": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement."
+    },
+    {
+      "canonical_statement": "An employee with an unplanned absence must notify the line manager and HR within 1 hour when practicable and provide a daily update until the expected return date is known.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-012",
+      "normative": true,
+      "section_title": "10. Unplanned Absence and Return to Work",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "HR"
+          ],
+          "clause_id": "EL-012-C1",
+          "conditions": [
+            "practicable and provide a daily update until the expected return date is known"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An employee with an unplanned absence must notify the line manager and HR within 1 hour when practicable and provide a daily update until the expected return date is known.",
+          "predicate": "must not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "1"
+            }
+          ],
+          "scope": "10. Unplanned Absence and Return to Work",
+          "source_quote": "An employee with an unplanned absence must notify the line manager and HR within 1 hour when practicable and provide a daily update until the expected return date is known.",
+          "subject": "An employee with an unplanned absence"
+        }
+      ],
+      "source_quote": "An employee with an unplanned absence must notify the line manager and HR within 1 hour when practicable and provide a daily update until the expected return date is known."
+    },
+    {
+      "canonical_statement": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-013",
+      "normative": true,
+      "section_title": "12. Exceptions, Ownership, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "department head",
+            "HR",
+            "HR Director"
+          ],
+          "clause_id": "EL-013-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy.",
+          "predicate": "requires",
+          "quantities": [],
+          "scope": "12. Exceptions, Ownership, and Review",
+          "source_quote": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy.",
+          "subject": "A policy exception"
+        }
+      ],
+      "source_quote": "A policy exception requires written approval from the HR Director and the relevant department head; a line manager alone cannot waive the policy."
+    },
+    {
+      "canonical_statement": "The next scheduled review date is 2027-01-15.",
+      "document_id": "policy-employee-leave-v2-1",
+      "fact_id": "EL-014",
+      "normative": true,
+      "section_title": "12. Exceptions, Ownership, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EL-014-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "The next scheduled review date is 2027-01-15.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2027"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "01"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "12. Exceptions, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15.",
+          "subject": "The next scheduled review date"
+        }
+      ],
+      "source_quote": "The next scheduled review date is 2027-01-15."
+    },
+    {
+      "canonical_statement": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-001",
+      "normative": true,
+      "section_title": "2. Eligibility for Ordinary Flexible Work",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-001-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan.",
+          "predicate": "requires",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "months",
+              "value": "6"
+            }
+          ],
+          "scope": "2. Eligibility for Ordinary Flexible Work",
+          "source_quote": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan.",
+          "subject": "Ordinary flexible-work eligibility"
+        }
+      ],
+      "source_quote": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan."
+    },
+    {
+      "canonical_statement": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-002",
+      "normative": true,
+      "section_title": "3. Standard Work Location and Weekly Limits",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-002-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            }
+          ],
+          "scope": "3. Standard Work Location and Weekly Limits",
+          "source_quote": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait.",
+          "subject": "An ordinary flexible-work arrangement"
+        }
+      ],
+      "source_quote": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait."
+    },
+    {
+      "canonical_statement": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-003",
+      "normative": true,
+      "section_title": "4. Approval Workflow and Decision Records",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "department head",
+            "HR"
+          ],
+          "clause_id": "FW-003-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR.",
+          "predicate": "requires",
+          "quantities": [],
+          "scope": "4. Approval Workflow and Decision Records",
+          "source_quote": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR.",
+          "subject": "An ordinary flexible-work arrangement"
+        }
+      ],
+      "source_quote": "An ordinary flexible-work arrangement requires approval from the line manager, department head, and HR."
+    },
+    {
+      "canonical_statement": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-004",
+      "normative": true,
+      "section_title": "4. Approval Workflow and Decision Records",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "IT Operations"
+          ],
+          "clause_id": "FW-004-C1",
+          "conditions": [
+            "the role uses elevated access or routinely handles restricted data"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "4. Approval Workflow and Decision Records",
+          "source_quote": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data.",
+          "subject": "IT Operations"
+        }
+      ],
+      "source_quote": "IT Operations must also review a flexible-work request when the role uses elevated access or routinely handles restricted data."
+    },
+    {
+      "canonical_statement": "An approved ordinary flexible-work arrangement lasts 6 months and must be reviewed before renewal; approval is not permanent.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-005",
+      "normative": true,
+      "section_title": "5. Duration, Review, and Renewal",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-005-C1",
+          "conditions": [
+            "renewal"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "An approved ordinary flexible-work arrangement lasts 6 months and must be reviewed before renewal; approval is not permanent.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "months",
+              "value": "6"
+            }
+          ],
+          "scope": "5. Duration, Review, and Renewal",
+          "source_quote": "An approved ordinary flexible-work arrangement lasts 6 months and must be reviewed before renewal; approval is not permanent.",
+          "subject": "An approved ordinary flexible-work arrangement lasts 6 months and"
+        }
+      ],
+      "source_quote": "An approved ordinary flexible-work arrangement lasts 6 months and must be reviewed before renewal; approval is not permanent."
+    },
+    {
+      "canonical_statement": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-006",
+      "normative": true,
+      "section_title": "6. Core Hours, Availability, and Meetings",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-006-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "10"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "00"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "3"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "00"
+            }
+          ],
+          "scope": "6. Core Hours, Availability, and Meetings",
+          "source_quote": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday.",
+          "subject": "Core working hours"
+        }
+      ],
+      "source_quote": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday."
+    },
+    {
+      "canonical_statement": "During core hours, a remote employee should normally acknowledge a message from a manager, project lead, or client-facing colleague within 30 minutes unless the employee is in another meeting.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-007",
+      "normative": true,
+      "section_title": "6. Core Hours, Availability, and Meetings",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-007-C1",
+          "conditions": [
+            "the employee is in another meeting"
+          ],
+          "exceptions": [
+            "the employee is in another meeting"
+          ],
+          "modality": "should",
+          "negated": false,
+          "object": "During core hours, a remote employee should normally acknowledge a message from a manager, project lead, or client-facing colleague within 30 minutes unless the employee is in another meeting.",
+          "predicate": "should",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "minutes",
+              "value": "30"
+            }
+          ],
+          "scope": "6. Core Hours, Availability, and Meetings",
+          "source_quote": "During core hours, a remote employee should normally acknowledge a message from a manager, project lead, or client-facing colleague within 30 minutes unless the employee is in another meeting.",
+          "subject": "During core hours, a remote employee"
+        }
+      ],
+      "source_quote": "During core hours, a remote employee should normally acknowledge a message from a manager, project lead, or client-facing colleague within 30 minutes unless the employee is in another meeting."
+    },
+    {
+      "canonical_statement": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-008",
+      "normative": true,
+      "section_title": "7. Required Office Attendance and Client Obligations",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-008-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "1"
+            }
+          ],
+          "scope": "7. Required Office Attendance and Client Obligations",
+          "source_quote": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency.",
+          "subject": "A manager"
+        }
+      ],
+      "source_quote": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency."
+    },
+    {
+      "canonical_statement": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-009",
+      "normative": true,
+      "section_title": "8. Working from Outside Kuwait",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head",
+            "HR",
+            "IT Operations"
+          ],
+          "clause_id": "FW-009-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations.",
+          "predicate": "requires",
+          "quantities": [],
+          "scope": "8. Working from Outside Kuwait",
+          "source_quote": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations.",
+          "subject": "Working from outside Kuwait"
+        }
+      ],
+      "source_quote": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations."
+    },
+    {
+      "canonical_statement": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-010",
+      "normative": true,
+      "section_title": "8. Working from Outside Kuwait",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-010-C1",
+          "conditions": [
+            "travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "15"
+            }
+          ],
+          "scope": "8. Working from Outside Kuwait",
+          "source_quote": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details.",
+          "subject": "A request to work from outside Kuwait"
+        }
+      ],
+      "source_quote": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details."
+    },
+    {
+      "canonical_statement": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-011",
+      "normative": true,
+      "section_title": "8. Working from Outside Kuwait",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-011-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "10"
+            }
+          ],
+          "scope": "8. Working from Outside Kuwait",
+          "source_quote": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+          "subject": "Approved outside-Kuwait work"
+        }
+      ],
+      "source_quote": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year."
+    },
+    {
+      "canonical_statement": "Outside-Kuwait work may be refused because of client-data restrictions, tax or employment concerns, sanctions risk, time-zone impact, or security controls.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-012",
+      "normative": true,
+      "section_title": "8. Working from Outside Kuwait",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-012-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "Outside-Kuwait work may be refused because of client-data restrictions, tax or employment concerns, sanctions risk, time-zone impact, or security controls.",
+          "predicate": "may",
+          "quantities": [],
+          "scope": "8. Working from Outside Kuwait",
+          "source_quote": "Outside-Kuwait work may be refused because of client-data restrictions, tax or employment concerns, sanctions risk, time-zone impact, or security controls.",
+          "subject": "Outside-Kuwait work"
+        }
+      ],
+      "source_quote": "Outside-Kuwait work may be refused because of client-data restrictions, tax or employment concerns, sanctions risk, time-zone impact, or security controls."
+    },
+    {
+      "canonical_statement": "Temporary remote work may be approved for up to 5 working days when the manager documents the reason and expected end date.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-013",
+      "normative": true,
+      "section_title": "9. Temporary and Business Continuity Arrangements",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-013-C1",
+          "conditions": [
+            "the manager documents the reason and expected end date"
+          ],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "Temporary remote work may be approved for up to 5 working days when the manager documents the reason and expected end date.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "5"
+            }
+          ],
+          "scope": "9. Temporary and Business Continuity Arrangements",
+          "source_quote": "Temporary remote work may be approved for up to 5 working days when the manager documents the reason and expected end date.",
+          "subject": "Temporary remote work"
+        }
+      ],
+      "source_quote": "Temporary remote work may be approved for up to 5 working days when the manager documents the reason and expected end date."
+    },
+    {
+      "canonical_statement": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-014",
+      "normative": true,
+      "section_title": "9. Temporary and Business Continuity Arrangements",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Chief Operating Officer"
+          ],
+          "clause_id": "FW-014-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2"
+            }
+          ],
+          "scope": "9. Temporary and Business Continuity Arrangements",
+          "source_quote": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply.",
+          "subject": "During a company-directed business-continuity arrangement, the Chief Operating Officer"
+        }
+      ],
+      "source_quote": "During a company-directed business-continuity arrangement, the Chief Operating Officer may suspend the ordinary 2-day weekly limit, but security and confidentiality rules continue to apply."
+    },
+    {
+      "canonical_statement": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-015",
+      "normative": true,
+      "section_title": "10. Equipment, Connectivity, and Workspace",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-015-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "10. Equipment, Connectivity, and Workspace",
+          "source_quote": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy.",
+          "subject": "Ordinary home internet"
+        }
+      ],
+      "source_quote": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy."
+    },
+    {
+      "canonical_statement": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-016",
+      "normative": true,
+      "section_title": "10. Equipment, Connectivity, and Workspace",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-016-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices.",
+          "predicate": "must not",
+          "quantities": [],
+          "scope": "10. Equipment, Connectivity, and Workspace",
+          "source_quote": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices.",
+          "subject": "Company equipment"
+        }
+      ],
+      "source_quote": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices."
+    },
+    {
+      "canonical_statement": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-017",
+      "normative": true,
+      "section_title": "11. Workplace Access, Visitors, and Records",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-017-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "90"
+            }
+          ],
+          "scope": "11. Workplace Access, Visitors, and Records",
+          "source_quote": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days.",
+          "subject": "A workplace visitor"
+        }
+      ],
+      "source_quote": "A workplace visitor must be pre-registered by the host and escorted in restricted areas; visitor-access records are retained for 90 calendar days."
+    },
+    {
+      "canonical_statement": "The next scheduled review date is 2027-01-15.",
+      "document_id": "policy-flexible-work-v2-1",
+      "fact_id": "FW-018",
+      "normative": true,
+      "section_title": "12. Exceptions, Ownership, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "FW-018-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "The next scheduled review date is 2027-01-15.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2027"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "01"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "12. Exceptions, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15.",
+          "subject": "The next scheduled review date"
+        }
+      ],
+      "source_quote": "The next scheduled review date is 2027-01-15."
+    },
+    {
+      "canonical_statement": "A company-account password must contain at least 14 characters.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-001",
+      "normative": true,
+      "section_title": "2. Identity, Passwords, and Authentication",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-001-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A company-account password must contain at least 14 characters.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "characters",
+              "value": "14"
+            }
+          ],
+          "scope": "2. Identity, Passwords, and Authentication",
+          "source_quote": "A company-account password must contain at least 14 characters.",
+          "subject": "A company-account password"
+        }
+      ],
+      "source_quote": "A company-account password must contain at least 14 characters."
+    },
+    {
+      "canonical_statement": "An account is locked for 15 minutes after 5 failed sign-in attempts.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-002",
+      "normative": true,
+      "section_title": "2. Identity, Passwords, and Authentication",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-002-C1",
+          "conditions": [
+            "5 failed sign-in attempts"
+          ],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "An account is locked for 15 minutes after 5 failed sign-in attempts.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "minutes",
+              "value": "15"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "5"
+            }
+          ],
+          "scope": "2. Identity, Passwords, and Authentication",
+          "source_quote": "An account is locked for 15 minutes after 5 failed sign-in attempts.",
+          "subject": "An account"
+        }
+      ],
+      "source_quote": "An account is locked for 15 minutes after 5 failed sign-in attempts."
+    },
+    {
+      "canonical_statement": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-003",
+      "normative": true,
+      "section_title": "3. Multi-Factor Authentication and Session Security",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-003-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts.",
+          "predicate": "is required",
+          "quantities": [],
+          "scope": "3. Multi-Factor Authentication and Session Security",
+          "source_quote": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts.",
+          "subject": "Multi-factor authentication"
+        }
+      ],
+      "source_quote": "Multi-factor authentication is required for company email, remote access, finance systems, and administrative accounts."
+    },
+    {
+      "canonical_statement": "Privileged access requires approval from the line manager and the system owner.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-004",
+      "normative": true,
+      "section_title": "5. Privileged and Emergency Access",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "system owner"
+          ],
+          "clause_id": "IS-004-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Privileged access requires approval from the line manager and the system owner.",
+          "predicate": "requires",
+          "quantities": [],
+          "scope": "5. Privileged and Emergency Access",
+          "source_quote": "Privileged access requires approval from the line manager and the system owner.",
+          "subject": "Privileged access"
+        }
+      ],
+      "source_quote": "Privileged access requires approval from the line manager and the system owner."
+    },
+    {
+      "canonical_statement": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-005",
+      "normative": true,
+      "section_title": "5. Privileged and Emergency Access",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-005-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days.",
+          "predicate": "must not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "7"
+            }
+          ],
+          "scope": "5. Privileged and Emergency Access",
+          "source_quote": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days.",
+          "subject": "Temporary privileged access"
+        }
+      ],
+      "source_quote": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days."
+    },
+    {
+      "canonical_statement": "Emergency privileged access must be reviewed by Information Security within 2 working days after use.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-006",
+      "normative": true,
+      "section_title": "5. Privileged and Emergency Access",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Information Security"
+          ],
+          "clause_id": "IS-006-C1",
+          "conditions": [
+            "use"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Emergency privileged access must be reviewed by Information Security within 2 working days after use.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            }
+          ],
+          "scope": "5. Privileged and Emergency Access",
+          "source_quote": "Emergency privileged access must be reviewed by Information Security within 2 working days after use.",
+          "subject": "Emergency privileged access"
+        }
+      ],
+      "source_quote": "Emergency privileged access must be reviewed by Information Security within 2 working days after use."
+    },
+    {
+      "canonical_statement": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-007",
+      "normative": true,
+      "section_title": "6. Data Classification and Approved Storage",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-007-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage.",
+          "predicate": "must not",
+          "quantities": [],
+          "scope": "6. Data Classification and Approved Storage",
+          "source_quote": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage.",
+          "subject": "Confidential or restricted information"
+        }
+      ],
+      "source_quote": "Confidential or restricted information must be stored only in approved company systems and must not be sent to personal email or personal cloud storage."
+    },
+    {
+      "canonical_statement": "Remote access requires a company-managed encrypted device and the approved company VPN.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-008",
+      "normative": true,
+      "section_title": "7. Remote Access and Device Security",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-008-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Remote access requires a company-managed encrypted device and the approved company VPN.",
+          "predicate": "requires",
+          "quantities": [],
+          "scope": "7. Remote Access and Device Security",
+          "source_quote": "Remote access requires a company-managed encrypted device and the approved company VPN.",
+          "subject": "Remote access"
+        }
+      ],
+      "source_quote": "Remote access requires a company-managed encrypted device and the approved company VPN."
+    },
+    {
+      "canonical_statement": "The policy intentionally does not identify the VPN vendor, VPN product name, or VPN software version.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-009",
+      "normative": true,
+      "section_title": "7. Remote Access and Device Security",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-009-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "The policy intentionally does not identify the VPN vendor, VPN product name, or VPN software version.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "7. Remote Access and Device Security",
+          "source_quote": "The policy intentionally does not identify the VPN vendor, VPN product name, or VPN software version.",
+          "subject": "The policy intentionally does not identify the VPN vendor, VPN product name, or VPN software version"
+        }
+      ],
+      "source_quote": "The policy intentionally does not identify the VPN vendor, VPN product name, or VPN software version."
+    },
+    {
+      "canonical_statement": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-010",
+      "normative": true,
+      "section_title": "8. Phishing and Suspicious Messages",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Information Security"
+          ],
+          "clause_id": "IS-010-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "1"
+            }
+          ],
+          "scope": "8. Phishing and Suspicious Messages",
+          "source_quote": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery.",
+          "subject": "An employee who interacted with a suspected phishing message"
+        }
+      ],
+      "source_quote": "An employee who interacted with a suspected phishing message must use the phishing-report button and notify Information Security within 1 hour of discovery."
+    },
+    {
+      "canonical_statement": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-011",
+      "normative": true,
+      "section_title": "8. Phishing and Suspicious Messages",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-011-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "8. Phishing and Suspicious Messages",
+          "source_quote": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day.",
+          "subject": "An employee who did not interact with a suspected phishing message"
+        }
+      ],
+      "source_quote": "An employee who did not interact with a suspected phishing message must use the phishing-report button by the end of the working day."
+    },
+    {
+      "canonical_statement": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-012",
+      "normative": true,
+      "section_title": "9. Security Incidents and Lost Devices",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "IT Operations"
+          ],
+          "clause_id": "IS-012-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "1"
+            }
+          ],
+          "scope": "9. Security Incidents and Lost Devices",
+          "source_quote": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery.",
+          "subject": "A lost or stolen company laptop, phone, security key, or storage device"
+        }
+      ],
+      "source_quote": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery."
+    },
+    {
+      "canonical_statement": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-013",
+      "normative": true,
+      "section_title": "10. Access Reviews and Removal",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "system owner"
+          ],
+          "clause_id": "IS-013-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "3"
+            }
+          ],
+          "scope": "10. Access Reviews and Removal",
+          "source_quote": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery.",
+          "subject": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery"
+        }
+      ],
+      "source_quote": "Managers must review team access at least quarterly, system owners must review privileged and finance-related access monthly, and unnecessary access must be removed within 3 working days of discovery."
+    },
+    {
+      "canonical_statement": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-014",
+      "normative": true,
+      "section_title": "11. Joiners, Movers, and Planned Exits",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR",
+            "IT Operations"
+          ],
+          "clause_id": "IS-014-C1",
+          "conditions": [
+            "the last working day and standard system access must be disabled by the end of the final working day"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+          "predicate": "must not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            }
+          ],
+          "scope": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+          "subject": "For a planned employee exit, HR"
+        }
+      ],
+      "source_quote": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day."
+    },
+    {
+      "canonical_statement": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-015",
+      "normative": true,
+      "section_title": "11. Joiners, Movers, and Planned Exits",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "IS-015-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction.",
+          "predicate": "may",
+          "quantities": [],
+          "scope": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction.",
+          "subject": "For an involuntary termination or urgent risk, access"
+        }
+      ],
+      "source_quote": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction."
+    },
+    {
+      "canonical_statement": "Company-managed endpoint protection is required, but the policy intentionally does not identify its brand, provider, product name, or version.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-016",
+      "normative": true,
+      "section_title": "12. Exceptions, Endpoint Protection, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-016-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Company-managed endpoint protection is required, but the policy intentionally does not identify its brand, provider, product name, or version.",
+          "predicate": "is required",
+          "quantities": [],
+          "scope": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "Company-managed endpoint protection is required, but the policy intentionally does not identify its brand, provider, product name, or version.",
+          "subject": "Company-managed endpoint protection"
+        }
+      ],
+      "source_quote": "Company-managed endpoint protection is required, but the policy intentionally does not identify its brand, provider, product name, or version."
+    },
+    {
+      "canonical_statement": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-017",
+      "normative": true,
+      "section_title": "12. Exceptions, Endpoint Protection, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Information Security",
+            "system owner"
+          ],
+          "clause_id": "IS-017-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date.",
+          "subject": "A security exception"
+        }
+      ],
+      "source_quote": "A security exception requires approval from Information Security and the relevant system owner and must record the business reason, compensating control, owner, expiry date, and review date."
+    },
+    {
+      "canonical_statement": "A security exception should normally expire within 30 calendar days.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-018",
+      "normative": true,
+      "section_title": "12. Exceptions, Endpoint Protection, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-018-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "should",
+          "negated": false,
+          "object": "A security exception should normally expire within 30 calendar days.",
+          "predicate": "should",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "30"
+            }
+          ],
+          "scope": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "A security exception should normally expire within 30 calendar days.",
+          "subject": "A security exception"
+        }
+      ],
+      "source_quote": "A security exception should normally expire within 30 calendar days."
+    },
+    {
+      "canonical_statement": "The next scheduled review date is 2027-01-15.",
+      "document_id": "policy-information-security-v2-1",
+      "fact_id": "IS-019",
+      "normative": true,
+      "section_title": "12. Exceptions, Endpoint Protection, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "IS-019-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "The next scheduled review date is 2027-01-15.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2027"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "01"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "12. Exceptions, Endpoint Protection, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15.",
+          "subject": "The next scheduled review date"
+        }
+      ],
+      "source_quote": "The next scheduled review date is 2027-01-15."
+    },
+    {
+      "canonical_statement": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-001",
+      "normative": true,
+      "section_title": "5. Ground Transport and Personal Mileage",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-001-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "per kilometer",
+              "value": "KWD 0.090"
+            }
+          ],
+          "scope": "5. Ground Transport and Personal Mileage",
+          "source_quote": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer.",
+          "subject": "Use of a personal car for approved business travel within Kuwait"
+        }
+      ],
+      "source_quote": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer."
+    },
+    {
+      "canonical_statement": "A mileage claim must include the start point, destination, business purpose, date, and kilometers traveled.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-002",
+      "normative": true,
+      "section_title": "5. Ground Transport and Personal Mileage",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-002-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A mileage claim must include the start point, destination, business purpose, date, and kilometers traveled.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "5. Ground Transport and Personal Mileage",
+          "source_quote": "A mileage claim must include the start point, destination, business purpose, date, and kilometers traveled.",
+          "subject": "A mileage claim"
+        }
+      ],
+      "source_quote": "A mileage claim must include the start point, destination, business purpose, date, and kilometers traveled."
+    },
+    {
+      "canonical_statement": "Economy class is the standard for flights under 6 hours.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-003",
+      "normative": true,
+      "section_title": "3. Air Travel and Class of Service",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-003-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Economy class is the standard for flights under 6 hours.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "6"
+            }
+          ],
+          "scope": "3. Air Travel and Class of Service",
+          "source_quote": "Economy class is the standard for flights under 6 hours.",
+          "subject": "Economy class"
+        }
+      ],
+      "source_quote": "Economy class is the standard for flights under 6 hours."
+    },
+    {
+      "canonical_statement": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-004",
+      "normative": true,
+      "section_title": "3. Air Travel and Class of Service",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head"
+          ],
+          "clause_id": "EX-004-C1",
+          "conditions": [
+            "the department head approves before booking"
+          ],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "6"
+            }
+          ],
+          "scope": "3. Air Travel and Class of Service",
+          "source_quote": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+          "subject": "Premium economy"
+        }
+      ],
+      "source_quote": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking."
+    },
+    {
+      "canonical_statement": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-005",
+      "normative": true,
+      "section_title": "3. Air Travel and Class of Service",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Chief Operating Officer"
+          ],
+          "clause_id": "EX-005-C1",
+          "conditions": [
+            "the Chief Operating Officer approves a specific exception before booking"
+          ],
+          "exceptions": [
+            "the Chief Operating Officer approves a specific exception before booking"
+          ],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "3. Air Travel and Class of Service",
+          "source_quote": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.",
+          "subject": "Business class"
+        }
+      ],
+      "source_quote": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking."
+    },
+    {
+      "canonical_statement": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-006",
+      "normative": true,
+      "section_title": "4. Hotels and Accommodation",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-006-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "per night",
+              "value": "KWD 55"
+            }
+          ],
+          "scope": "4. Hotels and Accommodation",
+          "source_quote": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges.",
+          "subject": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment"
+        }
+      ],
+      "source_quote": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges."
+    },
+    {
+      "canonical_statement": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-007",
+      "normative": true,
+      "section_title": "4. Hotels and Accommodation",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-007-C1",
+          "conditions": [
+            "Finance has published the destination as high-cost"
+          ],
+          "exceptions": [
+            "Finance has published the destination as high-cost"
+          ],
+          "modality": "declarative",
+          "negated": false,
+          "object": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "per night",
+              "value": "KWD 75"
+            }
+          ],
+          "scope": "4. Hotels and Accommodation",
+          "source_quote": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost.",
+          "subject": "For GCC business travel outside Kuwait, reimbursable hotel accommodation"
+        }
+      ],
+      "source_quote": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost."
+    },
+    {
+      "canonical_statement": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-008",
+      "normative": true,
+      "section_title": "6. Meals and Daily Limits",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-008-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 9"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "KWD 12"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "KWD 15"
+            }
+          ],
+          "scope": "6. Meals and Daily Limits",
+          "source_quote": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges.",
+          "subject": "Approved business-travel meal limits"
+        }
+      ],
+      "source_quote": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges."
+    },
+    {
+      "canonical_statement": "A separate breakfast claim is not reimbursable when breakfast is included in the hotel rate.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-009",
+      "normative": true,
+      "section_title": "6. Meals and Daily Limits",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-009-C1",
+          "conditions": [
+            "breakfast is included in the hotel rate"
+          ],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "A separate breakfast claim is not reimbursable when breakfast is included in the hotel rate.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "6. Meals and Daily Limits",
+          "source_quote": "A separate breakfast claim is not reimbursable when breakfast is included in the hotel rate.",
+          "subject": "A separate breakfast claim"
+        }
+      ],
+      "source_quote": "A separate breakfast claim is not reimbursable when breakfast is included in the hotel rate."
+    },
+    {
+      "canonical_statement": "Client entertainment expected to exceed KWD 40 per person requires department head pre-approval.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-010",
+      "normative": true,
+      "section_title": "7. Client Entertainment and Business Gifts",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head"
+          ],
+          "clause_id": "EX-010-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Client entertainment expected to exceed KWD 40 per person requires department head pre-approval.",
+          "predicate": "requires",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 40"
+            }
+          ],
+          "scope": "7. Client Entertainment and Business Gifts",
+          "source_quote": "Client entertainment expected to exceed KWD 40 per person requires department head pre-approval.",
+          "subject": "Client entertainment expected to exceed KWD 40 per person"
+        }
+      ],
+      "source_quote": "Client entertainment expected to exceed KWD 40 per person requires department head pre-approval."
+    },
+    {
+      "canonical_statement": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-011",
+      "normative": true,
+      "section_title": "7. Client Entertainment and Business Gifts",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Chief Commercial Officer"
+          ],
+          "clause_id": "EX-011-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": true,
+          "object": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval.",
+          "predicate": "may not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 25"
+            }
+          ],
+          "scope": "7. Client Entertainment and Business Gifts",
+          "source_quote": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval.",
+          "subject": "A single client gift"
+        }
+      ],
+      "source_quote": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval."
+    },
+    {
+      "canonical_statement": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-012",
+      "normative": true,
+      "section_title": "8. Training, Conferences, Mobile, and Internet",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-012-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "month",
+              "value": "KWD 10"
+            }
+          ],
+          "scope": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval.",
+          "subject": "A temporary business mobile-data package"
+        }
+      ],
+      "source_quote": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval."
+    },
+    {
+      "canonical_statement": "Ordinary home internet is not reimbursable.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-013",
+      "normative": true,
+      "section_title": "8. Training, Conferences, Mobile, and Internet",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-013-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Ordinary home internet is not reimbursable.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Ordinary home internet is not reimbursable.",
+          "subject": "Ordinary home internet"
+        }
+      ],
+      "source_quote": "Ordinary home internet is not reimbursable."
+    },
+    {
+      "canonical_statement": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-014",
+      "normative": true,
+      "section_title": "8. Training, Conferences, Mobile, and Internet",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "line manager",
+            "department head",
+            "HR",
+            "HR Learning"
+          ],
+          "clause_id": "EX-014-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 150"
+            }
+          ],
+          "scope": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval.",
+          "subject": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval"
+        }
+      ],
+      "source_quote": "Training and conference expenses require pre-approval from the line manager and department head; registration fees above KWD 150 also require HR Learning approval."
+    },
+    {
+      "canonical_statement": "Training and conference claims must include the agenda or course description and proof of completion when available.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-015",
+      "normative": true,
+      "section_title": "8. Training, Conferences, Mobile, and Internet",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-015-C1",
+          "conditions": [
+            "available"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Training and conference claims must include the agenda or course description and proof of completion when available.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Training and conference claims must include the agenda or course description and proof of completion when available.",
+          "subject": "Training and conference claims"
+        }
+      ],
+      "source_quote": "Training and conference claims must include the agenda or course description and proof of completion when available."
+    },
+    {
+      "canonical_statement": "An itemized receipt is required for every expense of KWD 3 or more.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-016",
+      "normative": true,
+      "section_title": "9. Receipts and Missing Documentation",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-016-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "An itemized receipt is required for every expense of KWD 3 or more.",
+          "predicate": "is required",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 3"
+            }
+          ],
+          "scope": "9. Receipts and Missing Documentation",
+          "source_quote": "An itemized receipt is required for every expense of KWD 3 or more.",
+          "subject": "An itemized receipt"
+        }
+      ],
+      "source_quote": "An itemized receipt is required for every expense of KWD 3 or more."
+    },
+    {
+      "canonical_statement": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-017",
+      "normative": true,
+      "section_title": "9. Receipts and Missing Documentation",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-017-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": true,
+          "object": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "KWD",
+              "value": "KWD 20"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "3"
+            }
+          ],
+          "scope": "9. Receipts and Missing Documentation",
+          "source_quote": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+          "subject": "A missing-receipt declaration"
+        }
+      ],
+      "source_quote": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter."
+    },
+    {
+      "canonical_statement": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-018",
+      "normative": true,
+      "section_title": "10. Submission Deadlines and Currency Conversion",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-018-C1",
+          "conditions": [
+            "the expense date, or within 15 calendar days after returning to Kuwait for business travel"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "15"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "10. Submission Deadlines and Currency Conversion",
+          "source_quote": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel.",
+          "subject": "An expense claim"
+        }
+      ],
+      "source_quote": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel."
+    },
+    {
+      "canonical_statement": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-019",
+      "normative": true,
+      "section_title": "10. Submission Deadlines and Currency Conversion",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "Finance Manager"
+          ],
+          "clause_id": "EX-019-C1",
+          "conditions": [
+            "the delay was outside the employee's control"
+          ],
+          "exceptions": [
+            "the delay was outside the employee's control"
+          ],
+          "modality": "may",
+          "negated": false,
+          "object": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control.",
+          "predicate": "may",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "calendar days",
+              "value": "45"
+            }
+          ],
+          "scope": "10. Submission Deadlines and Currency Conversion",
+          "source_quote": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control.",
+          "subject": "A claim submitted more than 45 calendar days late"
+        }
+      ],
+      "source_quote": "A claim submitted more than 45 calendar days late requires Finance Manager approval and may be rejected unless the delay was outside the employee's control."
+    },
+    {
+      "canonical_statement": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-020",
+      "normative": true,
+      "section_title": "11. Corporate Cards and Accidental Personal Charges",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-020-C1",
+          "conditions": [
+            "Finance confirms the amount"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount.",
+          "predicate": "must not",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "5"
+            }
+          ],
+          "scope": "11. Corporate Cards and Accidental Personal Charges",
+          "source_quote": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount.",
+          "subject": "After an accidental personal charge on a corporate card, the employee"
+        }
+      ],
+      "source_quote": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount."
+    },
+    {
+      "canonical_statement": "Corporate-card holders must submit monthly statements and receipts by the 10th calendar day of the following month.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-021",
+      "normative": true,
+      "section_title": "11. Corporate Cards and Accidental Personal Charges",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-021-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Corporate-card holders must submit monthly statements and receipts by the 10th calendar day of the following month.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "11. Corporate Cards and Accidental Personal Charges",
+          "source_quote": "Corporate-card holders must submit monthly statements and receipts by the 10th calendar day of the following month.",
+          "subject": "Corporate-card holders"
+        }
+      ],
+      "source_quote": "Corporate-card holders must submit monthly statements and receipts by the 10th calendar day of the following month."
+    },
+    {
+      "canonical_statement": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-022",
+      "normative": true,
+      "section_title": "12. Exceptions, Disputes, Ownership, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head",
+            "Finance Manager"
+          ],
+          "clause_id": "EX-022-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "12. Exceptions, Disputes, Ownership, and Review",
+          "source_quote": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable.",
+          "subject": "An expense-policy exception"
+        }
+      ],
+      "source_quote": "An expense-policy exception requires written approval from the Finance Manager and the relevant department head and must record the business reason, amount, date, and whether the cost is client-billable."
+    },
+    {
+      "canonical_statement": "The next scheduled review date is 2027-01-15.",
+      "document_id": "policy-travel-expense-v2-1",
+      "fact_id": "EX-023",
+      "normative": true,
+      "section_title": "12. Exceptions, Disputes, Ownership, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "EX-023-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "The next scheduled review date is 2027-01-15.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2027"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "01"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "12. Exceptions, Disputes, Ownership, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15.",
+          "subject": "The next scheduled review date"
+        }
+      ],
+      "source_quote": "The next scheduled review date is 2027-01-15."
+    },
+    {
+      "canonical_statement": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-001",
+      "normative": true,
+      "section_title": "3. Conflicts of Interest and Disclosure",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "CO-001-C1",
+          "conditions": [
+            "participating in the related decision"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "3. Conflicts of Interest and Disclosure",
+          "source_quote": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision.",
+          "subject": "An employee"
+        }
+      ],
+      "source_quote": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision."
+    },
+    {
+      "canonical_statement": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-002",
+      "normative": true,
+      "section_title": "3. Conflicts of Interest and Disclosure",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "CO-002-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client.",
+          "predicate": "may",
+          "quantities": [],
+          "scope": "3. Conflicts of Interest and Disclosure",
+          "source_quote": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client.",
+          "subject": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client"
+        }
+      ],
+      "source_quote": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client."
+    },
+    {
+      "canonical_statement": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-003",
+      "normative": true,
+      "section_title": "4. Outside Employment and Personal Relationships",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "department head",
+            "HR"
+          ],
+          "clause_id": "CO-003-C1",
+          "conditions": [
+            "it begins"
+          ],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins.",
+          "predicate": "may",
+          "quantities": [],
+          "scope": "4. Outside Employment and Personal Relationships",
+          "source_quote": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins.",
+          "subject": "Outside employment involving a competitor or vendor, or work that"
+        }
+      ],
+      "source_quote": "Outside employment involving a competitor or vendor, or work that may affect company duties, requires written approval from HR and the department head before it begins."
+    },
+    {
+      "canonical_statement": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-004",
+      "normative": true,
+      "section_title": "4. Outside Employment and Personal Relationships",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "CO-004-C1",
+          "conditions": [
+            "one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "4. Outside Employment and Personal Relationships",
+          "source_quote": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision.",
+          "subject": "A personal relationship"
+        }
+      ],
+      "source_quote": "A personal relationship must be disclosed to HR when one person can affect the other person's reporting line, pay, promotion, performance assessment, or procurement decision."
+    },
+    {
+      "canonical_statement": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-005",
+      "normative": true,
+      "section_title": "5. Gifts, Hospitality, and Serious-Offence Situations",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "CO-005-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "should",
+          "negated": false,
+          "object": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it.",
+          "predicate": "should",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "2"
+            }
+          ],
+          "scope": "5. Gifts, Hospitality, and Serious-Offence Situations",
+          "source_quote": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it.",
+          "subject": "When refusing a gift would seriously offend a business partner, the employee"
+        }
+      ],
+      "source_quote": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it."
+    },
+    {
+      "canonical_statement": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-006",
+      "normative": true,
+      "section_title": "6. Vendor and Procurement Integrity",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-006-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision.",
+          "predicate": "must not",
+          "quantities": [],
+          "scope": "6. Vendor and Procurement Integrity",
+          "source_quote": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision.",
+          "subject": "An employee involved in procurement"
+        }
+      ],
+      "source_quote": "An employee involved in procurement must not obtain a personal benefit, must disclose a relationship with a vendor, and must recuse from the affected decision."
+    },
+    {
+      "canonical_statement": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-007",
+      "normative": true,
+      "section_title": "7. Confidentiality and Records Accuracy",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-007-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently.",
+          "predicate": "must",
+          "quantities": [],
+          "scope": "7. Confidentiality and Records Accuracy",
+          "source_quote": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently.",
+          "subject": "Business records"
+        }
+      ],
+      "source_quote": "Business records must be accurate and complete, and mistakes must be corrected promptly and transparently."
+    },
+    {
+      "canonical_statement": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-008",
+      "normative": true,
+      "section_title": "8. Reporting Concerns and Available Channels",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR",
+            "Information Security",
+            "Legal Coordination"
+          ],
+          "clause_id": "CO-008-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "may",
+          "negated": false,
+          "object": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example.",
+          "predicate": "may",
+          "quantities": [],
+          "scope": "8. Reporting Concerns and Available Channels",
+          "source_quote": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example.",
+          "subject": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron"
+        }
+      ],
+      "source_quote": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example."
+    },
+    {
+      "canonical_statement": "The policy intentionally provides no ethics hotline telephone number.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-009",
+      "normative": true,
+      "section_title": "8. Reporting Concerns and Available Channels",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-009-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "The policy intentionally provides no ethics hotline telephone number.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "8. Reporting Concerns and Available Channels",
+          "source_quote": "The policy intentionally provides no ethics hotline telephone number.",
+          "subject": "The policy intentionally provides no ethics hotline telephone number"
+        }
+      ],
+      "source_quote": "The policy intentionally provides no ethics hotline telephone number."
+    },
+    {
+      "canonical_statement": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-010",
+      "normative": true,
+      "section_title": "9. Non-Retaliation and Protection",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-010-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": true,
+          "object": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation.",
+          "predicate": "is prohibited",
+          "quantities": [],
+          "scope": "9. Non-Retaliation and Protection",
+          "source_quote": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation.",
+          "subject": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation"
+        }
+      ],
+      "source_quote": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation."
+    },
+    {
+      "canonical_statement": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-011",
+      "normative": true,
+      "section_title": "9. Non-Retaliation and Protection",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-011-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised.",
+          "predicate": "states",
+          "quantities": [],
+          "scope": "9. Non-Retaliation and Protection",
+          "source_quote": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised.",
+          "subject": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised"
+        }
+      ],
+      "source_quote": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised."
+    },
+    {
+      "canonical_statement": "Managers must not conduct their own informal investigation into serious allegations without HR guidance.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-012",
+      "normative": true,
+      "section_title": "10. Investigations and Discipline",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [
+            "HR"
+          ],
+          "clause_id": "CO-012-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": true,
+          "object": "Managers must not conduct their own informal investigation into serious allegations without HR guidance.",
+          "predicate": "must not",
+          "quantities": [],
+          "scope": "10. Investigations and Discipline",
+          "source_quote": "Managers must not conduct their own informal investigation into serious allegations without HR guidance.",
+          "subject": "Managers must not conduct their own informal investigation into serious allegations without HR guidance"
+        }
+      ],
+      "source_quote": "Managers must not conduct their own informal investigation into serious allegations without HR guidance."
+    },
+    {
+      "canonical_statement": "Employees must acknowledge the Code of Conduct annually by 31 January.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-013",
+      "normative": true,
+      "section_title": "11. Annual Acknowledgment and New Joiners",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-013-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "Employees must acknowledge the Code of Conduct annually by 31 January.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "January",
+              "value": "31"
+            }
+          ],
+          "scope": "11. Annual Acknowledgment and New Joiners",
+          "source_quote": "Employees must acknowledge the Code of Conduct annually by 31 January.",
+          "subject": "Employees must acknowledge the Code of Conduct annually by 31 January"
+        }
+      ],
+      "source_quote": "Employees must acknowledge the Code of Conduct annually by 31 January."
+    },
+    {
+      "canonical_statement": "A new employee must acknowledge the Code of Conduct within 10 working days after joining.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-014",
+      "normative": true,
+      "section_title": "11. Annual Acknowledgment and New Joiners",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-014-C1",
+          "conditions": [
+            "joining"
+          ],
+          "exceptions": [],
+          "modality": "must",
+          "negated": false,
+          "object": "A new employee must acknowledge the Code of Conduct within 10 working days after joining.",
+          "predicate": "must",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "working days",
+              "value": "10"
+            }
+          ],
+          "scope": "11. Annual Acknowledgment and New Joiners",
+          "source_quote": "A new employee must acknowledge the Code of Conduct within 10 working days after joining.",
+          "subject": "A new employee"
+        }
+      ],
+      "source_quote": "A new employee must acknowledge the Code of Conduct within 10 working days after joining."
+    },
+    {
+      "canonical_statement": "The next scheduled review date is 2027-01-15.",
+      "document_id": "policy-code-conduct-v2-1",
+      "fact_id": "CO-015",
+      "normative": true,
+      "section_title": "12. Ownership, Guidance, and Review",
+      "semantic_clauses": [
+        {
+          "approval_authorities": [],
+          "clause_id": "CO-015-C1",
+          "conditions": [],
+          "exceptions": [],
+          "modality": "declarative",
+          "negated": false,
+          "object": "The next scheduled review date is 2027-01-15.",
+          "predicate": "states",
+          "quantities": [
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "2027"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "01"
+            },
+            {
+              "role": "policy value",
+              "unit": "",
+              "value": "15"
+            }
+          ],
+          "scope": "12. Ownership, Guidance, and Review",
+          "source_quote": "The next scheduled review date is 2027-01-15.",
+          "subject": "The next scheduled review date"
+        }
+      ],
+      "source_quote": "The next scheduled review date is 2027-01-15."
+    }
+  ]
+}

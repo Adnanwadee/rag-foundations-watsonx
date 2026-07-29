@@ -1,0 +1,1120 @@
+{
+  "category_counts": {
+    "condition_or_exception": 8,
+    "direct_fact": 8,
+    "multi_fact": 8,
+    "multi_section_or_source": 6,
+    "unsupported": 6
+  },
+  "corpus_version": "asteron-policies-v2.1",
+  "dataset_id": "grounded-development-v2-1",
+  "frozen": false,
+  "question_count": 36,
+  "questions": [
+    {
+      "atomic_claims": [
+        {
+          "claim": "Full-time annual leave accrues at 2 working days per completed month.",
+          "claim_id": "EL-003",
+          "fact_id": "EL-003",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "Paid annual leave accrues at 2 working days per completed month for a full-time employee.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "3. Annual Leave Entitlement and Accrual",
+          "source_quote": "Full-time annual leave accrues at 2 working days per completed month."
+        }
+      ],
+      "fact_ids": [
+        "EL-003"
+      ],
+      "question": "At what rate does paid annual leave accrue for a full-time employee after a completed month?",
+      "question_id": "dev2-g-001"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait.",
+          "claim_id": "FW-002",
+          "fact_id": "FW-002",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "3. Standard Work Location and Weekly Limits",
+          "source_quote": "An ordinary flexible-work arrangement permits a maximum of 2 remote-working days per week and ordinary remote work must be performed from inside Kuwait."
+        }
+      ],
+      "fact_ids": [
+        "FW-002"
+      ],
+      "question": "What is the ordinary weekly limit on remote-working days?",
+      "question_id": "dev2-g-002"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday.",
+          "claim_id": "FW-006",
+          "fact_id": "FW-006",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "6. Core Hours, Availability, and Meetings",
+          "source_quote": "Core working hours are 10:00 a.m. to 3:00 p.m. Kuwait time, Sunday through Thursday."
+        }
+      ],
+      "fact_ids": [
+        "FW-006"
+      ],
+      "question": "Which hours are designated as core working hours for remote employees?",
+      "question_id": "dev2-g-003"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A company-account password must contain at least 14 characters.",
+          "claim_id": "IS-001",
+          "fact_id": "IS-001",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "A company-account password must contain at least 14 characters.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "2. Identity, Passwords, and Authentication",
+          "source_quote": "A company-account password must contain at least 14 characters."
+        }
+      ],
+      "fact_ids": [
+        "IS-001"
+      ],
+      "question": "What minimum password length applies to a company account?",
+      "question_id": "dev2-g-004"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An account is locked for 15 minutes after 5 failed sign-in attempts.",
+          "claim_id": "IS-002",
+          "fact_id": "IS-002",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "An account is locked for 15 minutes after 5 failed sign-in attempts.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "2. Identity, Passwords, and Authentication",
+          "source_quote": "An account is locked for 15 minutes after 5 failed sign-in attempts."
+        }
+      ],
+      "fact_ids": [
+        "IS-002"
+      ],
+      "question": "What lockout follows repeated failed sign-in attempts?",
+      "question_id": "dev2-g-005"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer.",
+          "claim_id": "EX-001",
+          "fact_id": "EX-001",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "5. Ground Transport and Personal Mileage",
+          "source_quote": "Use of a personal car for approved business travel within Kuwait is reimbursed at KWD 0.090 per kilometer."
+        }
+      ],
+      "fact_ids": [
+        "EX-001"
+      ],
+      "question": "At what rate is approved use of a personal car reimbursed within Kuwait?",
+      "question_id": "dev2-g-006"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel.",
+          "claim_id": "EX-018",
+          "fact_id": "EX-018",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "A business-travel expense claim must be submitted within 15 calendar days after returning to Kuwait.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "10. Submission Deadlines and Currency Conversion",
+          "source_quote": "An expense claim must be submitted within 15 calendar days after the expense date, or within 15 calendar days after returning to Kuwait for business travel."
+        }
+      ],
+      "fact_ids": [
+        "EX-018"
+      ],
+      "question": "How soon after returning to Kuwait must a business-travel expense claim be submitted?",
+      "question_id": "dev2-g-007"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A new employee must acknowledge the Code of Conduct within 10 working days after joining.",
+          "claim_id": "CO-014",
+          "fact_id": "CO-014",
+          "materiality": "core"
+        }
+      ],
+      "category": "direct_fact",
+      "difficulty": "easy",
+      "expected_answer": "A new employee must acknowledge the Code of Conduct within 10 working days after joining.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "11. Annual Acknowledgment and New Joiners",
+          "source_quote": "A new employee must acknowledge the Code of Conduct within 10 working days after joining."
+        }
+      ],
+      "fact_ids": [
+        "CO-014"
+      ],
+      "question": "How long after joining does a new employee have to acknowledge the Code of Conduct?",
+      "question_id": "dev2-g-008"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception.",
+          "claim_id": "EL-005",
+          "fact_id": "EL-005",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "The employee may take planned annual leave during the first 90 calendar days only when it was agreed in the offer letter or HR approves a written exception.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "4. Probation, Advance Leave, and Eligibility",
+          "source_quote": "During the first 90 calendar days of employment, an employee may not take planned annual leave unless it was agreed in the offer letter or HR approves a written exception."
+        }
+      ],
+      "fact_ids": [
+        "EL-005"
+      ],
+      "question": "When may an employee in the first 90 calendar days of employment take planned annual leave?",
+      "question_id": "dev2-g-009"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+          "claim_id": "EL-007",
+          "fact_id": "EL-007",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "5. Long Leave Requests and Approval Workflow",
+          "source_quote": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head."
+        }
+      ],
+      "fact_ids": [
+        "EL-007"
+      ],
+      "question": "What notice and approvals are required for annual leave longer than 10 working days?",
+      "question_id": "dev2-g-010"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period.",
+          "claim_id": "EL-009",
+          "fact_id": "EL-009",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "6. Sick Leave Notification and Evidence",
+          "source_quote": "A medical certificate is required after more than 2 consecutive working days of sick leave or after 3 separate undocumented sick-leave absences in a rolling 60-day period."
+        }
+      ],
+      "fact_ids": [
+        "EL-009"
+      ],
+      "question": "Under which sick-leave patterns is a medical certificate required?",
+      "question_id": "dev2-g-011"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency.",
+          "claim_id": "FW-008",
+          "fact_id": "FW-008",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "A manager normally gives at least 1 working day's notice, but shorter notice may be given in an emergency.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "7. Required Office Attendance and Client Obligations",
+          "source_quote": "A manager may require office attendance on a planned remote day by giving at least 1 working day's notice; shorter notice may be given in an emergency."
+        }
+      ],
+      "fact_ids": [
+        "FW-008"
+      ],
+      "question": "What notice is normally required when office attendance is imposed on a planned remote day, and what emergency exception applies?",
+      "question_id": "dev2-g-012"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations.",
+          "claim_id": "FW-009",
+          "fact_id": "FW-009",
+          "materiality": "core"
+        },
+        {
+          "claim": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details.",
+          "claim_id": "FW-010",
+          "fact_id": "FW-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+          "claim_id": "FW-011",
+          "fact_id": "FW-011",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations; the request must be submitted at least 15 working days before travel; and approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year."
+        }
+      ],
+      "fact_ids": [
+        "FW-009",
+        "FW-010",
+        "FW-011"
+      ],
+      "question": "What approvals, submission timing, and annual duration limit apply to working from outside Kuwait?",
+      "question_id": "dev2-g-013"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Privileged access requires approval from the line manager and the system owner.",
+          "claim_id": "IS-004",
+          "fact_id": "IS-004",
+          "materiality": "core"
+        },
+        {
+          "claim": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days.",
+          "claim_id": "IS-005",
+          "fact_id": "IS-005",
+          "materiality": "core"
+        },
+        {
+          "claim": "Emergency privileged access must be reviewed by Information Security within 2 working days after use.",
+          "claim_id": "IS-006",
+          "fact_id": "IS-006",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "Privileged access requires approval from the line manager and system owner; temporary privileged access must expire automatically and normally must not exceed 7 calendar days; and emergency privileged access must be reviewed by Information Security within 2 working days after use.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "5. Privileged and Emergency Access",
+          "source_quote": "Privileged access requires approval from the line manager and the system owner."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "5. Privileged and Emergency Access",
+          "source_quote": "Temporary privileged access must expire automatically and normally must not exceed 7 calendar days."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "5. Privileged and Emergency Access",
+          "source_quote": "Emergency privileged access must be reviewed by Information Security within 2 working days after use."
+        }
+      ],
+      "fact_ids": [
+        "IS-004",
+        "IS-005",
+        "IS-006"
+      ],
+      "question": "What approvals and duration limit apply to temporary privileged access, and what review follows emergency use?",
+      "question_id": "dev2-g-014"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+          "claim_id": "EX-004",
+          "fact_id": "EX-004",
+          "materiality": "core"
+        },
+        {
+          "claim": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.",
+          "claim_id": "EX-005",
+          "fact_id": "EX-005",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "Premium economy may be approved for flights of 6 hours or more with department head approval before booking. Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "3. Air Travel and Class of Service",
+          "source_quote": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "3. Air Travel and Class of Service",
+          "source_quote": "Business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking."
+        }
+      ],
+      "fact_ids": [
+        "EX-004",
+        "EX-005"
+      ],
+      "question": "When may premium economy or business class be approved?",
+      "question_id": "dev2-g-015"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+          "claim_id": "EX-017",
+          "fact_id": "EX-017",
+          "materiality": "core"
+        }
+      ],
+      "category": "condition_or_exception",
+      "difficulty": "medium",
+      "expected_answer": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "9. Receipts and Missing Documentation",
+          "source_quote": "A missing-receipt declaration is limited to KWD 20 per expense and may be used no more than 3 times per employee per quarter."
+        }
+      ],
+      "fact_ids": [
+        "EX-017"
+      ],
+      "question": "What limits apply when an employee cannot provide an expense receipt?",
+      "question_id": "dev2-g-016"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March.",
+          "claim_id": "EL-010",
+          "fact_id": "EL-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement.",
+          "claim_id": "EL-011",
+          "fact_id": "EL-011",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March. HR and the department head may extend the deadline to 30 April only for a documented critical project requirement.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March."
+        },
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement."
+        }
+      ],
+      "fact_ids": [
+        "EL-010",
+        "EL-011"
+      ],
+      "question": "What are the normal carryover amount and deadline, and when can the deadline be extended?",
+      "question_id": "dev2-g-017"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan.",
+          "claim_id": "FW-001",
+          "fact_id": "FW-001",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "Eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "2. Eligibility for Ordinary Flexible Work",
+          "source_quote": "Ordinary flexible-work eligibility requires at least 6 months of continuous service, completed probation, a role that can be performed remotely, and no active performance-improvement plan."
+        }
+      ],
+      "fact_ids": [
+        "FW-001"
+      ],
+      "question": "What four conditions determine eligibility for ordinary flexible work?",
+      "question_id": "dev2-g-018"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery.",
+          "claim_id": "IS-012",
+          "fact_id": "IS-012",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "The employee must report the lost or stolen company device to IT Operations and the line manager within 1 hour of discovery.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "9. Security Incidents and Lost Devices",
+          "source_quote": "A lost or stolen company laptop, phone, security key, or storage device must be reported to IT Operations and the line manager within 1 hour of discovery."
+        }
+      ],
+      "fact_ids": [
+        "IS-012"
+      ],
+      "question": "What must an employee do after discovering that a company device is lost or stolen?",
+      "question_id": "dev2-g-019"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+          "claim_id": "IS-014",
+          "fact_id": "IS-014",
+          "materiality": "core"
+        },
+        {
+          "claim": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction.",
+          "claim_id": "IS-015",
+          "fact_id": "IS-015",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "For a planned exit, HR must notify IT Operations at least 2 working days before the last working day and access must be disabled by the end of the final working day. For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For an involuntary termination or urgent risk, access may be disabled immediately at HR's instruction."
+        }
+      ],
+      "fact_ids": [
+        "IS-014",
+        "IS-015"
+      ],
+      "question": "How does access disablement differ between a planned exit and an urgent or involuntary exit?",
+      "question_id": "dev2-g-020"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges.",
+          "claim_id": "EX-006",
+          "fact_id": "EX-006",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "For approved visitors or temporary assignment in Kuwait, reimbursable hotel accommodation is capped at KWD 55 per night, excluding taxes and mandatory service charges.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "4. Hotels and Accommodation",
+          "source_quote": "In Kuwait, reimbursable hotel accommodation for approved visitors or temporary assignment is capped at KWD 55 per night, excluding taxes and mandatory service charges."
+        }
+      ],
+      "fact_ids": [
+        "EX-006"
+      ],
+      "question": "What Kuwait hotel cap applies, to whom does it apply, and which charges are excluded from the cap?",
+      "question_id": "dev2-g-021"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount.",
+          "claim_id": "EX-020",
+          "fact_id": "EX-020",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "The employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "11. Corporate Cards and Accidental Personal Charges",
+          "source_quote": "After an accidental personal charge on a corporate card, the employee must notify Finance within 2 working days and repay the company within 5 working days after Finance confirms the amount."
+        }
+      ],
+      "fact_ids": [
+        "EX-020"
+      ],
+      "question": "What two deadlines apply after an accidental personal charge on a corporate card?",
+      "question_id": "dev2-g-022"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision.",
+          "claim_id": "CO-001",
+          "fact_id": "CO-001",
+          "materiality": "core"
+        },
+        {
+          "claim": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client.",
+          "claim_id": "CO-002",
+          "fact_id": "CO-002",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "The employee must disclose the potential conflict to HR as soon as the employee becomes aware of it and before participating in the related decision. HR may approve a conflict-management plan.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "3. Conflicts of Interest and Disclosure",
+          "source_quote": "An employee must disclose a potential conflict of interest to HR as soon as the employee becomes aware of it and before participating in the related decision."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "3. Conflicts of Interest and Disclosure",
+          "source_quote": "HR may approve a conflict-management plan, including removing the employee from vendor selection, changing reporting lines, or requiring disclosure to a client."
+        }
+      ],
+      "fact_ids": [
+        "CO-001",
+        "CO-002"
+      ],
+      "question": "When must a potential conflict be disclosed, and what may HR do afterward?",
+      "question_id": "dev2-g-023"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example.",
+          "claim_id": "CO-008",
+          "fact_id": "CO-008",
+          "materiality": "core"
+        },
+        {
+          "claim": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation.",
+          "claim_id": "CO-010",
+          "fact_id": "CO-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised.",
+          "claim_id": "CO-011",
+          "fact_id": "CO-011",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "expected_answer": "A concern may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example. Retaliation is prohibited and includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "8. Reporting Concerns and Available Channels",
+          "source_quote": "Concerns may be reported to a manager, HR, Legal Coordination, Information Security, or ethics@asteron.example."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "9. Non-Retaliation and Protection",
+          "source_quote": "Retaliation is prohibited against a person who raises a concern in good faith or participates in an investigation."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "9. Non-Retaliation and Protection",
+          "source_quote": "Retaliation includes demotion, threats, exclusion, schedule punishment, harassment, or negative treatment because a concern was raised."
+        }
+      ],
+      "fact_ids": [
+        "CO-008",
+        "CO-010",
+        "CO-011"
+      ],
+      "question": "Through which channels may a concern be reported, and what forms of retaliation are prohibited?",
+      "question_id": "dev2-g-024"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head.",
+          "claim_id": "EL-007",
+          "fact_id": "EL-007",
+          "materiality": "core"
+        },
+        {
+          "claim": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March.",
+          "claim_id": "EL-010",
+          "fact_id": "EL-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement.",
+          "claim_id": "EL-011",
+          "fact_id": "EL-011",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "The leave must be requested at least 30 calendar days in advance and approved by the line manager and department head. A maximum of 7 unused working days may be carried over and normally must be used by 31 March; HR and the department head may extend the deadline to 30 April only for a documented critical project requirement.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "5. Long Leave Requests and Approval Workflow",
+          "source_quote": "Annual leave longer than 10 working days must be requested at least 30 calendar days in advance and requires approval from both the line manager and the department head."
+        },
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "A maximum of 7 unused working days may be carried into the next calendar year and must normally be used by 31 March."
+        },
+        {
+          "document_id": "policy-employee-leave-v2-1",
+          "section_title": "9. Carryover, Expiry, and Exceptional Extensions",
+          "source_quote": "HR and the department head may extend the carryover deadline to 30 April only for a documented critical project requirement."
+        }
+      ],
+      "fact_ids": [
+        "EL-007",
+        "EL-010",
+        "EL-011"
+      ],
+      "question": "For an employee planning more than 10 working days of annual leave and carrying unused leave into the next year, what advance request, approvals, carryover limit, and deadlines apply?",
+      "question_id": "dev2-g-025"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations.",
+          "claim_id": "FW-009",
+          "fact_id": "FW-009",
+          "materiality": "core"
+        },
+        {
+          "claim": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details.",
+          "claim_id": "FW-010",
+          "fact_id": "FW-010",
+          "materiality": "core"
+        },
+        {
+          "claim": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year.",
+          "claim_id": "FW-011",
+          "fact_id": "FW-011",
+          "materiality": "core"
+        },
+        {
+          "claim": "Remote access requires a company-managed encrypted device and the approved company VPN.",
+          "claim_id": "IS-008",
+          "fact_id": "IS-008",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "The employee needs written approval from the department head, HR, and IT Operations; must apply at least 15 working days before travel; is normally limited to 10 working days per calendar year; and must use a company-managed encrypted device with the approved company VPN.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "Working from outside Kuwait requires separate written approval from the department head, HR, and IT Operations."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "A request to work from outside Kuwait must be submitted at least 15 working days before travel and must state the country, dates, reason, time zone, data-access needs, and emergency contact details."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "8. Working from Outside Kuwait",
+          "source_quote": "Approved outside-Kuwait work is normally limited to 10 working days in a calendar year."
+        },
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "7. Remote Access and Device Security",
+          "source_quote": "Remote access requires a company-managed encrypted device and the approved company VPN."
+        }
+      ],
+      "fact_ids": [
+        "FW-009",
+        "FW-010",
+        "FW-011",
+        "IS-008"
+      ],
+      "question": "When an employee is approved to work from outside Kuwait, what policy approvals, timing, annual limit, device, and remote-access controls apply?",
+      "question_id": "dev2-g-026"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy.",
+          "claim_id": "FW-015",
+          "fact_id": "FW-015",
+          "materiality": "core"
+        },
+        {
+          "claim": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval.",
+          "claim_id": "EX-012",
+          "fact_id": "EX-012",
+          "materiality": "core"
+        },
+        {
+          "claim": "Ordinary home internet is not reimbursable.",
+          "claim_id": "EX-013",
+          "fact_id": "EX-013",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "Ordinary home internet is not reimbursed. A temporary business mobile-data package may be reimbursed up to KWD 10 per month with manager approval.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "10. Equipment, Connectivity, and Workspace",
+          "source_quote": "Ordinary home internet is not reimbursed under the Flexible Work and Workplace Access Policy."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "A temporary business mobile-data package is reimbursable up to KWD 10 per month with manager approval."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "8. Training, Conferences, Mobile, and Internet",
+          "source_quote": "Ordinary home internet is not reimbursable."
+        }
+      ],
+      "fact_ids": [
+        "FW-015",
+        "EX-012",
+        "EX-013"
+      ],
+      "question": "How do the flexible-work and expense policies treat ordinary home internet and a temporary business mobile-data package?",
+      "question_id": "dev2-g-027"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking.",
+          "claim_id": "EX-004",
+          "fact_id": "EX-004",
+          "materiality": "core"
+        },
+        {
+          "claim": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost.",
+          "claim_id": "EX-007",
+          "fact_id": "EX-007",
+          "materiality": "core"
+        },
+        {
+          "claim": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges.",
+          "claim_id": "EX-008",
+          "fact_id": "EX-008",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "Premium economy may be approved with department head approval before booking. The normal GCC hotel cap is KWD 75 per night unless Finance designates the destination high-cost. Meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "3. Air Travel and Class of Service",
+          "source_quote": "Premium economy may be approved for flights of 6 hours or more when the department head approves before booking."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "4. Hotels and Accommodation",
+          "source_quote": "For GCC business travel outside Kuwait, reimbursable hotel accommodation is capped at KWD 75 per night unless Finance has published the destination as high-cost."
+        },
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "6. Meals and Daily Limits",
+          "source_quote": "Approved business-travel meal limits are KWD 9 for breakfast, KWD 12 for lunch, and KWD 15 for dinner, including taxes and service charges."
+        }
+      ],
+      "fact_ids": [
+        "EX-004",
+        "EX-007",
+        "EX-008"
+      ],
+      "question": "For a 7-hour GCC business trip, what flight class may be approved, what normal hotel cap applies, and what meal limits apply?",
+      "question_id": "dev2-g-028"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day.",
+          "claim_id": "IS-014",
+          "fact_id": "IS-014",
+          "materiality": "core"
+        },
+        {
+          "claim": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices.",
+          "claim_id": "FW-016",
+          "fact_id": "FW-016",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "HR must notify IT Operations at least 2 working days before the last working day, access must be disabled by the end of the final working day, and company equipment must be returned at the end of employment.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-information-security-v2-1",
+          "section_title": "11. Joiners, Movers, and Planned Exits",
+          "source_quote": "For a planned employee exit, HR must notify IT Operations at least 2 working days before the last working day and standard system access must be disabled by the end of the final working day."
+        },
+        {
+          "document_id": "policy-flexible-work-v2-1",
+          "section_title": "10. Equipment, Connectivity, and Workspace",
+          "source_quote": "Company equipment must be returned on request, during replacement, or at the end of employment, and family members or visitors must not use company devices."
+        }
+      ],
+      "fact_ids": [
+        "IS-014",
+        "FW-016"
+      ],
+      "question": "For a planned employee exit, what access-disablement and company-equipment requirements apply?",
+      "question_id": "dev2-g-029"
+    },
+    {
+      "atomic_claims": [
+        {
+          "claim": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval.",
+          "claim_id": "EX-011",
+          "fact_id": "EX-011",
+          "materiality": "core"
+        },
+        {
+          "claim": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it.",
+          "claim_id": "CO-005",
+          "fact_id": "CO-005",
+          "materiality": "core"
+        }
+      ],
+      "category": "multi_section_or_source",
+      "difficulty": "hard",
+      "expected_answer": "A purchased client gift may not exceed KWD 25 without Chief Commercial Officer approval. When refusing a received gift would seriously offend the business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it.",
+      "expected_answerable": true,
+      "expected_sources": [
+        {
+          "document_id": "policy-travel-expense-v2-1",
+          "section_title": "7. Client Entertainment and Business Gifts",
+          "source_quote": "A single client gift may not exceed KWD 25 without Chief Commercial Officer approval."
+        },
+        {
+          "document_id": "policy-code-conduct-v2-1",
+          "section_title": "5. Gifts, Hospitality, and Serious-Offence Situations",
+          "source_quote": "When refusing a gift would seriously offend a business partner, the employee should accept it on behalf of Asteron, notify HR within 2 working days, and let HR decide whether to return, donate, or share it."
+        }
+      ],
+      "fact_ids": [
+        "EX-011",
+        "CO-005"
+      ],
+      "question": "Compare the rule for purchasing a client gift with the rule for receiving a gift that would seriously offend the business partner to refuse.",
+      "question_id": "dev2-g-030"
+    },
+    {
+      "absence_assertion": "The corpus intentionally does not identify the VPN vendor, product, or version.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "Which VPN software vendor and version must employees install?",
+      "question_id": "dev2-g-031"
+    },
+    {
+      "absence_assertion": "The corpus does not specify a home-office furniture budget.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "What annual budget is provided for home-office furniture?",
+      "question_id": "dev2-g-032"
+    },
+    {
+      "absence_assertion": "The corpus does not define parking-permit colors.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "What color parking permit is assigned to remote employees?",
+      "question_id": "dev2-g-033"
+    },
+    {
+      "absence_assertion": "The corpus does not identify a preferred airline loyalty program.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "Which airline loyalty program is preferred for company travel?",
+      "question_id": "dev2-g-034"
+    },
+    {
+      "absence_assertion": "The corpus provides reporting channels and an email address but no ethics telephone number.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "What telephone number should employees call to report an ethics concern?",
+      "question_id": "dev2-g-035"
+    },
+    {
+      "absence_assertion": "The corpus does not define a childcare allowance.",
+      "atomic_claims": [],
+      "category": "unsupported",
+      "difficulty": "hard",
+      "expected_answer": "I don't know based on the provided documents.",
+      "expected_answerable": false,
+      "expected_sources": [],
+      "fact_ids": [],
+      "question": "What monthly childcare allowance is paid to employees?",
+      "question_id": "dev2-g-036"
+    }
+  ],
+  "tuning_scope": "development-only"
+}

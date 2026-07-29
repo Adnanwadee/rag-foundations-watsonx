@@ -1,0 +1,7 @@
+Question:
+{{ question }}
+
+Retrieved context:
+{{ retrieved_context }}
+
+Return the required JSON object only.

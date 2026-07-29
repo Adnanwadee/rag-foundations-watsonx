@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools==65.5.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-foundations"
+version = "0.1.0"
+description = "CLI-first retrieval-augmented generation system using watsonx.ai, FAISS, grounded citations, tone transformation, and controlled evaluation."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "faiss-cpu==1.14.3",
+  "ibm-watsonx-ai==1.6.0",
+  "numpy==2.3.5",
+  "pydantic==2.13.4",
+  "pydantic-settings==2.14.2",
+  "huggingface-hub==1.24.0",
+  "tokenizers==0.22.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.14.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "live_watsonx: opt-in tests that may call watsonx.ai; excluded from ordinary test runs",
+]
+addopts = ["-m", "not live_watsonx"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = true

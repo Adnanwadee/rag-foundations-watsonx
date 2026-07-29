@@ -1,0 +1,65 @@
+[
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-001",
+    "expected_output": "Eligible technicians get 3 paid equipment-inspection days each year.",
+    "grounded_answer": "Eligible technicians receive 3 paid equipment-inspection days per year.",
+    "original_question": "What inspection-leave entitlement do eligible technicians receive?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  },
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-002",
+    "expected_output": "Temporary laboratory access can be approved for up to 4 calendar days once the laboratory manager approves it in writing. An active Safety incident can still suspend access.",
+    "grounded_answer": "Temporary laboratory access may be approved for up to 4 calendar days when the laboratory manager gives written approval, unless Safety suspends access because of an active incident.",
+    "original_question": "When may temporary laboratory access be approved?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  },
+  {
+    "demonstrates": [
+      "style and JSON structure only",
+      "semantic-slot preservation"
+    ],
+    "example_id": "tone-example-003",
+    "expected_output": "The account stays locked for 15 minutes.",
+    "grounded_answer": "15 minutes.",
+    "original_question": "How long is the account lockout?",
+    "prohibited_transfer_fields": [
+      "subject",
+      "action",
+      "relation",
+      "object",
+      "number",
+      "unit",
+      "condition",
+      "exception",
+      "authority"
+    ]
+  }
+]

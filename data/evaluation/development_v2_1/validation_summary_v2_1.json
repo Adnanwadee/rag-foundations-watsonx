@@ -1,0 +1,9 @@
+{
+  "corpus_version": "asteron-policies-v2.1",
+  "document_count": 5,
+  "fact_count": 89,
+  "final_overlap": 0,
+  "grounded_question_count": 36,
+  "section_count": 60,
+  "tone_input_count": 18
+}

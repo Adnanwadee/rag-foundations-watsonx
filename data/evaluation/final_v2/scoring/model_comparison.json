@@ -1,0 +1,69 @@
+{
+  "comparison_basis": "smaller nominal documented parameter count when verified by model-selection evidence",
+  "comparison_model": "mistralai/mistral-small-3-1-24b-instruct-2503",
+  "grounded": {
+    "answerable_correct_rate_delta_comparison_minus_primary": -0.05,
+    "comparison": {
+      "answerable_correct_rate": 0.8,
+      "answerable_partial_rate": 0.2,
+      "citation_validity": 19,
+      "correct": 16,
+      "deterministic_clean_records": 11,
+      "human_reviewed_records": 13,
+      "normalization_count": 0,
+      "partial": 4,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.8333,
+      "unsupported_correct": 4,
+      "unsupported_refusal_rate": 1.0,
+      "unsupported_wrong": 0,
+      "wrong": 0
+    },
+    "primary": {
+      "answerable_correct_rate": 0.85,
+      "answerable_partial_rate": 0.1,
+      "citation_validity": 20,
+      "correct": 17,
+      "deterministic_clean_records": 13,
+      "human_reviewed_records": 11,
+      "normalization_count": 3,
+      "partial": 2,
+      "repair_count": 0,
+      "strict_overall_accuracy": 0.8333,
+      "unsupported_correct": 3,
+      "unsupported_refusal_rate": 0.75,
+      "unsupported_wrong": 1,
+      "wrong": 1
+    },
+    "strict_accuracy_delta_comparison_minus_primary": 0.0
+  },
+  "only_generation_model_changed": true,
+  "primary_model": "ibm/granite-4-h-small",
+  "retrieval_and_embeddings_shared": true,
+  "independent_human_signoff": false,
+  "scoring_layer": "hybrid_final",
+  "semantic_review_method": "tool-assisted semantic adjudication",
+  "status": "complete",
+  "tones": {
+    "comparison": {
+      "deterministic_clean_triplets": 0,
+      "fully_valid_triplet_rate": 0.45,
+      "fully_valid_triplets": 9,
+      "human_reviewed_triplets": 20,
+      "tone_input_triplets": 20,
+      "triplet_distinct": 20,
+      "triplet_distinct_rate": 1.0
+    },
+    "fully_valid_triplet_rate_delta_comparison_minus_primary": 0.05,
+    "primary": {
+      "deterministic_clean_triplets": 0,
+      "fully_valid_triplet_rate": 0.4,
+      "fully_valid_triplets": 8,
+      "human_reviewed_triplets": 20,
+      "tone_input_triplets": 20,
+      "triplet_distinct": 16,
+      "triplet_distinct_rate": 0.8
+    },
+    "triplet_distinct_rate_delta_comparison_minus_primary": 0.2
+  }
+}

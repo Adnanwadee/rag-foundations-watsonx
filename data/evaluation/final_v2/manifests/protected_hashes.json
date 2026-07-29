@@ -1,0 +1,31 @@
+{
+    "created_at_utc":  "2026-07-28T22:55:04+00:00",
+    "hash_policy":  "sha256 over repository-canonical bytes; LF-normalized for text, raw bytes for binary artifacts",
+    "protected_files":  {
+                            "data/corpus_fact_registry_v2_1.json":  "9a26d817f82d786dba4fad5cd20caca20d1a855518ddc244c4d5e0fbe22a13ba",
+                            "data/documents_v2_1/code_conduct_conflicts_reporting_policy.md":  "666c1a183c9ed94ab4645747a627be348064c63dc12c308aed4d0bf63cb7e19b",
+                            "data/documents_v2_1/employee_leave_attendance_policy.md":  "52ee1c259b5b13e902902d14577c5ca33400340a815e901b7b18dc9626ea8268",
+                            "data/documents_v2_1/flexible_work_workplace_access_policy.md":  "efa246ff5213ed4168833e9ee806ddeba4b682f9dae45166d4bdd7cf880be35b",
+                            "data/documents_v2_1/information_security_access_control_policy.md":  "4623b1dba85d55da011511c3af3fcb2195d1a8faa2e7210ccca4730279e89a4f",
+                            "data/documents_v2_1/travel_expense_corporate_card_policy.md":  "a214aeab27cb56c2d59bbd798df9c6050a4fc78f34c8776d694c86a59c3f1b0c",
+                            "data/evaluation/phase_c/frozen/frozen_configuration_v2.json":  "17311ed2cfddcbbdf1280cd3f7a1fb52c2b93d26aac77fc6f49e8519b5a16d99",
+                            "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json":  "aea0c39096f1befe265952abdec958936ce35f2818f0b3681b1f0ce29a0c6bf4",
+                            "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json":  "17c45cfea26f5ad3845635893734be5a33da91f399dedfa6362e2f0cd2c77cad",
+                            "data/evaluation/phase_c/frozen/phase_c_decision_report.md":  "97072a289f0a015be5cebaf82a8b71577bae897b2cde585d47a78fe7197bdea4",
+                            "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/asteron_policies_watsonx.index":  "d69ec3caa0a49e331396650dc1eae69d5fe20b2386e436b06a0da3bc63d201d4",
+                            "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/index_config.json":  "bced71913f5d1b273fb524ce9fc7d972eaada925294a5efc92140608bfed902e",
+                            "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/metadata.json":  "2d5e015f7758fcbdcdbd21cf3df2e914ab3a54ccac311ccc1dd43d4128e60ffa",
+                            "data/manifest_v2_1.json":  "ab579b8bf2fdbd21e44369e037418292156f3746bb32e1d9ae4e7ae21ccbbd22",
+                            "prompts/v2/few_shot/casual.json":  "98651faf80268aeaebcce21fe43594b5dc8e0c022d4d26750f964fa4de6309a5",
+                            "prompts/v2/few_shot/executive.json":  "c3dc8f30c038f0b94d7a22e5f68bef7e90743d4d1ab50b7a806facb99eb741bf",
+                            "prompts/v2/few_shot/formal.json":  "23393176d93f4b6534d320dc87e6aa54baf2f4cbf5baefe64c4018943a5068d4",
+                            "prompts/v2/grounded/candidate_a.system.txt":  "3c7f68ba48bebb89f5b34c90283f4adaa25b6dbae237686968ae18efd9930b7c",
+                            "prompts/v2/grounded/candidate_a.user.txt":  "9c61ea57abedd3461c453aee0869cf74925185a369ca954df2a9e3dcf8b2c3a5",
+                            "prompts/v2/tones/casual.system.txt":  "00e758eddc494f7a6a75996df8fdd9b47a661c193706cc6ec3e2ec4e8a5ba5f2",
+                            "prompts/v2/tones/casual.user.txt":  "bcedc3186415e78a65b485efe480758c6d22d559e4f6094c74317e81bb63b5d1",
+                            "prompts/v2/tones/executive.system.txt":  "85af371befee441cdc5642c759643a28628835a37aab7d61678f29961f8a6e39",
+                            "prompts/v2/tones/executive.user.txt":  "6a28c4ebcd46c1c56a248082fee6fcfcbcf0e943e8083877d3d51314e655ec2a",
+                            "prompts/v2/tones/formal.system.txt":  "e975f7c46770543036e7cdcd11ba2dc0ff544235faabf9271cc3cd2b7c4eaeb5",
+                            "prompts/v2/tones/formal.user.txt":  "4b40f78cb4f63a91d0a9f42167226cca1b87e9f07cf5eaa9a1106b07dae90665"
+                        }
+}

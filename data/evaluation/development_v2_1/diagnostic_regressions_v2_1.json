@@ -1,0 +1,25 @@
+{
+  "dataset_id": "diagnostic-regressions-v2-1",
+  "grounded_run_ids": [
+    "PL-G-A-005",
+    "PL-G-B-005",
+    "PL-G-A-006",
+    "PL-G-B-006",
+    "PL-G-A-009",
+    "PL-G-B-009",
+    "PL-G-A-010",
+    "PL-G-B-010"
+  ],
+  "purpose": "Focused Phase C regression cases derived from Phase B evidence-correction requirements.",
+  "tone_dimensions": [
+    "numbers_preserved",
+    "units_preserved",
+    "dates_deadlines_preserved",
+    "modality_preserved",
+    "conditions_preserved",
+    "exceptions_preserved",
+    "approval_authorities_preserved",
+    "language_preserved",
+    "rough_style_signal"
+  ]
+}
