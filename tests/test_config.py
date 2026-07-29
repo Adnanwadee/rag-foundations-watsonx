@@ -21,6 +21,7 @@ ENV_NAMES = [
     "GENERATION_TOP_P",
     "GENERATION_MAX_OUTPUT_TOKENS",
     "GENERATION_RANDOM_SEED",
+    "LOG_LEVEL",
 ]
 
 
@@ -51,6 +52,14 @@ def test_environment_variables_override_defaults(monkeypatch: pytest.MonkeyPatch
     assert settings.request_timeout_seconds == 12.5
     assert settings.generation_temperature == 0.2
     assert settings.generation_top_p == 0.9
+
+
+def test_log_level_environment_override(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("LOG_LEVEL", "DEBUG")
+
+    settings = AppSettings(_env_file=None)
+
+    assert settings.log_level == "DEBUG"
 
 
 def test_python_field_name_population_works() -> None:

@@ -6,12 +6,17 @@ import argparse
 import contextlib
 import io
 import json
+import logging
 import sys
 from typing import Sequence
 
+from rag_foundations.config import AppSettings
 from rag_foundations.errors import RAGFoundationsError
+from rag_foundations.logging_config import configure_logging
 from rag_foundations.pipeline import PipelineResult, run_question
 from rag_foundations.schemas import Citation, ToneName, ToneResult
+
+LOGGER = logging.getLogger(__name__)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -83,6 +88,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = _build_parser()
     try:
         args = parser.parse_args(argv)
+        settings = AppSettings()
+        configure_logging(settings.log_level)
+        LOGGER.debug("CLI command parsed: %s", args.command)
         if args.command == "ask":
             sdk_stderr = io.StringIO()
             with contextlib.redirect_stderr(sdk_stderr):

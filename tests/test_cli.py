@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 
 import pytest
 
@@ -133,6 +134,28 @@ def test_json_output_parses_successfully(
     assert exit_code == 0
     assert parsed["grounded_result"]["is_answerable"] is True
     assert len(parsed["all_tone_result"]["variations"]) == 3
+
+
+def test_json_output_remains_parseable_when_debug_logging_enabled(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setenv("LOG_LEVEL", "DEBUG")
+
+    def noisy_run_question(*args: object, **kwargs: object) -> PipelineResult:
+        logging.getLogger("rag_foundations.cli").debug("diagnostic without secrets")
+        return result()
+
+    monkeypatch.setattr(cli, "run_question", noisy_run_question)
+
+    exit_code = cli.main(["ask", "How many remote days?", "--json"])
+    captured = capsys.readouterr()
+    parsed = json.loads(captured.out)
+
+    assert exit_code == 0
+    assert parsed["grounded_result"]["is_answerable"] is True
+    assert "diagnostic without secrets" in captured.err
+    assert "diagnostic without secrets" not in captured.out
 
 
 def test_human_readable_output_includes_answer_and_sources(

@@ -22,10 +22,10 @@ jobs:
           python -m pip install -e ".[dev]"
 
       - name: Compile
-        run: python -m compileall src scripts
+        run: python -m compileall -q src scripts tests
 
       - name: Lint
-        run: python -m ruff check src scripts tests
+        run: python -m ruff check .
 
       - name: Test
         run: python -m pytest -q
