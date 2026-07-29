@@ -119,41 +119,6 @@ def semantic_role_flags(answer: str, atomic_claims: list[dict[str, Any]]) -> lis
     return flags
 
 
-def corrected_grounded_case(row: dict[str, Any], question: dict[str, Any], resolved: dict[str, Any]) -> dict[str, Any]:
-    parsed, parse_error = parse_json_object(row["raw_output"])
-    valid = parse_error is None and parsed is not None and {"answerable", "answer", "citation_chunk_ids"} <= set(parsed)
-    answer = str(parsed.get("answer", "")) if parsed else ""
-    citations = parsed.get("citation_chunk_ids", []) if parsed and isinstance(parsed.get("citation_chunk_ids", []), list) else []
-    expected_unsupported = not question["expected_answerable"]
-    app = application_grounded_output(question["expected_answerable"], parsed)
-    return {
-        "run_id": row["run_id"],
-        "case_id": row.get("case_id") or row.get("question_id") or row.get("tone_input_id"),
-        "asset_name": row.get("asset_name") or f"phase-c-grounded-{row.get('candidate', 'unknown')}",
-        "structured_json_valid": bool(valid),
-        "parse_error": parse_error,
-        "expected_answerable": question["expected_answerable"],
-        "model_answerable": parsed.get("answerable") if parsed else None,
-        "unsupported_decision_correct": bool(expected_unsupported and parsed and parsed.get("answerable") is False),
-        "canonical_refusal_raw_valid": bool(
-            expected_unsupported and parsed and parsed.get("answerable") is False and answer == CANONICAL_REFUSAL and citations == []
-        ),
-        "canonical_refusal_application_valid": bool(
-            expected_unsupported and app["answerable"] is False and app["answer"] == CANONICAL_REFUSAL and app["citation_chunk_ids"] == []
-        ),
-        "empty_refusal_text": bool(expected_unsupported and parsed and parsed.get("answerable") is False and citations == [] and answer == ""),
-        "unsupported_explanatory_text": bool(
-            expected_unsupported and parsed and parsed.get("answerable") is False and citations == [] and answer not in {"", CANONICAL_REFUSAL}
-        ),
-        "unsupported_answered": bool(expected_unsupported and parsed and parsed.get("answerable") is True),
-        "invented_requested_attribute": bool(expected_unsupported and invented_requested_attribute(question, answer)),
-        "attribute_substitution_failure": False,
-        "citation_contract_valid": citation_contract_valid(question["expected_answerable"], parsed, set(resolved.get("allowed_chunk_ids", []))),
-        "semantic_role_regression_flags": semantic_role_flags(answer, question.get("atomic_claims", [])) if question["expected_answerable"] else [],
-        "application_output": app,
-    }
-
-
 def dimension(applicable: bool, passed: bool | None, expected: list[str], observed: list[str], rationale: str) -> dict[str, Any]:
     return {
         "applicable": applicable,
@@ -254,11 +219,3 @@ def corrected_tone_case(row: dict[str, Any], tone_input: dict[str, Any]) -> dict
         "dimensions": dimensions,
         "output": output,
     }
-
-
-def aggregate_applicable_dimensions(results: list[dict[str, Any]], dimension_names: list[str]) -> dict[str, Any]:
-    out: dict[str, Any] = {}
-    for name in dimension_names:
-        applicable = [r["dimensions"][name] for r in results if r["dimensions"][name]["applicable"]]
-        out[name] = {"applicable": len(applicable), "passed": sum(d["passed"] is True for d in applicable)}
-    return out
