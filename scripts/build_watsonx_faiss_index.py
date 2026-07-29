@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from rag_foundations.chunking import ChunkingConfig, MiniLMTokenizer, create_chunks, summarize_chunks
 from rag_foundations.document_loader import load_documents
@@ -12,8 +13,6 @@ from rag_foundations.faiss_store import (
     WATSONX_EMBEDDING_DIMENSION,
     WATSONX_EMBEDDING_MODEL_ID,
     WATSONX_FAISS_DIR,
-    WATSONX_FAISS_INDEX_PATH,
-    WATSONX_FAISS_METADATA_PATH,
     build_faiss_index,
     index_config_for_chunks,
     load_faiss_store,
@@ -36,10 +35,46 @@ def assert_no_torch_path_imported() -> None:
         raise RuntimeError(f"Forbidden Torch/local embedding imports detected: {imported}")
 
 
+def repository_relative(path: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        return resolved.as_posix()
+
+
+def validate_preflight_counts(summary: dict[str, int], chunk_count: int) -> None:
+    if summary["documents_loaded"] != 5:
+        raise RuntimeError(f"Expected 5 documents, got {summary['documents_loaded']}.")
+    if summary["sections_loaded"] != 60:
+        raise RuntimeError(f"Expected 60 sections, got {summary['sections_loaded']}.")
+    if chunk_count != 70:
+        raise RuntimeError(
+            "Expected 70 deterministic chunks; got "
+            f"{chunk_count} from {summary['sections_loaded']} represented sections."
+        )
+
+
+def validate_output_directory(output_dir: Path, *, overwrite: bool) -> Path:
+    resolved = output_dir.resolve()
+    if resolved == SELECTED_INDEX_DIR.resolve() and not overwrite:
+        raise FileExistsError(
+            "data/indexes/selected is frozen evidence; pass --overwrite to replace it explicitly"
+        )
+    return resolved
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build the watsonx.ai FAISS index.")
-    parser.add_argument("--rebuild", action="store_true", help="Replace existing FAISS index files.")
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=WATSONX_FAISS_DIR,
+        help="Directory for rebuilt index artifacts; defaults to ignored artifacts/rebuilt-index/.",
+    )
+    parser.add_argument("--overwrite", action="store_true", help="Replace existing output files.")
     args = parser.parse_args()
+    output_dir = validate_output_directory(args.output_dir, overwrite=args.overwrite)
 
     assert_no_torch_path_imported()
     runtime = create_runtime()
@@ -58,15 +93,7 @@ def main() -> None:
     summary = summarize_chunks(documents, chunks)
     assert_no_torch_path_imported()
 
-    if summary["documents_loaded"] != 5:
-        raise RuntimeError(f"Expected 5 documents, got {summary['documents_loaded']}.")
-    if summary["sections_loaded"] != 70:
-        raise RuntimeError(f"Expected 70 sections, got {summary['sections_loaded']}.")
-    if len(chunks) != 70:
-        raise RuntimeError(
-            "Expected 70 deterministic chunks; got "
-            f"{len(chunks)} from {summary['sections_loaded']} represented sections."
-        )
+    validate_preflight_counts(summary, len(chunks))
     if any(not chunk.text.strip() for chunk in chunks):
         raise RuntimeError("All chunk texts must be non-empty.")
     if len({chunk.chunk_id for chunk in chunks}) != len(chunks):
@@ -84,6 +111,8 @@ def main() -> None:
             f"Expected embedding dimension {WATSONX_EMBEDDING_DIMENSION}, "
             f"got {provider.embedding_dimension}."
         )
+    if any(len(vector) != WATSONX_EMBEDDING_DIMENSION for vector in embeddings):
+        raise RuntimeError("Every embedding vector must have 768 dimensions.")
     assert_no_torch_path_imported()
 
     metadata = metadata_records_for_chunks(
@@ -91,6 +120,8 @@ def main() -> None:
         embedding_model_id=WATSONX_EMBEDDING_MODEL_ID,
         embedding_dimension=WATSONX_EMBEDDING_DIMENSION,
     )
+    for record in metadata:
+        record["source_path"] = Path(record["source_path"]).as_posix()
     index = build_faiss_index(
         embeddings,
         metadata,
@@ -108,27 +139,30 @@ def main() -> None:
         index=index,
         metadata=metadata,
         config=config,
-        directory=WATSONX_FAISS_DIR,
-        overwrite=args.rebuild,
+        directory=output_dir,
+        overwrite=args.overwrite,
     )
 
-    reloaded = load_faiss_store(WATSONX_FAISS_DIR)
+    reloaded = load_faiss_store(output_dir)
     if reloaded.index.ntotal != 70:
         raise RuntimeError(f"Expected reloaded index.ntotal 70, got {reloaded.index.ntotal}.")
     if len(reloaded.metadata) != 70:
         raise RuntimeError(f"Expected reloaded metadata count 70, got {len(reloaded.metadata)}.")
 
     print("Documents indexed: 5")
-    print("Sections represented: 70")
+    print("Sections loaded: 60")
     print("Chunks indexed: 70")
     print(f"Embedding model: {WATSONX_EMBEDDING_MODEL_ID}")
     print(f"Embedding dimension: {WATSONX_EMBEDDING_DIMENSION}")
     print("FAISS index type: IndexFlatIP")
     print(f"Similarity: {SIMILARITY_METRIC.replace('_', ' ')}")
-    print(f"Index path: {WATSONX_FAISS_INDEX_PATH.as_posix()}")
-    print(f"Metadata path: {WATSONX_FAISS_METADATA_PATH.as_posix()}")
+    print(f"Output directory: {repository_relative(output_dir)}")
+    print(f"Index path: {repository_relative(output_dir / 'asteron_policies_watsonx.index')}")
+    print(f"Metadata path: {repository_relative(output_dir / 'metadata.json')}")
     assert_no_torch_path_imported()
 
 
 if __name__ == "__main__":
     main()
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SELECTED_INDEX_DIR = REPO_ROOT / "data/indexes/selected"

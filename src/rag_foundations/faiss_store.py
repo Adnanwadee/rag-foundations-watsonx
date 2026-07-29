@@ -13,7 +13,8 @@ import numpy as np
 from rag_foundations.schemas import DocumentChunk, RetrievedChunk, ScoreType
 
 
-WATSONX_FAISS_DIR = Path("data/faiss/watsonx")
+WATSONX_FAISS_DIR = Path("artifacts/rebuilt-index")
+SELECTED_FAISS_DIR = Path("data/indexes/selected")
 WATSONX_FAISS_INDEX_PATH = WATSONX_FAISS_DIR / "asteron_policies_watsonx.index"
 WATSONX_FAISS_METADATA_PATH = WATSONX_FAISS_DIR / "metadata.json"
 WATSONX_FAISS_CONFIG_PATH = WATSONX_FAISS_DIR / "index_config.json"
@@ -248,6 +249,8 @@ def save_faiss_store(
     """Persist the FAISS index, metadata, and config."""
 
     directory_path = Path(directory)
+    if directory_path.as_posix().rstrip("/") == SELECTED_FAISS_DIR.as_posix() and not overwrite:
+        raise FileExistsError("selected frozen FAISS index is protected; pass overwrite=True explicitly")
     index_path = directory_path / WATSONX_FAISS_INDEX_PATH.name
     metadata_path = directory_path / WATSONX_FAISS_METADATA_PATH.name
     config_path = directory_path / WATSONX_FAISS_CONFIG_PATH.name

@@ -1,4 +1,4 @@
-"""Deterministic Phase C evaluation helpers."""
+"""Deterministic evaluation scoring helpers."""
 
 from __future__ import annotations
 
@@ -96,7 +96,7 @@ def citation_contract_valid(expected_answerable: bool, parsed: dict[str, Any] | 
 def semantic_role_flags(answer: str, atomic_claims: list[dict[str, Any]]) -> list[str]:
     """Return only conservative, claim-local role warnings.
 
-    This deliberately avoids the Phase B cross-claim logic that flagged any answer
+    This deliberately avoids earlier cross-claim logic that flagged any answer
     containing `calendar days` when any expected claim contained `working days`, or
     any answer containing `may` when any expected claim contained `must`.
     """

@@ -33,6 +33,9 @@ jobs:
       - name: Validate documentation
         run: python scripts/validate_documentation.py
 
+      - name: Validate references
+        run: python scripts/validate_references.py
+
       - name: Validate corpus
         run: python scripts/validate_corpus_v2_1.py
 
@@ -79,20 +82,14 @@ jobs:
           mkdir "$tmp/repo"
           tar -xf "$tmp/repo.tar" -C "$tmp/repo"
           cd "$tmp/repo"
+          export PYTHONPATH="$PWD/src"
           python scripts/validate_documentation.py
+          python scripts/validate_references.py
           python scripts/validate_corpus_v2_1.py
           python scripts/validate_final_v2.py
           python scripts/validate_project_complete.py
           python scripts/run_final_v2.py --dry-run
 
-      - name: Check whitespace in changed range
+      - name: Check whitespace
         shell: bash
-        run: |
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            base="${{ github.event.pull_request.base.sha }}"
-          elif [[ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
-            base="${{ github.event.before }}"
-          else
-            base="$(git rev-parse HEAD^)"
-          fi
-          git diff --check "$base"...HEAD -- ':!data/**' ':!prompts/**'
+        run: git diff-tree --check --root -r HEAD -- ':!data/**' ':!prompts/**'

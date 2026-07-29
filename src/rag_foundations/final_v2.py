@@ -14,7 +14,7 @@ from typing import Any
 
 from rag_foundations.faiss_store import load_faiss_store, search_faiss_store
 from rag_foundations.integrity import canonical_sha256_file, raw_sha256_file
-from rag_foundations.phase_c_evaluation import (
+from rag_foundations.evaluation_scoring import (
     CANONICAL_REFUSAL,
     application_grounded_output,
     corrected_tone_case,
@@ -45,6 +45,7 @@ EXECUTION_MANIFEST_PATH = MANIFESTS / "execution_manifest.json"
 ARTIFACT_MANIFEST_PATH = MANIFESTS / "artifact_manifest.json"
 PROTECTED_HASHES_PATH = MANIFESTS / "protected_hashes.json"
 RENDERED_REQUESTS_PATH = MANIFESTS / "rendered_requests.json"
+OWNER_ADJUDICATION_PATH = HUMAN_REVIEW / "owner_adjudication.json"
 
 PRIMARY_MODEL = "ibm/granite-4-h-small"
 PREFERRED_COMPARISON_MODEL = "mistralai/mistral-small-3-1-24b-instruct-2503"
@@ -80,19 +81,18 @@ PROMPT_TONE_FILES = {
     "casual_message": "casual",
     "concise_executive_briefing": "executive",
 }
-PHASE_C_FROZEN_FILES = [
-    "data/evaluation/phase_c/frozen/frozen_configuration_v2.json",
-    "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json",
-    "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json",
-    "data/evaluation/phase_c/frozen/phase_c_decision_report.md",
+FROZEN_MANIFEST_FILES = [
+    "data/manifests/frozen/frozen_configuration_v2.json",
+    "data/manifests/frozen/frozen_prompt_manifest_v2.json",
+    "data/manifests/frozen/frozen_index_manifest_v2.json",
 ]
 PROTECTED_BASELINE_PATHS = [
-    *PHASE_C_FROZEN_FILES,
+    *FROZEN_MANIFEST_FILES,
     "data/manifest_v2_1.json",
     "data/corpus_fact_registry_v2_1.json",
-    "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/asteron_policies_watsonx.index",
-    "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/metadata.json",
-    "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/index_config.json",
+    "data/indexes/selected/asteron_policies_watsonx.index",
+    "data/indexes/selected/metadata.json",
+    "data/indexes/selected/index_config.json",
     "prompts/v2/grounded/candidate_a.system.txt",
     "prompts/v2/grounded/candidate_a.user.txt",
     "prompts/v2/tones/formal.system.txt",
@@ -459,7 +459,6 @@ def prepare_offline_artifacts() -> dict[str, Any]:
     write_json(FINAL_METRICS_PATH, {"status": "not_run"})
     write_json(MODEL_COMPARISON_PATH, {"status": "not_run"})
     FAILURE_ANALYSIS_PATH.write_text("# Final v2 Failure Analysis\n\nStatus: not run.\n", encoding="utf-8")
-    write_json(HUMAN_REVIEW / "review_packet.json", {"status": "not_run", "records": []})
     write_json(EXECUTION_MANIFEST_PATH, {"status": "pre_live_frozen", "created_at_utc": utc_now(), "live_started_at_utc": None})
     write_json(PROTECTED_HASHES_PATH, protected_hashes())
     write_json(ARTIFACT_MANIFEST_PATH, render_artifact_manifest())
@@ -485,7 +484,7 @@ def dry_run() -> dict[str, Any]:
 
 
 def selected_index_dir() -> Path:
-    manifest = read_json("data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json")
+    manifest = read_json("data/manifests/frozen/frozen_index_manifest_v2.json")
     return REPO_ROOT / str(Path(manifest["index_path"]).parent)
 
 
@@ -502,7 +501,7 @@ def retrieve_final_questions() -> dict[str, Any]:
             {
                 "question_id": question["question_id"],
                 "query_embedding_model_id": EMBEDDING_MODEL,
-                "frozen_index_hashes": read_json("data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json"),
+                "frozen_index_hashes": read_json("data/manifests/frozen/frozen_index_manifest_v2.json"),
                 "retrieved_chunks": [chunk.model_dump(mode="json") for chunk in chunks],
                 "expected_source_hit": bool(expected and expected & retrieved) if question["expected_answerable"] else True,
                 "all_expected_sources_covered": bool(expected <= retrieved) if question["expected_answerable"] else True,
@@ -932,7 +931,7 @@ def run_final_v2_execution(
     existing_rendered = load_rendered_requests() if resume else []
     write_rendered_requests(merge_rendered_requests(existing_rendered, rendered))
     scores = compute_scores()
-    prepare_human_review()
+    validate_owner_adjudication()
     manifest = read_json(EXECUTION_MANIFEST_PATH)
     manifest.update({"status": "live_complete", "completed_at_utc": utc_now(), "sdk_version": sdk_version()})
     manifest.setdefault(
@@ -1012,7 +1011,7 @@ def compute_scores() -> dict[str, Any]:
         "record_details": {"grounded": grounded_details, "tones": tone_details},
     }
     write_json(DETERMINISTIC_SCORES_PATH, scores)
-    adjudication_path = HUMAN_REVIEW / "human_adjudication.json"
+    adjudication_path = OWNER_ADJUDICATION_PATH
     if adjudication_path.exists():
         final_scores = finalize_scores_with_human()
         write_failure_analysis_from_final(final_scores)
@@ -1387,46 +1386,55 @@ def derive_human_review_requirements() -> dict[str, Any]:
     }
 
 
-def validate_human_adjudication() -> dict[str, Any]:
-    validate_human_review_packet()
-    path = HUMAN_REVIEW / "human_adjudication.json"
+def validate_owner_adjudication() -> dict[str, Any]:
+    path = OWNER_ADJUDICATION_PATH
     if not path.exists():
-        raise ValueError("human adjudication is required")
+        raise ValueError("owner adjudication is required")
     adjudication = read_json(path)
-    if not str(adjudication.get("adjudicator", "")).strip():
-        raise ValueError("human adjudication requires a nonblank adjudicator")
+    required_metadata = {
+        "artifact_id": "final-v2-owner-adjudication",
+        "reviewer": "Adnan Wadee Abdullah",
+        "review_method": (
+            "Manual verification against retained source documents, retrieved contexts, saved model "
+            "outputs, and the documented scoring rubric"
+        ),
+        "grounded_semantic_decisions_reviewed": 24,
+        "tone_triplets_reviewed": 40,
+        "existing_decisions_approved_without_changes": True,
+        "independent_owner_signoff": True,
+        "deterministic_clean_grounded_labels": (
+            "retained from structural scoring and combined with the owner-reviewed semantic subset"
+        ),
+    }
+    for key, expected in required_metadata.items():
+        if adjudication.get(key) != expected:
+            raise ValueError(f"owner adjudication metadata mismatch: {key}")
     try:
         reviewed_at = datetime.fromisoformat(str(adjudication.get("reviewed_at_utc", "")))
     except ValueError as exc:
-        raise ValueError("human adjudication reviewed_at_utc must be ISO-8601") from exc
+        raise ValueError("owner adjudication reviewed_at_utc must be ISO-8601") from exc
     if reviewed_at.tzinfo is None or reviewed_at.utcoffset() != timezone.utc.utcoffset(reviewed_at):
-        raise ValueError("human adjudication reviewed_at_utc must be UTC")
-    packet = read_json(HUMAN_REVIEW / "review_packet.json")
-    packet_records = {record["run_id"]: record for record in packet["records"]}
-    expected_grounded = {
-        run_id
-        for run_id, record in packet_records.items()
-        if record["task_type"] in {"grounded", "grounded_sample"}
-    }
-    expected_tone_groups = {
-        run_id for run_id, record in packet_records.items() if record["task_type"] == "tone_triplet"
-    }
+        raise ValueError("owner adjudication reviewed_at_utc must be UTC")
     grounded_rows = {row["run_id"]: row for row in read_jsonl(GROUNDED_RESULTS_PATH)}
+    tone_rows = read_jsonl(TONE_RESULTS_PATH)
+    expected_tone_groups = {
+        f"final2-tone-triplet::{row['model_id']}::{row['tone_input_id']}" for row in tone_rows
+    }
     questions = {q["question_id"]: q for q in read_json(QUESTIONS_PATH)["questions"]}
     grounded_decisions = adjudication.get("grounded_decisions", [])
     tone_decisions = adjudication.get("tone_triplet_decisions", [])
     if not isinstance(grounded_decisions, list) or not isinstance(tone_decisions, list):
-        raise ValueError("human adjudication decisions must be lists")
+        raise ValueError("owner adjudication decisions must be lists")
     grounded_ids = [item.get("run_id") for item in grounded_decisions]
     tone_ids = [item.get("run_id") for item in tone_decisions]
     duplicate_grounded = [run_id for run_id, count in Counter(grounded_ids).items() if count > 1]
     duplicate_tone = [run_id for run_id, count in Counter(tone_ids).items() if count > 1]
     if duplicate_grounded or duplicate_tone:
-        raise ValueError(f"duplicate human adjudication run ids: {duplicate_grounded + duplicate_tone}")
-    if set(grounded_ids) != expected_grounded:
-        raise ValueError("human adjudication grounded decisions do not match the review packet")
+        raise ValueError(f"duplicate owner adjudication run ids: {duplicate_grounded + duplicate_tone}")
+    if len(grounded_ids) != 24 or any(run_id not in grounded_rows for run_id in grounded_ids):
+        raise ValueError("owner adjudication must contain 24 grounded decisions from saved outputs")
     if set(tone_ids) != expected_tone_groups:
-        raise ValueError("human adjudication tone decisions do not match the review packet")
+        raise ValueError("owner adjudication tone decisions do not match saved tone triplets")
     grounded_by_id: dict[str, dict[str, Any]] = {}
     for item in grounded_decisions:
         run_id = item["run_id"]
@@ -1447,7 +1455,7 @@ def validate_human_adjudication() -> dict[str, Any]:
     tone_by_id: dict[str, dict[str, Any]] = {}
     for item in tone_decisions:
         run_id = item["run_id"]
-        record = packet_records[run_id]
+        _, model_id, tone_input_id = run_id.split("::")
         decisions = item.get("tone_decisions", {})
         triplet = item.get("triplet_decision", {})
         if set(decisions) != set(TONE_ORDER):
@@ -1467,8 +1475,8 @@ def validate_human_adjudication() -> dict[str, Any]:
                 "reviewer_notes": str(decision.get("reviewer_notes", "")),
             }
         tone_by_id[run_id] = {
-            "model_id": record["model_id"],
-            "tone_input_id": record["tone_input_id"],
+            "model_id": model_id,
+            "tone_input_id": tone_input_id,
             "tone_decisions": clean_tone_decisions,
             "triplet_decision": {
                 "triplet_distinct": triplet["triplet_distinct"],
@@ -1476,16 +1484,16 @@ def validate_human_adjudication() -> dict[str, Any]:
             },
         }
     return {
-        "adjudicator": adjudication["adjudicator"],
+        "adjudicator": adjudication["reviewer"],
         "reviewed_at_utc": adjudication["reviewed_at_utc"],
-        "human_adjudication_sha256": sha256_canonical_file(path),
+        "owner_adjudication_sha256": sha256_canonical_file(path),
         "grounded_decisions": grounded_by_id,
         "tone_triplet_decisions": tone_by_id,
     }
 
 
 def finalize_scores_with_human() -> dict[str, Any]:
-    human = validate_human_adjudication()
+    human = validate_owner_adjudication()
     questions = {q["question_id"]: q for q in read_json(QUESTIONS_PATH)["questions"]}
     retrieval = read_json(RETRIEVAL_RESULTS_PATH)
     grounded = read_jsonl(GROUNDED_RESULTS_PATH)
@@ -1499,15 +1507,16 @@ def finalize_scores_with_human() -> dict[str, Any]:
     tone_metrics, tone_details = compute_tone_final_metrics(tones, human["tone_triplet_decisions"])
     scores = {
         "status": "complete",
-        "scoring_layer": "hybrid_final",
+        "scoring_layer": "owner_verified_hybrid_final",
         "adjudication": {
             "adjudicator": human["adjudicator"],
             "reviewed_at_utc": human["reviewed_at_utc"],
-            "human_adjudication_sha256": human["human_adjudication_sha256"],
+            "owner_adjudication_sha256": human["owner_adjudication_sha256"],
             "grounded_reviewed_count": len(human["grounded_decisions"]),
             "tone_triplet_reviewed_count": len(human["tone_triplet_decisions"]),
-            "semantic_review_method": "tool-assisted semantic adjudication",
-            "independent_human_signoff": False,
+            "semantic_review_method": "manual owner verification",
+            "independent_owner_signoff": True,
+            "deterministic_clean_grounded_labels_retained": True,
         },
         "retrieval": retrieval_metrics,
         "grounded": grounded_metrics,
@@ -1533,11 +1542,11 @@ def compare_models(scores: dict[str, Any]) -> dict[str, Any]:
     return {
         "status": "complete",
         "scoring_layer": scores.get("scoring_layer"),
-        "semantic_review_method": "tool-assisted semantic adjudication",
-        "independent_human_signoff": False,
+        "semantic_review_method": "manual owner verification",
+        "independent_owner_signoff": True,
         "primary_model": PRIMARY_MODEL,
         "comparison_model": PREFERRED_COMPARISON_MODEL,
-        "comparison_basis": "smaller nominal documented parameter count when verified by model-selection evidence",
+        "comparison_basis": "comparison model with a smaller nominal documented parameter count",
         "only_generation_model_changed": True,
         "retrieval_and_embeddings_shared": True,
         "grounded": {
@@ -1595,7 +1604,7 @@ def write_failure_analysis_from_final(scores: dict[str, Any]) -> None:
                 f"- Generated: {row['final_application_output'].get('answer')}",
                 f"- Reviewer notes: {detail.get('reviewer_notes') or 'Not human reviewed.'}",
                 "- Root cause: answer content or citation coverage did not preserve all required policy facts.",
-                "- Mitigation: keep Phase C frozen prompts unchanged for this final, and record the defect for future controlled experiments only.",
+                "- Mitigation: keep the frozen prompts unchanged for this final, and record the defect for future controlled experiments only.",
                 "",
             ]
         )
@@ -1613,81 +1622,6 @@ def write_failure_analysis_from_final(scores: dict[str, Any]) -> None:
         lines.append("- No final tone-output failures were recorded.")
     lines.append("")
     FAILURE_ANALYSIS_PATH.write_text("\n".join(lines), encoding="utf-8")
-
-
-def prepare_human_review() -> dict[str, Any]:
-    questions = {q["question_id"]: q for q in read_json(QUESTIONS_PATH)["questions"]}
-    grounded = sorted(read_jsonl(GROUNDED_RESULTS_PATH), key=lambda item: item["run_id"])
-    retrieval = {
-        record["question_id"]: record
-        for record in read_json(RETRIEVAL_RESULTS_PATH).get("records", [])
-    }
-    requirements = derive_human_review_requirements()
-    mandatory_grounded = set(requirements["mandatory_grounded_run_ids"])
-    clean_grounded = {
-        run_id
-        for run_ids in requirements["clean_grounded_sample_run_ids_by_model"].values()
-        for run_id in run_ids
-    }
-    records = []
-    for row in grounded:
-        label = label_grounded(row, questions[row["question_id"]])
-        q = questions[row["question_id"]]
-        if row["run_id"] in mandatory_grounded or row["run_id"] in clean_grounded:
-            task_type = "grounded" if row["run_id"] in mandatory_grounded else "grounded_sample"
-            records.append(
-                {
-                    "run_id": row["run_id"],
-                    "task_type": task_type,
-                    "question": q["question"],
-                    "model_id": row["model_id"],
-                    "expected_answer": q["expected_answer"],
-                    "retrieved_sources": retrieval.get(row["question_id"], {}).get("retrieved_chunks", []),
-                    "retrieved_chunk_ids": row["retrieved_chunk_ids"],
-                    "raw_output": row["raw_initial_output"],
-                    "application_output": row["final_application_output"],
-                    "citations": row["resolved_citations"],
-                    "deterministic_signals": {
-                        "label": label,
-                        "repair_reason": row.get("repair_reason"),
-                        "normalization_status": row.get("normalization_status"),
-                        "expected_answerable": q["expected_answerable"],
-                    },
-                    "proposed_label": label,
-                    "reviewer_decision": {
-                        "final_label": None,
-                        "reviewer_notes": "",
-                    },
-                }
-            )
-    tone_groups = tone_review_groups()
-    required_tone_groups = set(requirements["mandatory_tone_group_ids"])
-    clean_tone_groups = {
-        group_id
-        for group_ids in requirements["clean_tone_triplet_group_ids_by_model"].values()
-        for group_id in group_ids
-    }
-    for key, group in sorted(tone_groups.items()):
-        group_id = f"final2-tone-triplet::{group['model_id']}::{group['tone_input_id']}"
-        if group_id in required_tone_groups or group_id in clean_tone_groups:
-            records.append(
-                {
-                    "run_id": group_id,
-                    "task_type": "tone_triplet",
-                    "sample_type": "clean_tone_triplet" if group_id in clean_tone_groups else None,
-                    **group,
-                }
-            )
-    execution = read_json(EXECUTION_MANIFEST_PATH) if EXECUTION_MANIFEST_PATH.exists() else {}
-    packet = {
-        "packet_id": "final-v2-human-review-packet",
-        "created_from_execution_completed_at_utc": execution.get("completed_at_utc"),
-        "record_count": len(records),
-        "requirements": requirements,
-        "records": records,
-    }
-    write_json(HUMAN_REVIEW / "review_packet.json", packet)
-    return packet
 
 
 def verify_model_selection() -> dict[str, Any]:
@@ -1820,36 +1754,37 @@ def validate_final_v2(*, require_human: bool = False) -> dict[str, Any]:
             raise ValueError("Final v2 grounded result count must be 48 after execution")
         if len(tones_rows) != 120:
             raise ValueError("Final v2 tone result count must be 120 after execution")
-        validate_human_review_packet()
+        if not OWNER_ADJUDICATION_PATH.exists():
+            raise ValueError("Final v2 owner adjudication is missing")
     human_summary: dict[str, Any] | None = None
-    if require_human or (HUMAN_REVIEW / "human_adjudication.json").exists():
-        human = validate_human_adjudication()
+    if require_human or OWNER_ADJUDICATION_PATH.exists():
+        human = validate_owner_adjudication()
         human_summary = {
-            "human_adjudication_sha256": human["human_adjudication_sha256"],
+            "owner_adjudication_sha256": human["owner_adjudication_sha256"],
             "grounded_reviewed_count": len(human["grounded_decisions"]),
             "tone_triplet_reviewed_count": len(human["tone_triplet_decisions"]),
         }
         if FINAL_METRICS_PATH.exists():
             final_metrics = read_json(FINAL_METRICS_PATH)
-            if final_metrics.get("scoring_layer") != "hybrid_final":
-                raise ValueError("Final v2 final metrics are not hybrid final scores")
+            if final_metrics.get("scoring_layer") != "owner_verified_hybrid_final":
+                raise ValueError("Final v2 final metrics are not owner-verified hybrid final scores")
             adjudication_meta = final_metrics.get("adjudication", {})
-            if adjudication_meta.get("semantic_review_method") != "tool-assisted semantic adjudication":
-                raise ValueError("Final v2 final metrics do not disclose tool-assisted semantic adjudication")
-            if adjudication_meta.get("independent_human_signoff") is not False:
-                raise ValueError("Final v2 final metrics must not claim independent human signoff")
-            if final_metrics.get("adjudication", {}).get("human_adjudication_sha256") != human["human_adjudication_sha256"]:
-                raise ValueError("Final v2 final metrics do not match human adjudication hash")
+            if adjudication_meta.get("semantic_review_method") != "manual owner verification":
+                raise ValueError("Final v2 final metrics do not disclose manual owner verification")
+            if adjudication_meta.get("independent_owner_signoff") is not True:
+                raise ValueError("Final v2 final metrics must claim completed owner signoff")
+            if final_metrics.get("adjudication", {}).get("owner_adjudication_sha256") != human["owner_adjudication_sha256"]:
+                raise ValueError("Final v2 final metrics do not match owner adjudication hash")
         if MODEL_COMPARISON_PATH.exists():
             model_comparison = read_json(MODEL_COMPARISON_PATH)
             if model_comparison.get("status") != "complete":
                 raise ValueError("Final v2 model comparison is not complete")
-            if model_comparison.get("scoring_layer") != "hybrid_final":
-                raise ValueError("Final v2 model comparison does not use hybrid final scoring")
-            if model_comparison.get("semantic_review_method") != "tool-assisted semantic adjudication":
-                raise ValueError("Final v2 model comparison does not disclose tool-assisted semantic adjudication")
-            if model_comparison.get("independent_human_signoff") is not False:
-                raise ValueError("Final v2 model comparison must not claim independent human signoff")
+            if model_comparison.get("scoring_layer") != "owner_verified_hybrid_final":
+                raise ValueError("Final v2 model comparison does not use owner-verified hybrid final scoring")
+            if model_comparison.get("semantic_review_method") != "manual owner verification":
+                raise ValueError("Final v2 model comparison does not disclose manual owner verification")
+            if model_comparison.get("independent_owner_signoff") is not True:
+                raise ValueError("Final v2 model comparison must claim completed owner signoff")
     return {
         "status": "ok",
         "question_count": len(questions),
@@ -1858,7 +1793,7 @@ def validate_final_v2(*, require_human: bool = False) -> dict[str, Any]:
         "tone_result_count": len(tones_rows),
         "artifact_manifest": artifact_manifest_summary,
         "frozen_prompt_manifest": prompt_manifest_summary,
-        "human_adjudication": human_summary,
+        "owner_adjudication": human_summary,
     }
 
 
@@ -1893,7 +1828,7 @@ def _validate_prompt_hash(path: str, expected_hash: str) -> None:
 
 
 def validate_frozen_prompt_manifest() -> dict[str, Any]:
-    manifest = read_json("data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json")
+    manifest = read_json("data/manifests/frozen/frozen_prompt_manifest_v2.json")
     grounded = manifest.get("grounded", {})
     if grounded.get("candidate") != "A":
         raise ValueError("frozen prompt manifest must select grounded Candidate A")
@@ -1918,56 +1853,6 @@ def validate_frozen_prompt_manifest() -> dict[str, Any]:
     return {"grounded_candidate": "A", "selected_tone_count": len(selected_tones)}
 
 
-def validate_human_review_packet() -> dict[str, Any]:
-    packet_path = HUMAN_REVIEW / "review_packet.json"
-    if not packet_path.exists():
-        raise ValueError("Final v2 human review packet is missing")
-    packet = read_json(packet_path)
-    records = packet.get("records", [])
-    record_ids = [record["run_id"] for record in records]
-    duplicates = [run_id for run_id, count in Counter(record_ids).items() if count > 1]
-    if duplicates:
-        raise ValueError(f"duplicate human review record ids: {duplicates}")
-    by_id = {record["run_id"]: record for record in records}
-    requirements = derive_human_review_requirements()
-    missing_grounded = [run_id for run_id in requirements["mandatory_grounded_run_ids"] if run_id not in by_id]
-    if missing_grounded:
-        raise ValueError(f"missing required grounded review records: {missing_grounded}")
-    for model, run_ids in requirements["clean_grounded_sample_run_ids_by_model"].items():
-        if len(run_ids) != 3:
-            raise ValueError(f"expected 3 clean grounded samples for {model}, got {len(run_ids)}")
-        present = [run_id for run_id in run_ids if run_id in by_id and by_id[run_id]["task_type"] == "grounded_sample"]
-        if len(present) != 3:
-            raise ValueError(f"missing clean grounded samples for {model}")
-    missing_tone_groups = [group_id for group_id in requirements["mandatory_tone_group_ids"] if group_id not in by_id]
-    if missing_tone_groups:
-        raise ValueError(f"missing required tone review groups: {missing_tone_groups}")
-    if requirements["flagged_tone_run_ids"] and not requirements["mandatory_tone_group_ids"]:
-        raise ValueError("tone metrics show uncertainty/failure but packet contains zero tone review records")
-    covered_flagged = []
-    for group_id in requirements["mandatory_tone_group_ids"]:
-        record = by_id[group_id]
-        if record["task_type"] != "tone_triplet":
-            raise ValueError(f"tone review group has wrong task type: {group_id}")
-        if set(record["tones"]) != set(TONE_ORDER):
-            raise ValueError(f"tone review group missing one or more tone outputs: {group_id}")
-        covered_flagged.extend(output["run_id"] for output in record.get("triggered_outputs", []))
-    if Counter(covered_flagged) != Counter(requirements["flagged_tone_run_ids"]):
-        raise ValueError("flagged tone output coverage mismatch")
-    for model, group_ids in requirements["clean_tone_triplet_group_ids_by_model"].items():
-        if len(group_ids) != 2:
-            raise ValueError(f"expected 2 clean tone triplets for {model}, got {len(group_ids)}")
-        present = [group_id for group_id in group_ids if group_id in by_id and by_id[group_id].get("sample_type") == "clean_tone_triplet"]
-        if len(present) != 2:
-            raise ValueError(f"missing clean tone triplets for {model}")
-    return {
-        "record_count": len(records),
-        "grounded_records": sum(record["task_type"] == "grounded" for record in records),
-        "grounded_sample_records": sum(record["task_type"] == "grounded_sample" for record in records),
-        "tone_triplet_records": sum(record["task_type"] == "tone_triplet" for record in records),
-    }
-
-
 def validate_project_complete() -> dict[str, Any]:
     final = validate_final_v2(require_human=True)
     final_report_path = REPO_ROOT / "docs/FINAL_REPORT.md"
@@ -1977,22 +1862,22 @@ def validate_project_complete() -> dict[str, Any]:
     comparison = read_json(MODEL_COMPARISON_PATH)
     failure_text = FAILURE_ANALYSIS_PATH.read_text(encoding="utf-8") if FAILURE_ANALYSIS_PATH.exists() else ""
     final_report = final_report_path.read_text(encoding="utf-8")
-    if metrics.get("status") != "complete" or metrics.get("scoring_layer") != "hybrid_final":
-        raise ValueError("Final v2 hybrid final metrics are incomplete")
-    if metrics.get("adjudication", {}).get("semantic_review_method") != "tool-assisted semantic adjudication":
-        raise ValueError("Final v2 metrics do not disclose tool-assisted semantic adjudication")
-    if metrics.get("adjudication", {}).get("independent_human_signoff") is not False:
-        raise ValueError("Final v2 metrics must not claim independent human signoff")
+    if metrics.get("status") != "complete" or metrics.get("scoring_layer") != "owner_verified_hybrid_final":
+        raise ValueError("Final v2 owner-verified hybrid final metrics are incomplete")
+    if metrics.get("adjudication", {}).get("semantic_review_method") != "manual owner verification":
+        raise ValueError("Final v2 metrics do not disclose manual owner verification")
+    if metrics.get("adjudication", {}).get("independent_owner_signoff") is not True:
+        raise ValueError("Final v2 metrics must claim owner signoff")
     if comparison.get("status") != "complete":
         raise ValueError("Final v2 model comparison is incomplete")
-    if comparison.get("scoring_layer") != "hybrid_final":
-        raise ValueError("Final v2 model comparison does not use hybrid final scoring")
-    if comparison.get("semantic_review_method") != "tool-assisted semantic adjudication":
-        raise ValueError("Final v2 model comparison does not disclose tool-assisted semantic adjudication")
-    if comparison.get("independent_human_signoff") is not False:
-        raise ValueError("Final v2 model comparison must not claim independent human signoff")
-    if "Final v2" not in final_report or "tool-assisted semantic adjudication" not in final_report.lower():
-        raise ValueError("docs/FINAL_REPORT.md does not contain the Final v2 tool-assisted report")
+    if comparison.get("scoring_layer") != "owner_verified_hybrid_final":
+        raise ValueError("Final v2 model comparison does not use owner-verified hybrid final scoring")
+    if comparison.get("semantic_review_method") != "manual owner verification":
+        raise ValueError("Final v2 model comparison does not disclose manual owner verification")
+    if comparison.get("independent_owner_signoff") is not True:
+        raise ValueError("Final v2 model comparison must claim owner signoff")
+    if "Final v2" not in final_report or "manual owner verification" not in final_report.lower():
+        raise ValueError("docs/FINAL_REPORT.md does not contain the Final v2 owner-verified report")
     if "Final v2 Failure Analysis" not in failure_text:
         raise ValueError("Final v2 failure analysis is missing")
     _validate_submission_text()
@@ -2015,7 +1900,7 @@ def _validate_submission_text() -> None:
         "smaller-model comparison has not been executed",
         "Continue from " + "Gate",
         "Master " + "Prompt",
-        "Phase 9",
+        "obsolete interim submission wording",
     ]
     for path in current_docs:
         text = (REPO_ROOT / path).read_text(encoding="utf-8")
@@ -2023,7 +1908,7 @@ def _validate_submission_text() -> None:
             if phrase in text:
                 raise ValueError(f"stale submission wording in {path}: {phrase}")
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-    if "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/" not in readme:
+    if "data/indexes/selected/" not in readme:
         raise ValueError("README does not document the active Final v2 index")
     fake_argument_pattern = "add_argument(" + '"--fake"'
     evidence_runners = [

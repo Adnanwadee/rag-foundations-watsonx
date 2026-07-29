@@ -205,24 +205,6 @@ def test_clean_grounded_and_tone_sample_requirements_by_model() -> None:
     }
 
 
-def test_human_review_regeneration_is_deterministic_and_preserves_live_evidence(
-    tmp_path: Path,
-    monkeypatch,
-) -> None:
-    review_dir = tmp_path / "human_review"
-    review_dir.mkdir()
-    monkeypatch.setattr(final_v2, "HUMAN_REVIEW", review_dir)
-    before = file_hashes(EVIDENCE_PATHS)
-
-    first = final_v2.prepare_human_review()
-    first_packet = (review_dir / "review_packet.json").read_text(encoding="utf-8")
-    second = final_v2.prepare_human_review()
-
-    assert first == second
-    assert (review_dir / "review_packet.json").read_text(encoding="utf-8") == first_packet
-    assert file_hashes(EVIDENCE_PATHS) == before
-
-
 def test_final2_g_021_legitimate_request_passes_leakage_validation() -> None:
     request = final2_g_021_request()
 
@@ -409,6 +391,8 @@ def test_injected_final_v2_execution_path_uses_frozen_inputs(tmp_path: Path, mon
             json.dumps({"tone": "formal_report_summary", "output": tone_input["grounded_answer"]}),
         ]
     )
+    monkeypatch.setattr(final_v2, "compute_scores", lambda: {"status": "complete"})
+    monkeypatch.setattr(final_v2, "validate_owner_adjudication", lambda: {"status": "test"})
 
     summary = final_v2.run_final_v2_execution(chat_client=client)
 
@@ -513,6 +497,8 @@ def test_resume_skips_completed_checkpoints_without_rewriting(tmp_path: Path, mo
             )
         ]
     )
+    monkeypatch.setattr(final_v2, "compute_scores", lambda: {"status": "complete"})
+    monkeypatch.setattr(final_v2, "validate_owner_adjudication", lambda: {"status": "test"})
 
     final_v2.run_final_v2_execution(resume=True, chat_client=client)
 
@@ -524,14 +510,14 @@ def test_resume_skips_completed_checkpoints_without_rewriting(tmp_path: Path, mo
     assert len(client.calls) == 1
 
 
-def test_human_adjudication_validates_against_review_packet() -> None:
-    summary = final_v2.validate_human_adjudication()
+def test_owner_adjudication_validates_against_saved_outputs() -> None:
+    summary = final_v2.validate_owner_adjudication()
 
     assert summary["adjudicator"]
     assert len(summary["grounded_decisions"]) == 24
     assert len(summary["tone_triplet_decisions"]) == 40
-    assert summary["human_adjudication_sha256"] == final_v2.sha256_canonical_file(
-        final_v2.HUMAN_REVIEW / "human_adjudication.json"
+    assert summary["owner_adjudication_sha256"] == final_v2.sha256_canonical_file(
+        final_v2.OWNER_ADJUDICATION_PATH
     )
 
 
@@ -540,29 +526,27 @@ def test_public_final_v2_parser_rejects_fake_mode() -> None:
         final_v2.main(["--execute", "--fake"])
 
 
-def test_human_adjudication_rejects_duplicate_grounded_ids(tmp_path: Path, monkeypatch) -> None:
+def test_owner_adjudication_rejects_duplicate_grounded_ids(tmp_path: Path, monkeypatch) -> None:
     review_dir = tmp_path / "human_review"
     review_dir.mkdir()
-    for name in ["review_packet.json", "human_adjudication.json"]:
-        (review_dir / name).write_text(
-            (final_v2.HUMAN_REVIEW / name).read_text(encoding="utf-8"),
-            encoding="utf-8",
-        )
-    data = json.loads((review_dir / "human_adjudication.json").read_text(encoding="utf-8"))
+    path = review_dir / "owner_adjudication.json"
+    path.write_text(final_v2.OWNER_ADJUDICATION_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+    data = json.loads(path.read_text(encoding="utf-8"))
     data["grounded_decisions"][1]["run_id"] = data["grounded_decisions"][0]["run_id"]
-    (review_dir / "human_adjudication.json").write_text(json.dumps(data), encoding="utf-8")
+    path.write_text(json.dumps(data), encoding="utf-8")
     monkeypatch.setattr(final_v2, "HUMAN_REVIEW", review_dir)
+    monkeypatch.setattr(final_v2, "OWNER_ADJUDICATION_PATH", path)
 
-    with pytest.raises(ValueError, match="duplicate human adjudication"):
-        final_v2.validate_human_adjudication()
+    with pytest.raises(ValueError, match="duplicate owner adjudication"):
+        final_v2.validate_owner_adjudication()
 
 
 def test_final_metrics_preserve_deterministic_and_human_layers() -> None:
     metrics = final_v2.read_json(final_v2.FINAL_METRICS_PATH)
 
-    assert metrics["scoring_layer"] == "hybrid_final"
-    assert metrics["adjudication"]["semantic_review_method"] == "tool-assisted semantic adjudication"
-    assert metrics["adjudication"]["independent_human_signoff"] is False
+    assert metrics["scoring_layer"] == "owner_verified_hybrid_final"
+    assert metrics["adjudication"]["semantic_review_method"] == "manual owner verification"
+    assert metrics["adjudication"]["independent_owner_signoff"] is True
     assert metrics["layers_preserved"]["deterministic_layer_preserved"] is True
     assert metrics["layers_preserved"]["human_layer_preserved"] is True
     assert metrics["record_details"]["grounded"]

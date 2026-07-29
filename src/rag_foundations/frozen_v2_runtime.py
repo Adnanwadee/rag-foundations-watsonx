@@ -47,9 +47,9 @@ PRIMARY_MODEL = "ibm/granite-4-h-small"
 EMBEDDING_MODEL = "ibm/granite-embedding-278m-multilingual"
 TOP_K = 5
 PROTECTED_HASHES_PATH = REPO_ROOT / "data/evaluation/final_v2/manifests/protected_hashes.json"
-FROZEN_CONFIGURATION_PATH = REPO_ROOT / "data/evaluation/phase_c/frozen/frozen_configuration_v2.json"
-FROZEN_INDEX_MANIFEST_PATH = REPO_ROOT / "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json"
-FROZEN_PROMPT_MANIFEST_PATH = REPO_ROOT / "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json"
+FROZEN_CONFIGURATION_PATH = REPO_ROOT / "data/manifests/frozen/frozen_configuration_v2.json"
+FROZEN_INDEX_MANIFEST_PATH = REPO_ROOT / "data/manifests/frozen/frozen_index_manifest_v2.json"
+FROZEN_PROMPT_MANIFEST_PATH = REPO_ROOT / "data/manifests/frozen/frozen_prompt_manifest_v2.json"
 TONE_ORDER = [
     ToneName.FORMAL_REPORT_SUMMARY,
     ToneName.CASUAL_MESSAGE,
@@ -126,12 +126,12 @@ def verify_frozen_v2_artifacts() -> dict[str, Any]:
     index_manifest = read_json(FROZEN_INDEX_MANIFEST_PATH)
     prompt_manifest = read_json(FROZEN_PROMPT_MANIFEST_PATH)
     required_paths = [
-        "data/evaluation/phase_c/frozen/frozen_configuration_v2.json",
-        "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json",
-        "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json",
-        "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/asteron_policies_watsonx.index",
-        "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/metadata.json",
-        "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/index_config.json",
+        "data/manifests/frozen/frozen_configuration_v2.json",
+        "data/manifests/frozen/frozen_prompt_manifest_v2.json",
+        "data/manifests/frozen/frozen_index_manifest_v2.json",
+        "data/indexes/selected/asteron_policies_watsonx.index",
+        "data/indexes/selected/metadata.json",
+        "data/indexes/selected/index_config.json",
         "prompts/v2/grounded/candidate_a.system.txt",
         "prompts/v2/grounded/candidate_a.user.txt",
         "prompts/v2/tones/formal.system.txt",
@@ -195,10 +195,7 @@ def _manifest_hash(path: str, expected: str) -> None:
 
 
 def validate_frozen_index_manifest(index_manifest: dict[str, Any]) -> None:
-    if index_manifest.get("index_path") != (
-        "data/evaluation/phase_c/retrieval/indexes/chunk-220-overlap-40/"
-        "asteron_policies_watsonx.index"
-    ):
+    if index_manifest.get("index_path") != "data/indexes/selected/asteron_policies_watsonx.index":
         raise ValueError("frozen index manifest selected index path mismatch")
     _manifest_hash(index_manifest["index_path"], index_manifest["index_sha256"])
     _manifest_hash(index_manifest["metadata_path"], index_manifest["metadata_sha256"])
@@ -233,9 +230,9 @@ def validate_frozen_configuration(config: dict[str, Any], index_manifest: dict[s
     }
     for key, path in dataset_paths.items():
         _manifest_hash(path, config["development_dataset_hashes"][key])
-    if config["prompt_manifest_path"] != "data/evaluation/phase_c/frozen/frozen_prompt_manifest_v2.json":
+    if config["prompt_manifest_path"] != "data/manifests/frozen/frozen_prompt_manifest_v2.json":
         raise ValueError("frozen configuration prompt manifest path mismatch")
-    if config["embedding_configuration"]["index_manifest_path"] != "data/evaluation/phase_c/frozen/frozen_index_manifest_v2.json":
+    if config["embedding_configuration"]["index_manifest_path"] != "data/manifests/frozen/frozen_index_manifest_v2.json":
         raise ValueError("frozen configuration index manifest path mismatch")
     if index_manifest["selected_retrieval_configuration"] != config["selected_retrieval_configuration"]:
         raise ValueError("frozen configuration/index selection mismatch")

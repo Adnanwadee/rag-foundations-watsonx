@@ -1,4 +1,4 @@
-"""Corpus v2.1 loaders and validators for Phase C development evidence."""
+"""Corpus v2.1 loaders and validators for controlled development evidence."""
 
 from __future__ import annotations
 
