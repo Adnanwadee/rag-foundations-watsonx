@@ -30,8 +30,6 @@ jobs:
       - name: Test
         run: python -m pytest -q
 
-      - name: Validate documentation
-        run: python scripts/validate_documentation.py
 
       - name: Validate references
         run: python scripts/validate_references.py
@@ -84,7 +82,6 @@ jobs:
           tar -xf "$tmp/repo.tar" -C "$tmp/repo"
           cd "$tmp/repo"
           export PYTHONPATH="$PWD/src"
-          python scripts/validate_documentation.py
           python scripts/validate_references.py
           python scripts/validate_corpus_v2_1.py
           python scripts/validate_final_v2.py

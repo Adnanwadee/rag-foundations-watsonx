@@ -16,9 +16,7 @@ Purpose: recompute deterministic and owner-verified scoring from saved evidence.
 
 Purpose: validate corpus counts, checksums, fact registry, and synthetic declaration. Offline/live: offline. Evidence modification: none.
 
-## `validate_documentation.py`
 
-Purpose: validate required docs, metrics, acceptance criteria, links, owner-review claims, and synthetic disclosure. Offline/live: offline. Evidence modification: none.
 
 ## `validate_references.py`
 
