@@ -20,7 +20,7 @@ Purpose: validate corpus counts, checksums, fact registry, and synthetic declara
 
 ## `validate_references.py`
 
-Purpose: parse JSON/JSONL, validate retained repository paths, reject personal absolute paths, reject stale workflow terms outside immutable evidence text, and detect obvious credentials. Offline/live: offline. Evidence modification: none.
+Purpose: parse JSON/JSONL, validate retained repository paths, check Markdown links and backticked paths, reject public stale workflow terms and personal absolute paths, and detect obvious credentials. Offline/live: offline. Evidence modification: none.
 
 ## `validate_final_v2.py`
 

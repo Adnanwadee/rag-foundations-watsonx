@@ -77,8 +77,10 @@ python -m pytest -q
 Final code-hardening result:
 
 ```text
-306 passed
+323 passed
 ```
+
+This count reflects the final release-audit run on 2026-07-30.
 
 ### Offline validations
 
@@ -88,7 +90,6 @@ The following checks passed before the live calls:
 python -m compileall -q src scripts tests
 python -m ruff check .
 
-python scripts/validate_documentation.py
 python scripts/validate_references.py
 python scripts/validate_corpus_v2_1.py
 python scripts/validate_final_v2.py
@@ -216,7 +217,7 @@ Premium economy for flights of 6 hours or more requires department head approval
 
 ### Supporting evidence
 
-The resolved supporting quote contained both required rules:
+The resolved retrieved supporting excerpt contained both required rules:
 
 - premium economy may be approved for flights of six hours or more when the department head approves before booking;
 - business class is not reimbursable unless the Chief Operating Officer approves a specific exception before booking.

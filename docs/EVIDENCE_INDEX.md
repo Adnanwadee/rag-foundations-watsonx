@@ -13,7 +13,7 @@
 | Final tone inputs | 20 |
 | Saved grounded results | 48 |
 | Saved tone results | 120 |
-| Automated tests | 306 passing |
+| Automated tests | Complete suite passing |
 | Evidence status | Frozen, validated, and owner-reviewed |
 
 ---
@@ -49,7 +49,7 @@ Deterministic validation and scoring
         ↓
 Human semantic review
         ↓
-Independent owner verification
+Separate manual owner verification
         ↓
 Final metrics and reports
 ```
@@ -63,8 +63,10 @@ Final metrics and reports
 | Raw execution evidence | Saved retrieval and model outputs | `data/evaluation/final_v2/retrieval_results.json`, `grounded_results.jsonl`, `tone_results.jsonl` |
 | Deterministic evidence | Schema, structure, retrieval, and rule-based scoring | `data/evaluation/final_v2/scoring/deterministic_scores.json` |
 | Human review | Targeted semantic decisions | Final scoring records and failure analysis |
-| Owner verification | Independent confirmation of reviewed decisions | `data/evaluation/final_v2/human_review/owner_adjudication.json` |
+| Owner verification | Author-performed separate manual owner-verification pass | `data/evaluation/final_v2/human_review/owner_adjudication.json` |
 | Final summary | Final metrics and comparison | `final_metrics.json`, `model_comparison.json`, `docs/FINAL_REPORT.md` |
+
+The final manual owner-verification pass was performed by the project author, Adnan Wadee Abdullah. It was conducted separately from deterministic scoring, but it was not an external, blind, or independent third-party review. Frozen artifacts retain the field name `independent_owner_signoff` for compatibility with the finalized scoring schema; in this project, that field denotes a separate owner-verification pass rather than reviewer independence.
 
 ---
 
@@ -98,7 +100,7 @@ Expected high-level results:
 
 ```text
 Dependencies:        No broken requirements
-Tests:               306 passed
+Tests:               complete automated test suite passes
 Final-v2 dry-run:    external_calls=0
 FAISS preflight:     External calls: 0
 FAISS preflight:     Files written: 0
@@ -300,7 +302,7 @@ A runtime citation can contain:
 - document title;
 - section heading;
 - source path;
-- supporting quote;
+- retrieved supporting excerpt;
 - corpus version;
 - index ID.
 
@@ -654,7 +656,7 @@ No secret values are retained in the report.
 The final project state passes:
 
 ```text
-306 tests
+the complete automated test suite
 ```
 
 ### Main test files
@@ -716,7 +718,7 @@ The CI verifies:
 - compilation of `src`, `scripts`, and `tests`;
 - Ruff across the repository;
 - the complete Pytest suite;
-- documentation validation;
+- reference and project-completeness validation;
 - reference validation;
 - corpus validation;
 - Final-v2 validation;
@@ -823,7 +825,7 @@ A reviewer can confirm submission readiness with this checklist:
 - [x] Owner adjudication is present.
 - [x] Final artifacts are hashed.
 - [x] Live smoke tests are documented.
-- [x] The project passes 306 tests.
+- [x] The project passes the complete automated test suite.
 - [x] Offline validators pass.
 - [x] Dry-run and FAISS preflight use zero external calls.
 - [x] `.env` is ignored and untracked.

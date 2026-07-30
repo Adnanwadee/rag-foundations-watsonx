@@ -22,6 +22,8 @@
 | Final scoring layer | `owner_verified_hybrid_final` |
 | Final evaluation status | Complete and frozen |
 
+The final manual owner-verification pass was performed by the project author, Adnan Wadee Abdullah. It was conducted separately from deterministic scoring, but it was not an external, blind, or independent third-party review. Frozen artifacts retain the field name `independent_owner_signoff` for compatibility with the finalized scoring schema; in this project, that field denotes a separate owner-verification pass rather than reviewer independence.
+
 ---
 
 ## 1. Purpose
@@ -276,7 +278,7 @@ The frozen run plan is stored at:
 data/evaluation/final_v2/run_plan.json
 ```
 
-### Planned and retained execution
+### Retained execution plan
 
 | Task | Calculation | Total |
 | --- | ---: | ---: |
@@ -1040,9 +1042,9 @@ Existing reviewed decisions changed:  No
 Owner signoff:                        Yes
 ```
 
-The owner approved the retained decisions without changing their labels.
+The author-owner approved the retained decisions without changing their labels.
 
-This signoff is independent from the automated deterministic scoring layer; it is not presented as review by an external third-party organization.
+This signoff was performed after automated deterministic scoring and is not presented as external, blind, or independent third-party review.
 
 ---
 
@@ -1614,12 +1616,10 @@ remain aligned with the reported final results.
 Run the Final-v2 validators with the project’s Python 3.11 environment:
 
 ```powershell
-$PYTHON = "D:\PythonEnvs\project-01-rag-foundations\Scripts\python.exe"
-
-& $PYTHON scripts/validate_references.py
-& $PYTHON scripts/validate_corpus_v2_1.py
-& $PYTHON scripts/validate_final_v2.py
-& $PYTHON scripts/validate_project_complete.py
+python scripts/validate_references.py
+python scripts/validate_corpus_v2_1.py
+python scripts/validate_final_v2.py
+python scripts/validate_project_complete.py
 ```
 
 Run the read-only Final-v2 execution check:

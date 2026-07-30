@@ -15,6 +15,8 @@
 | Author and owner reviewer | Adnan Wadee Abdullah |
 | Final status | Implemented, evaluated, live-tested, and validated |
 
+The final manual owner-verification pass was performed by the project author, Adnan Wadee Abdullah. It was conducted separately from deterministic scoring, but it was not an external, blind, or independent third-party review. Frozen artifacts retain the field name `independent_owner_signoff` for compatibility with the finalized scoring schema; in this project, that field denotes a separate owner-verification pass rather than reviewer independence.
+
 ---
 
 ## 1. Executive Summary
@@ -44,9 +46,9 @@ The project also includes:
 - 120 tone outputs;
 - deterministic validation;
 - targeted human semantic review;
-- independent owner verification;
+- separate manual owner verification;
 - live Watsonx smoke tests;
-- 306 passing automated tests;
+- the complete automated test suite passes;
 - offline GitHub Actions validation.
 
 The final selected retriever achieved:
@@ -465,7 +467,7 @@ The application resolves these identifiers locally to:
 - document title;
 - section heading;
 - source path;
-- supporting quote;
+- retrieved supporting excerpt;
 - corpus version;
 - index ID.
 
@@ -802,7 +804,7 @@ Final scoring combines:
 1. raw model outputs;
 2. deterministic schema and content checks;
 3. targeted human semantic review;
-4. independent owner verification;
+4. separate manual owner verification;
 5. preserved labels and metrics.
 
 Owner verification covered:
@@ -1129,7 +1131,7 @@ Detailed live observations are documented in [`LIVE_SMOKE_TEST.md`](LIVE_SMOKE_T
 The final code-hardening state passed:
 
 ```text
-306 automated tests
+the complete automated test suite
 ```
 
 The validation suite includes:
@@ -1158,7 +1160,7 @@ Final validation confirmed:
 - no broken requirements;
 - valid Python compilation;
 - no Ruff violations;
-- 306 passing tests;
+- the complete automated test suite passes;
 - valid tracked JSON and JSONL files;
 - zero external calls during dry-run;
 - zero external calls and zero writes during FAISS preflight;
@@ -1224,7 +1226,7 @@ The project’s primary strengths are:
    Hit@5 reached `1.00`, with MRR `0.975`.
 
 2. **Traceable evidence**
-   Answers resolve citations to document, section, path, and supporting quote.
+   Answers resolve citations to document, section, path, and retrieved supporting excerpt.
 
 3. **Explicit unsupported handling**
    The runtime has a clear answerability field and canonical refusal path.
@@ -1340,7 +1342,7 @@ The final system includes:
 - two-model comparison;
 - failure analysis;
 - live operational tests;
-- 306 automated tests;
+- the complete automated test suite;
 - offline and archive-isolated validation.
 
 The final strict grounded accuracy of `0.8333` exceeds the required acceptance threshold, and the project preserves sufficient implementation, experiment, scoring, and evidence artifacts for a reviewer to understand and verify each major decision.

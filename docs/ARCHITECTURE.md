@@ -601,7 +601,7 @@ This means the application, not the model, is responsible for authoritative:
 - document title;
 - section heading;
 - source path;
-- supporting quote;
+- retrieved supporting excerpt;
 - corpus version;
 - index ID.
 
@@ -1057,7 +1057,7 @@ The following use no Watsonx model calls:
 - `python -m compileall`;
 - Ruff;
 - Pytest;
-- documentation validation;
+- reference and project-completeness validation;
 - reference validation;
 - corpus validation;
 - Final-v2 validation;
@@ -1335,7 +1335,7 @@ CI runs:
 - Python compilation;
 - Ruff;
 - Pytest;
-- documentation validator;
+- reference validator;
 - reference validator;
 - corpus validator;
 - Final-v2 validator;
@@ -1566,7 +1566,7 @@ CLI interface:                  Implemented
 Project-only logging:           Implemented
 Frozen runtime integrity:       Implemented
 Offline preflight:              Implemented
-Automated tests:                306 passed
+Automated tests:                complete automated test suite passes
 Git-archive isolation:          Passed
 Live operational validation:    Passed
 ```

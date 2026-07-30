@@ -772,7 +772,7 @@ The application rejects citation IDs that are not in the current retrieved set.
 - Reduces fabricated citation metadata.
 - Keeps source titles and section names authoritative.
 - Connects every citation to current retrieval evidence.
-- Supports source paths and supporting quotes.
+- Supports source paths and retrieved supporting excerpts.
 
 ### Costs
 
@@ -1632,7 +1632,7 @@ Make tests, validators, dry-run, selected-index preflight, and archive isolation
 The final code state passes:
 
 ```text
-306 automated tests
+the complete automated test suite
 ```
 
 Offline validation covers:
@@ -1756,7 +1756,7 @@ The completed project already includes:
 - full evaluation;
 - model comparison;
 - CLI;
-- 306 tests;
+- the complete automated test suite;
 - live smoke testing.
 
 The remaining stretch goals would add new variables requiring new experiments and regression testing.

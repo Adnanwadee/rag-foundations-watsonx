@@ -561,7 +561,7 @@ The application validates and resolves:
 - document title;
 - section heading;
 - source path;
-- supporting quote;
+- retrieved supporting excerpt;
 - corpus version;
 - index ID.
 
@@ -586,7 +586,7 @@ This architecture reduces the chance of fabricated:
 - document titles;
 - section names;
 - paths;
-- supporting quotes.
+- retrieved supporting excerpts.
 
 The model identifies evidence; the application owns citation metadata.
 
@@ -1650,7 +1650,7 @@ Future prompt improvements should use:
 The complete project test suite currently passes:
 
 ```text
-306 tests
+the complete automated test suite
 ```
 
 ---

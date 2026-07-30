@@ -313,9 +313,9 @@ COMPLETE
 
 - `src/rag_foundations/document_loader.py`
 - `src/rag_foundations/chunking.py`
-- `src/rag_foundations/embeddings.py`
+- `src/rag_foundations/watsonx_embeddings.py`
 - `src/rag_foundations/faiss_store.py`
-- `src/rag_foundations/retrieval.py`
+- `src/rag_foundations/faiss_store.py`, `src/rag_foundations/frozen_v2_runtime.py`
 - `scripts/build_watsonx_faiss_index.py`
 - `data/manifest_v2_1.json`
 - `data/indexes/selected/`
@@ -350,7 +350,7 @@ COMPLETE
   - document title;
   - section heading;
   - source path;
-  - supporting quote.
+  - retrieved supporting excerpt.
 - Unsupported questions use a canonical refusal.
 - The formal-report tone was implemented with:
   - a dedicated system prompt;
@@ -361,7 +361,7 @@ COMPLETE
 ### Evidence
 
 - `src/rag_foundations/grounded_generation.py`
-- `src/rag_foundations/citations.py`
+- `src/rag_foundations/grounded_generation.py`, `src/rag_foundations/schemas.py`
 - `src/rag_foundations/schemas.py`
 - `prompts/v2/grounded/`
 - `prompts/v2/tones/formal.system.txt`
@@ -415,13 +415,13 @@ The CLI can request:
 ### Evidence
 
 - `src/rag_foundations/tone_transformation.py`
-- `src/rag_foundations/structured_output.py`
+- `src/rag_foundations/schemas.py`, `src/rag_foundations/frozen_v2_runtime.py`
 - `src/rag_foundations/pipeline.py`
 - `prompts/v2/tones/`
 - `prompts/v2/few_shot/`
 - `prompts/v2/schemas/tone_output.schema.json`
 - `tests/test_tone_transformation.py`
-- `tests/test_structured_output.py`
+- `tests/test_schemas.py`, `tests/test_grounded_generation.py`, `tests/test_tone_transformation.py`
 
 ### Status
 
@@ -674,7 +674,7 @@ Final results use multiple review layers:
 2. schema validation;
 3. deterministic scoring;
 4. targeted human semantic review;
-5. independent owner verification.
+5. separate manual owner verification.
 
 The owner review covers:
 
@@ -701,7 +701,7 @@ python -m pytest -q
 Current result:
 
 ```text
-306 passed
+complete automated test suite passes
 ```
 
 ### Repository validators
@@ -806,16 +806,16 @@ Detailed live observations are documented in
 | Fact registry | `data/corpus_fact_registry_v2_1.json` | Complete |
 | Ingestion pipeline | `src/rag_foundations/document_loader.py` | Complete |
 | Chunking pipeline | `src/rag_foundations/chunking.py` | Complete |
-| Watsonx embedding integration | `src/rag_foundations/embeddings.py` | Complete |
+| Watsonx embedding integration | `src/rag_foundations/watsonx_embeddings.py` | Complete |
 | FAISS index | `data/indexes/selected/` | Complete |
-| Top-K retriever | `src/rag_foundations/retrieval.py` | Complete |
+| Top-K retriever | `src/rag_foundations/faiss_store.py`, `src/rag_foundations/frozen_v2_runtime.py` | Complete |
 | Grounded generation | `src/rag_foundations/grounded_generation.py` | Complete |
-| Citations | `src/rag_foundations/citations.py` | Complete |
+| Citations | `src/rag_foundations/grounded_generation.py`, `src/rag_foundations/schemas.py` | Complete |
 | Unsupported refusal | Grounded prompt, schemas, tests, final outputs | Complete |
 | Three tone templates | `prompts/v2/tones/` | Complete |
 | Few-shot examples | `prompts/v2/few_shot/` | Complete |
 | Structured output | `prompts/v2/schemas/`, Pydantic schemas | Complete |
-| Malformed-output handling | Structured-output and repair modules | Complete |
+| Malformed-output handling | Pydantic schemas and bounded repair paths | Complete |
 | CLI | `src/rag_foundations/cli.py` | Complete |
 | Four experiment artifacts | `data/evaluation/experiments/` | Complete |
 | 24-question evaluation set | `data/evaluation/final_v2/` | Complete |
@@ -895,7 +895,7 @@ Final evaluation:                  Complete
 Model comparison:                  Complete
 Failure analysis:                  Complete
 Live smoke testing:                Complete
-Automated testing:                 306 passed
+Automated testing:                 complete automated test suite passes
 Offline CI and archive validation: Complete
 Submission documentation:         Complete
 ```
