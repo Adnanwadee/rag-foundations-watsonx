@@ -1336,7 +1336,6 @@ CI runs:
 - Ruff;
 - Pytest;
 - reference validator;
-- reference validator;
 - corpus validator;
 - Final-v2 validator;
 - project-completeness validator;

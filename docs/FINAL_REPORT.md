@@ -49,7 +49,7 @@ The project also includes:
 - separate manual owner verification;
 - live Watsonx smoke tests;
 - the complete automated test suite passes;
-- offline GitHub Actions validation.
+- a complete local offline validation suite and a repository-contained GitHub Actions workflow definition.
 
 The final selected retriever achieved:
 
@@ -739,7 +739,7 @@ The comparison held constant:
 - output schemas;
 - scoring rubric.
 
-The comparison model is described as having a smaller nominal documented parameter count. Pricing was not used because no frozen pricing evidence was included in the evaluation.
+The comparison model is described as having a smaller nominal documented parameter count. No deployment-cost conclusion is drawn from the retained evaluation evidence.
 
 ---
 
@@ -1169,6 +1169,8 @@ Final validation confirmed:
 - clean archive-isolation execution;
 - unchanged protected prompts, documents, evaluations, and indexes.
 
+Remote GitHub Actions execution was unavailable at final closeout because of GitHub account billing restrictions. Submission readiness was therefore established using the equivalent local offline validation commands documented in the repository.
+
 ---
 
 ## 21. Security and Evidence Integrity
@@ -1182,7 +1184,7 @@ The project includes the following safeguards.
 - `.env.example` contains placeholders only.
 - tests do not read or print real credentials.
 - project logging does not log settings or API keys.
-- GitHub Actions requires no Watsonx credentials.
+- The repository-contained GitHub Actions workflow definition requires no Watsonx credentials when remote execution is available.
 
 ### Logging
 
@@ -1278,7 +1280,7 @@ The formal-report tone showed the highest reliability in the final evaluation.
 
 ## 23.5 Model comparison
 
-The comparison evaluates task behavior under controlled conditions. It does not make a pricing claim because frozen pricing evidence was not included.
+The comparison evaluates task behavior under controlled conditions. It does not draw a deployment-cost conclusion from the retained evidence.
 
 ## 23.6 Timeout metadata
 

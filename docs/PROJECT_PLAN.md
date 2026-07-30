@@ -315,7 +315,7 @@ COMPLETE
 - `src/rag_foundations/chunking.py`
 - `src/rag_foundations/watsonx_embeddings.py`
 - `src/rag_foundations/faiss_store.py`
-- `src/rag_foundations/faiss_store.py`, `src/rag_foundations/frozen_v2_runtime.py`
+- `src/rag_foundations/frozen_v2_runtime.py`
 - `scripts/build_watsonx_faiss_index.py`
 - `data/manifest_v2_1.json`
 - `data/indexes/selected/`
@@ -361,7 +361,6 @@ COMPLETE
 ### Evidence
 
 - `src/rag_foundations/grounded_generation.py`
-- `src/rag_foundations/grounded_generation.py`, `src/rag_foundations/schemas.py`
 - `src/rag_foundations/schemas.py`
 - `prompts/v2/grounded/`
 - `prompts/v2/tones/formal.system.txt`
@@ -420,8 +419,9 @@ The CLI can request:
 - `prompts/v2/tones/`
 - `prompts/v2/few_shot/`
 - `prompts/v2/schemas/tone_output.schema.json`
+- `tests/test_schemas.py`
+- `tests/test_grounded_generation.py`
 - `tests/test_tone_transformation.py`
-- `tests/test_schemas.py`, `tests/test_grounded_generation.py`, `tests/test_tone_transformation.py`
 
 ### Status
 
@@ -523,7 +523,7 @@ The two generation models were evaluated under the same:
 - schemas;
 - scoring rubric.
 
-The comparison model is discussed using its nominal documented parameter count. No unsupported pricing claim is used.
+The comparison model is discussed using its nominal documented parameter count. No deployment-cost conclusion is drawn from the retained evidence.
 
 Final evaluation includes:
 
@@ -731,7 +731,7 @@ Expected behavior:
 
 ### Archive isolation
 
-GitHub Actions also validates a clean Git archive to confirm that offline verification does not depend on:
+The repository-contained workflow definition also checks a clean Git archive when remote execution is available, confirming that offline verification does not depend on:
 
 - `.env`;
 - untracked files;
