@@ -1,4 +1,4 @@
-# Prompting & RAG Foundations on watsonx.ai
+﻿# Prompting & RAG Foundations on watsonx.ai
 
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
@@ -110,7 +110,7 @@ The selected index, prompts, final outputs, metrics, owner-adjudication artifact
 
 ## Corpus
 
-The project uses five fictional Asteron policy documents under `data/documents_v2_1/`. The corpus intentionally contains overlapping policy language, multi-source questions, unsupported concepts, numeric thresholds, dates, authorities, prohibitions, and multilingual tone inputs.
+The project uses five fictional Asteron policy documents under `data/documents_v2_1/`. The corpus intentionally contains overlapping policy language, multi-source questions, unsupported concepts, numeric thresholds, dates, authorities, prohibitions, and retrieval distractors.
 
 | Document | Subject |
 | --- | --- |
@@ -471,3 +471,4 @@ These limits are documented because the benchmark measures implementation correc
 Adnan Wadee Abdullah
 
 Tier-1 Prompting and RAG Foundations project using IBM watsonx.ai, FAISS, structured prompting, grounded citations, controlled tone transformation, and offline validation.
+
